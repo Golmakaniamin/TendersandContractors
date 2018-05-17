@@ -1,0 +1,19 @@
+﻿<Page x:Class="RTM.Contracts.ContractsMainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="ContractsMainMenu" Background="{x:Null}">
+
+    <Grid Background="{x:Null}" Height="768" Width="1024">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="294" HorizontalAlignment="Right" Margin="0,224,339,250" Name="border1" Opacity="0.4" VerticalAlignment="Center" Width="361">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Label Content="منوی اصلی سامانه مدیریت قراردادها" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="53" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="344,0,360,493" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="319.884" />
+        <Button Content="ثبت قرارداد جدید" Height="70" Margin="414,277,433,421" Name="CreateBtn" Opacity="1" TabIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="CreateBtn_Click" />
+        <Button Content="جستجوی قراردادها" Height="70" Margin="414,355,433,343" Name="SearchForEditBtn" Opacity="1" TabIndex="1" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="SearchForEditBtn_Click" />
+        <Button Content="مدیریت دسترسی قراردادها" Height="70" Margin="414,431,433,267" Name="button1" Opacity="1" TabIndex="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button1_Click" />
+    </Grid>
+</Page>

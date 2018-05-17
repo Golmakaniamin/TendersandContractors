@@ -1,0 +1,878 @@
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.exe.config
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Pictures\goodwp.com_18222.jpg
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.exe.manifest
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.application
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.exe
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.pdb
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Blend.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTMFileServer.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\WPFToolkit.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Framework.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Extensibility.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.DesignSurface.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Project.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.DesignModel.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Code.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Markup.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Licensing.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Extensibility.Designer.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Expression.Extensibility.Project.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\ActiproSoftware.SyntaxEditor.Net20.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.VisualStudio.Platform.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.Loader.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.CompositionModel.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\ActiproSoftware.Shared.Net20.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.Blend.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.Framework.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.DesignSurface.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.Project.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.DesignModel.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.Code.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\en\Microsoft.Expression.Markup.resources.dll
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\BaseInfo.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\ContractorSelection.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\Tazmin.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\BusyIndicator.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsCreate.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsPage1.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Styles\GlassButton.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\FindUser.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\LoginPage.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\NewUser.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\UserMainMenu.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\App.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\BaseInfo.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\ContractorSelection.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\Tazmin.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractDocuments.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\TransfersManagement.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\BusyIndicator.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\MainWindow.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsCreate.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractsSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsPage1.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Regulations\RegulationsSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation2.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\NavigationBar.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\test.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Contractors.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\FindUser.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\LoginPage.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\NewUser.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\StartPage.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\UserMainMenu.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\App.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM_Content.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM_MarkupCompile.cache
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM_MarkupCompile.lref
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\ContractDocuments.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Contracts\TransfersManagement.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\MainWindow.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Styles\Styles.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Styles\Buttons.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Tenderingg\Evaluation2.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\NavigationBar.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\Styles\NavigationResource.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserControls\test.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\Contractors.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\UserManagement\StartPage.baml
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.g.resources
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.Properties.Resources.resources
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.exe.manifest
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.application
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.exe
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.pdb
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.csprojResolveAssemblyReference.cache
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\obj\x86\Debug\RTM.csproj.GenerateResource.Cache
+C:\Users\HeSaM\Desktop\NEW RTM\Tender\RTM\bin\Debug\RTM.XML
+D:\Tender\RTM\bin\Debug\RTM.exe.config
+D:\Tender\RTM\bin\Debug\RTM.XML
+D:\Tender\RTM\obj\x86\Debug\RTM.exe
+D:\Tender\RTM\obj\x86\Debug\RTM.pdb
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.exe.config
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.XML
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.exe
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.pdb
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Pictures\goodwp.com_18222.jpg
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.exe.manifest
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.application
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.exe
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTM.pdb
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.Shared.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\RTMFileServer.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Telerik.Reporting.Design.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Telerik.Reporting.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\WPFToolkit.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Framework.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Extensibility.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.DesignSurface.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Project.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.DesignModel.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Code.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Markup.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Licensing.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Extensibility.Designer.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Expression.Extensibility.Project.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\ActiproSoftware.SyntaxEditor.Net20.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.VisualStudio.Platform.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.Loader.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.VisualStudio.AssetSystem.CompositionModel.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\ActiproSoftware.Shared.Net20.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.Blend.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.Framework.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.DesignSurface.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.Project.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.DesignModel.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.Code.resources.dll
+D:\Tender\WIN.APP_Source\RTM\bin\Debug\en\Microsoft.Expression.Markup.resources.dll
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\BaseInfo.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\ContractorSelection.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\Tazmin.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\BusyIndicator.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsCreate.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsPage1.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Styles\GlassButton.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\FindUser.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\LoginPage.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\NewUser.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\UserMainMenu.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\App.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\BaseInfo.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\ContractorSelection.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\Tazmin.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractDocuments.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\TransfersManagement.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\BusyIndicator.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\MainWindow.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsCreate.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsPage1.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\NavigationBar.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\test.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Contractors.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\FindUser.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\LoginPage.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\NewUser.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\StartPage.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\UserMainMenu.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\App.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM_Content.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM_MarkupCompile.cache
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM_MarkupCompile.lref
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractDocuments.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\TransfersManagement.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\MainWindow.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Styles\Styles.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Styles\Buttons.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\NavigationBar.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\Styles\NavigationResource.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\test.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Contractors.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\StartPage.baml
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.g.resources
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.Properties.Resources.resources
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.exe.manifest
+D:\Tender\WIN.APP_Source\RTM\obj\x86\Debug\RTM.application
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.exe.config
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.exe
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.pdb
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.csprojResolveAssemblyReference.cache
+E:\WIN.APP_Source\RTM\obj\x86\Debug\BaseInfo.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\ContractorSelection.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\Tazmin.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\BusyIndicator.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsCreate.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsPage1.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Styles\GlassButton.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\FindUser.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\LoginPage.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\NewUser.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\UserMainMenu.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\App.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\BaseInfo.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\ContractorSelection.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\Tazmin.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractDocuments.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\TransfersManagement.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\BusyIndicator.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\MainWindow.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsCreate.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractsSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsPage1.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Regulations\RegulationsSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\NavigationBar.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Contractors.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\FindUser.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\LoginPage.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\NewUser.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\StartPage.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\UserMainMenu.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\App.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM_Content.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM_MarkupCompile.cache
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM_MarkupCompile.lref
+E:\WIN.APP_Source\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\ContractDocuments.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Contracts\TransfersManagement.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\MainWindow.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Styles\Styles.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Styles\Buttons.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Tenderingg\Evaluation2.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserControls\NavigationBar.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\Styles\NavigationResource.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\Contractors.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\UserManagement\StartPage.baml
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.g.resources
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.Properties.Resources.resources
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.csproj.GenerateResource.Cache
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.exe.manifest
+E:\WIN.APP_Source\RTM\bin\Debug\Pictures\goodwp.com_18222.jpg
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.exe.manifest
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.application
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.exe
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.pdb
+E:\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\WIN.APP_Source\RTM\bin\Debug\CrystalDecisions.Shared.dll
+E:\WIN.APP_Source\RTM\bin\Debug\RTMFileServer.dll
+E:\WIN.APP_Source\RTM\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+E:\WIN.APP_Source\RTM\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+E:\WIN.APP_Source\RTM\bin\Debug\Telerik.Reporting.Design.dll
+E:\WIN.APP_Source\RTM\bin\Debug\Telerik.Reporting.dll
+E:\WIN.APP_Source\RTM\bin\Debug\WPFToolkit.dll
+E:\WIN.APP_Source\RTM\obj\x86\Debug\RTM.application
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\Pictures\goodwp.com_18222.jpg
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.exe.config
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.exe.manifest
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.application
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.XML
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.exe
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTM.pdb
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\CrystalDecisions.Shared.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\RTMFileServer.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\Telerik.Reporting.Design.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\Telerik.Reporting.dll
+E:\WIN.APP_Source_92.6.31\RTM\bin\Debug\WPFToolkit.dll
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.csprojResolveAssemblyReference.cache
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\BaseInfo.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\ContractorSelection.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\Tazmin.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\BusyIndicator.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsCreate.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsPage1.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Styles\GlassButton.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\FindUser.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\LoginPage.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\NewUser.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\UserMainMenu.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\App.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\BaseInfo.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\AccessToTendersManagement.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Download_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\CreateNotices.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\NoticeRequest.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Notices\NoticeSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Contractor_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Contract_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Evaluation_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Regulation_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Tender_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\User_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Havale\Havale_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report10\Report10_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\ContractorSelection.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\GenralRep\Log_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\PriceEvalReport\PriceEval_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report7\Report7_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report8\Report8_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report1\Report1_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report6\Report6_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\Tazmin.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\SelfStateManagment.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\ContractHeaderControl.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report2\Report2_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report3\Report3_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report4\Report4_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Report\Report5\Report5_Viewer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractDocuments.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\NewPaymentTransfer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\TransfersManagement.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI15RegisterBankGaurantees.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI16RegisterBills.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI17RegisterParticipationBills.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI1choosingCntrctrReq.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI6TenderingNotice.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI7RegisterAds.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\BusyIndicator.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\MainWindow.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsCreate.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsMainMenu.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractsSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsMainMenu.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsPage1.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Regulations\RegulationsSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation1-1.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Consultant Forms\Evaluation1Search.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation2.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation2Search.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\EvaluationReport.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\TenderingMainMenu.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\NavigationBar.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\TenderingHeaderControl.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Contractors.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\ContractorsSearch.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\FindUser.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\LoginPage.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\NewUser.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\StartPage.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\UserMainMenu.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\App.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM_Content.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM_MarkupCompile.cache
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM_MarkupCompile.lref
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\SystemLog\SystemLogsManagement.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\TenderAdvancedSearch.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\PriceEvaluation1.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Web_DocContractor.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\ContractDocuments.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\SearchRequestInformation.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\SearchTenderInformation.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Contracts\TransfersManagement.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI10DocsPresentation.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI13packetPresentationt.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI14OnePhaseReopening.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI18RegisterPriceOffer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI19TenderResult.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI21TwoPhaseReopeningSesion.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI22TowPhaseRegisterPriceOffer.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI2CreditControl.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI3PresidentOrder.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI4HoldingTenderSesion.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI5TenderDocs.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI8ExtendSesion.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tendering1\UI9JustificationSesion.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\MainWindow.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Styles\Styles.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Styles\Buttons.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\TenderingArchive\TenderingArchiveMain.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Tenderingg\Evaluation2.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserControls\NavigationBar.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\Styles\NavigationResource.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\Contractors.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\OrganizationalChart.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\UserManagement\StartPage.baml
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.g.resources
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.Properties.Resources.resources
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.csproj.GenerateResource.Cache
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.exe.manifest
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.application
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.exe
+E:\WIN.APP_Source_92.6.31\RTM\obj\x86\Debug\RTM.pdb
+E:\WIN.APP_Source\RTM\bin\Debug\RTM.XML
+D:\Work\Resome\1392-2013\WIN.APP_Source\RTM\bin\Debug\RTM.exe.config
+D:\Work\Resome\1392-2013\WIN.APP_Source\RTM\bin\Debug\RTM.XML
+D:\Work\Resome\1392-2013\WIN.APP_Source\RTM\obj\x86\Debug\RTM.exe
+D:\Work\Resome\1392-2013\WIN.APP_Source\RTM\obj\x86\Debug\RTM.pdb

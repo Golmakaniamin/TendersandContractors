@@ -1,0 +1,29 @@
+﻿<Page x:Class="RTM.Tenderingg.Web_DocContractor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="Web_DocContractor" xmlns:my="clr-namespace:RTM">
+    <Grid Background="{x:Null}" Height="768" Width="1024">
+        <Border Background="#FFA0A0A0" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="667" HorizontalAlignment="Left" Margin="24,54,0,0" Name="Border" Opacity="0.4" VerticalAlignment="Top" Width="976">
+            <Label Height="0" Name="label2" Width="0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </Border>
+        <Label Content="لیست دریافت اسناد از سامانه خود اظهاری" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="682,55,0,0" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <Button Click="SearchBtn_Click" Content="جستجو" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="40" Margin="569,114,0,0" Name="SearchBtn" TabIndex="1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="110" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="Arial" FontSize="20" FontWeight="Normal" Height="39.974" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="684.617,114.143,0,0" MaxLines="5" Name="TenderNumberTxt" TabIndex="0" Text="{Binding ElementName=page, Path=CurrentTender.TenderingNumber}" TextAlignment="Left" TextWrapping="Wrap" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="188" />
+        <Label Content="شماره مناقصه :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="858,110,0,0" Name="label9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="150" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="302" HorizontalContentAlignment="Center" IsReadOnly="True" Margin="38,368.667,0,0" Name="DataGrid1" SelectionMode="Single" TabIndex="2" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="948.383">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Cntrctr" Binding="{Binding contractorId, Converter={StaticResource companyNameConverter}}" Header="نام شرکت" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="SocialNom" Binding="{Binding contractorId,  Converter={StaticResource companySNConverter}}" Header="شناسه ملی شرکت" IsReadOnly="True" />
+                <DataGridTextColumn IsReadOnly="True" Header="آخرین تاریخ دانلود اسناد" Binding="{Binding Path=date, Converter= {StaticResource dateConverter}}"/>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button  Content="چاپ" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="40" Margin="189,670,0,0" Name="PrintBtn" TabIndex="3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="114" Visibility="Hidden" />
+        <my:TenderingHeaderControl HorizontalAlignment="Left" Margin="38,163,0,0" x:Name="Header" VerticalAlignment="Top" Width="948" />
+        <Button Content="چاپ گزارش" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="38,675,0,0" Name="Print" TabIndex="1" VerticalAlignment="Top" Width="110" Click="Print_Click" />
+    </Grid>
+</Page>

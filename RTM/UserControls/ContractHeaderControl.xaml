@@ -1,0 +1,46 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="RTM.ContractHeaderControl"
+	x:Name="UserControl"
+	d:DesignWidth="934" d:DesignHeight="231">
+
+	<Grid x:Name="LayoutRoot" Height="229">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="543*" />
+            <ColumnDefinition Width="391*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*" />
+            <RowDefinition Height="86*" />
+        </Grid.RowDefinitions>
+        <Border AllowDrop="True" Background="White" BorderBrush="#FF9A9696" BorderThickness="1" CornerRadius="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="229" HorizontalAlignment="Right" Name="border1" Opacity="0.4" VerticalAlignment="Bottom" Width="934">
+            <Label Height="0" Name="label1" Width="0" />
+        </Border>
+        <Label Content="پیمانکار :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="517,17,0,0" x:Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="78" Grid.ColumnSpan="2" />
+		<Label Content="موضوع قرارداد :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalContentAlignment="Center" Margin="263,54,0,0" x:Name="label8" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="104" Grid.Column="1" />
+		<Label Content="واحد نظارت :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,47,376,0" x:Name="label25" VerticalContentAlignment="Center" Width="98" VerticalAlignment="Top" Height="35" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Label Content="{Binding ContractDate, Converter={StaticResource dateConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="102,98,0,0" x:Name="l5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Grid.RowSpan="2" Background="WhiteSmoke" Grid.Column="1" />
+        <Label Content="{Binding ConsultantId, Converter={StaticResource companyNameConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="24,18,0,0" x:Name="l3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="214" d:LayoutOverrides="HorizontalAlignment, GridBox" Background="WhiteSmoke" />
+        <Label Content="{Binding ContractTtile}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="24,58,0,0" x:Name="l4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="782" Background="WhiteSmoke" Grid.ColumnSpan="2" />
+        <TextBlock Text="{Binding ContractBudget, StringFormat=N0}" FlowDirection="RightToLeft" FontFamily="Tahoma" FontSize="17" Height="35" HorizontalAlignment="Right" Margin="0,12,128,0" x:Name="l8" VerticalAlignment="Top" Width="235" Grid.Row="1" Background="WhiteSmoke" Grid.Column="1" />
+        <Label Content="{Binding ContractPeriod}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalContentAlignment="Left" Margin="177,51,128,0" x:Name="l9" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Row="1" Background="WhiteSmoke" Grid.Column="1" />
+		<Label Content="تاریخ مبادله پیمان :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="459,96,0,0" x:Name="label18" VerticalContentAlignment="Center" Width="135" VerticalAlignment="Top" Height="35" d:LayoutOverrides="VerticalAlignment" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+        <Label Content="{Binding StartDate, Converter={StaticResource dateConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="24,98,0,0" x:Name="l7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="137" d:LayoutOverrides="HorizontalAlignment" Grid.RowSpan="2" Background="WhiteSmoke" />
+        <Label Content="{Binding SupervisingUnit, Converter={StaticResource orgConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="24,52,0,0" x:Name="l10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="435" Grid.Row="1" Background="WhiteSmoke" />
+		<Label Content="شماره قرارداد :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" Margin="269,16,0,0" x:Name="label1_Copy1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="99" HorizontalContentAlignment="Center" Grid.Column="1" />
+        <Label Content="{Binding ContractNumber}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,18,128,0" x:Name="l1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="205" Background="WhiteSmoke" Grid.Column="1" />
+        <Label Content="مشاور :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="235,16,0,0" x:Name="label1_Copy3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="65" d:LayoutOverrides="HorizontalAlignment" />
+		<Label Content="مبلغ قرارداد :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="265,10,0,0" x:Name="label1_Copy4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="104" Grid.Row="1" Grid.Column="1" />
+		<Label Content="مدت قرارداد :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="251,51,0,0" x:Name="label1_Copy6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="134" Grid.Row="1" Grid.Column="1" />
+		<Label Content="تاریخ قرارداد :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="261,97,0,97" x:Name="label1_Copy7" VerticalContentAlignment="Center" Width="116" Height="35" Grid.RowSpan="2" Grid.Column="1" />
+        <Label Content="{Binding AgreementDate, Converter={StaticResource dateConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalContentAlignment="Left" Margin="319,98,0,0" x:Name="l6" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="140" Grid.RowSpan="2" Background="WhiteSmoke" />
+		<Label Content="تاریخ شروع بکار :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="160,96,0,0" x:Name="label1_Copy9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="134" d:LayoutOverrides="HorizontalAlignment, GridBox" Grid.RowSpan="2" />
+		<Label Content="نظارت عالیه :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="440,10,0,0" x:Name="label1_Copy10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="134" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Label Content="{Binding SupervisingUnitHigher, Converter={StaticResource orgConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalContentAlignment="Left" Margin="0,12,84,0" x:Name="l11" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="435" d:LayoutOverrides="GridBox" Grid.Row="1" Background="WhiteSmoke" />
+        <Label Content="{Binding ContractorId, Converter={StaticResource companyNameConverter}}" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="35" HorizontalContentAlignment="Left" Margin="306,18,23,0" x:Name="l2" VerticalAlignment="Top" VerticalContentAlignment="Center" Background="WhiteSmoke" />
+    </Grid>
+</UserControl>

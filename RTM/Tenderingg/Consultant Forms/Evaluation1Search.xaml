@@ -1,0 +1,34 @@
+﻿<Page x:Class="RTM.Tenderingg.Evaluation1Search"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:dp="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="Evaluation1Search" Background="{x:Null}" Height="768" Width="1024" Loaded="Page_Loaded"
+      >
+
+    <Grid Background="{x:Null}" Height="768" Width="1024">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="346" HorizontalAlignment="Right" Margin="0,0,224,238" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" Width="588">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <dp:DatePicker Margin="539,236,312,504" FlowDirection="RightToLeft" Name="datepicker" TabIndex="0" />
+        <Label Content="جستجوی جلسه ارزیابی مشاور" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,182,230,534" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" />
+        <Button Content="مشاهده" Margin="514,490,390,246" Name="OpenBtn" TabIndex="5" Width="120" Click="OpenBtn_Click" />
+        <Button Content="جستجو" HorizontalAlignment="Right" Margin="0,490,265,246" Name="SearchBtn" TabIndex="3" Width="120" Click="SearchBtn_Click" />
+        <DataGrid IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False"  CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="233,306,0,0" Name="Grid" SelectionMode="Single" TabIndex="4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="544" >
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="عنوان جلسه" Binding="{Binding Path=Title}"/>
+                <DataGridCheckBoxColumn  Header=" وضعيت ثبت" Binding="{Binding Path=PermanentRecord}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="از تاریخ :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="707,228,247,0" Name="label32" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="233,267.5,301,0" MaxLines="5" Name="TitleTxt" TabIndex="2" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <Label Content="عنوان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="729,262,247,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <Button Content="تازه سازی" Margin="262,490,642,246" Name="RefreshBtn" TabIndex="6" Width="120" Click="RefreshBtn_Click" />
+        <Button Content="ویرایش" HorizontalAlignment="Right" Margin="0,490,516,246" Name="EditBtn" TabIndex="8" Width="120" Click="EditBtn_Click" />
+        <dp:DatePicker FlowDirection="RightToLeft" Margin="234,236,617,504" Name="datePicker1" TabIndex="1" />
+        <Label Content="تا تاریخ :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="408,228,554,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+    </Grid>
+</Page>

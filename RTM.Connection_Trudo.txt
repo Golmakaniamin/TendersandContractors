@@ -1,0 +1,1 @@
+metadata=res://*/RTMDB.csdl|res://*/RTMDB.ssdl|res://*/RTMDB.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:172.20.40.8\GIS-SERVER,1433;initial catalog=Ratec;persist security info=True;user id=ratec;password=ratec;"

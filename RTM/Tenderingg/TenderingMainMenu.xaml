@@ -1,0 +1,43 @@
+﻿<Page x:Class="RTM.Tenderingg.TenderingMainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="TenderingMainMenu" Height="768" Width="1024" Background="{x:Null}" Loaded="Page_Loaded">
+
+    <Grid Height="768" Width="1024" Background="{x:Null}">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="527" Margin="230,0,0,126" Name="border1" Opacity="0.6" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="555">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="220" Margin="512,0,262,144" Name="border3" Opacity="0.4" VerticalAlignment="Bottom" Width="250">
+            <Label Height="0" Name="label3" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="393" Margin="250,0,524,203" Name="border2" Opacity="0.4" VerticalAlignment="Bottom" Width="250">
+            <Label Height="0" Name="label1" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="220" Margin="512,0,262,376" Name="border4" Opacity="0.4" VerticalAlignment="Bottom" Width="250">
+            <Label Height="0" Name="label4" Width="0" />
+        </Border>
+        <Label Content="منوی اصلی سامانه کمیسیون مناقصات" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="53" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="345,0,359,602" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="319.884" />
+        <Button Content="ایجاد جلسه ارزیابی مشاور" Height="50" Margin="26,694,848,24" Name="button3" Opacity="1" TabIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button3_Click" Width="150" Visibility="Hidden" />
+        <Button Content="مشاهده جلسات ارزیابی مشاور" Height="50" Margin="26,638,848,80" Name="button1" Opacity="1" TabIndex="1" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button1_Click" Width="150" Visibility="Hidden" />
+        <Button Content="ایجاد جلسه ارزیابی کیفی" Height="50" Margin="537,504,287,214" Name="button2" Opacity="1" TabIndex="10" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button2_Click" Width="200" />
+        <Button Content="جستجوی جلسات" Height="50" Margin="537,560,287,158" Name="button4" Opacity="1" TabIndex="11" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button4_Click" Width="200" />
+        <Button Margin="0,214,287,0" Name="ContractorsBtn" Opacity="1" TabIndex="6" VerticalContentAlignment="Center" Click="ContractorsBtn_Click" Height="50" Width="200" VerticalAlignment="Top" HorizontalAlignment="Right" Content="ثبت شرکت جدید" />
+        <Button Content="جستجوی شرکت ها" Height="50" Margin="537,0,287,448" Name="ContractorsSearchBtn" Opacity="1" TabIndex="7" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Click="ContractorsSearchBtn_Click" Width="200" />
+        <Button Content="جستجوی مناقصات" Height="50" Margin="274,270,550,448" Name="button6" Opacity="1" TabIndex="1" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="0" Click="button6_Click" Width="200" />
+        <Button Content="ایجاد مناقصه" Height="50" Margin="274,214,550,504" Name="button8" Opacity="1" TabIndex="0" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button8_Click" Width="200" />
+        <Button Content="جستجوی درخواست ها" Height="31" Margin="394,366,390,370" Name="button5" Opacity="1" Padding="0" TabIndex="1" VerticalAlignment="Center" VerticalContentAlignment="Center" Click="button5_Click_1" Visibility="Hidden" />
+        <Button Content="ایجاد جلسه ارزیابی قیمت" Height="50" Margin="537,448,287,270" Name="button7" Opacity="1" TabIndex="9" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" IsEnabled="True" Click="button7_Click" />
+        <Label Content="اطلاعات پیمانکاران و مشاوران" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="19" FontWeight="Normal" Foreground="Black" Height="53" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="513,0,259,547" Name="label5" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="251" />
+        <Label Content="کمیسیون مناقصات" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="19" FontWeight="Normal" Foreground="Black" Height="53" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="247,0,526,546" Name="label6" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="251" />
+        <Label Content="جلسات کمیته فنی و بازرگانی" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="19" FontWeight="Normal" Foreground="Black" Height="48" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="513,0,260,316" Name="label7" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="251" />
+        <Button Content="مدیریت سامانه خوداظهاری" Height="50" HorizontalAlignment="Right" Margin="0,327,287,0" Name="SelfStateBtn" Opacity="1" TabIndex="8" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="200" Click="SelfStateBtn_Click" />
+        <Button Content="ایجاد فراخوان ارزیابی" Height="50" Margin="274,386,550,332" Name="button9" Opacity="1" TabIndex="3" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Click="button9_Click" />
+        <Button Content="جستجوی فراخوان ها" Height="50" Margin="274,442,550,276" Name="button10" Opacity="1" Padding="0" TabIndex="4" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Click="button10_Click" />
+        <Button Content="لیست دریافت اسناد مناقصات" Height="50" Margin="274,500,550,218" Name="button11" Opacity="1" Padding="0" TabIndex="5" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Click="button11_Click" />
+        <Button Content="گزارش مناقصات و فراخوان ها" Height="50" Margin="274,328,550,390" Name="button12" Opacity="1" Padding="0" TabIndex="2" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Click="button12_Click" />
+    </Grid>
+</Page>

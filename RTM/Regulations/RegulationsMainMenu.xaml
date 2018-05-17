@@ -1,0 +1,15 @@
+﻿<Page x:Class="RTM.Regulations.RegulationsMainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" Title="RegulationsMainMenu" Background="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" Height="768" Width="1024">
+    <Grid Height="630" Width="717.358" HorizontalAlignment="Center" UseLayoutRounding="False" VerticalAlignment="Center" Background="{x:Null}" Margin="0" ShowGridLines="False">
+        <Border BorderBrush="{x:Null}" BorderThickness="1" Name="border1" Background="White" Opacity="0.4" CornerRadius="0" Margin="182.489,161.298,177.573,245.111" VerticalAlignment="Center" HorizontalAlignment="Center" Height="223.591" Width="357.296">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Label Content="منوی اصلی سامانه مدیریت آیین نامه ها" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" Foreground="Black" Height="53" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="202.489,0,194.985,415.702" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="319.884" FontWeight="Normal" />
+        <Button Content="ثبت آیین نامه جدید" Height="70" Margin="282.301,220.298,280.035,338.797" Name="button3" Opacity="1" VerticalAlignment="Center" VerticalContentAlignment="Center" TabIndex="0" Click="button3_Click" />
+        <Button Content="جستجوی آیین نامه" Height="70" Margin="282.301,297.203,280.035,261.892" Name="button1" Opacity="1" VerticalAlignment="Center" VerticalContentAlignment="Center" TabIndex="1" Click="button1_Click" />
+    </Grid>
+</Page>

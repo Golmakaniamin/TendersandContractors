@@ -1,0 +1,20 @@
+﻿RTM
+
+
+winexe
+C#
+.cs
+E:\WIN.APP_Source\RTM\obj\x86\Debug\
+RTM
+none
+false
+DEBUG;TRACE
+E:\WIN.APP_Source\RTM\App.xaml
+88-628257046
+9-2008636203
+147-1005463399
+311426393766
+BaseInfo.xaml;Contracts\AccessToTendersManagement.xaml;Report\GenralRep\Download_Viewer.xaml;UserManagement\Notices\CreateNotices.xaml;UserManagement\Notices\NoticeRequest.xaml;UserManagement\Notices\NoticeSearch.xaml;Report\GenralRep\Contractor_Viewer.xaml;Report\GenralRep\Contract_Viewer.xaml;Report\GenralRep\Evaluation_Viewer.xaml;Report\GenralRep\Regulation_Viewer.xaml;Report\GenralRep\Tender_Viewer.xaml;Report\GenralRep\User_Viewer.xaml;Report\Havale\Havale_Viewer.xaml;Report\Report10\Report10_Viewer.xaml;Tendering1\ContractorSelection.xaml;Report\GenralRep\Log_Viewer.xaml;Report\PriceEvalReport\PriceEval_Viewer.xaml;Report\Report7\Report7_Viewer.xaml;Report\Report8\Report8_Viewer.xaml;SystemLog\SystemLogsManagement.xaml;Report\Report1\Report1_Viewer.xaml;Report\Report6\Report6_Viewer.xaml;Tendering1\Tazmin.xaml;Tendering1\TenderAdvancedSearch.xaml;Tenderingg\PriceEvaluation.xaml;Tenderingg\PriceEvaluation1.xaml;Tenderingg\SelfStateManagment.xaml;Tenderingg\Web_DocContractor.xaml;UserControls\ContractHeaderControl.xaml;Report\Report2\Report2_Viewer.xaml;Report\Report3\Report3_Viewer.xaml;Report\Report4\Report4_Viewer.xaml;Report\Report5\Report5_Viewer.xaml;Contracts\ContractDocuments.xaml;Contracts\NewPaymentTransfer.xaml;Tendering1\SearchRequestInformation.xaml;Tendering1\SearchTenderInformation.xaml;Contracts\TransfersManagement.xaml;Tendering1\UI10DocsPresentation.xaml;Tendering1\UI13packetPresentationt.xaml;Tendering1\UI14OnePhaseReopening.xaml;Tendering1\UI15RegisterBankGaurantees.xaml;Tendering1\UI16RegisterBills.xaml;Tendering1\UI17RegisterParticipationBills.xaml;Tendering1\UI18RegisterPriceOffer.xaml;Tendering1\UI19TenderResult.xaml;Tendering1\UI1choosingCntrctrReq.xaml;Tendering1\UI21TwoPhaseReopeningSesion.xaml;Tendering1\UI22TowPhaseRegisterPriceOffer.xaml;Tendering1\UI2CreditControl.xaml;Tendering1\UI3PresidentOrder.xaml;Tendering1\UI4HoldingTenderSesion.xaml;Tendering1\UI5TenderDocs.xaml;Tendering1\UI6TenderingNotice.xaml;Tendering1\UI7RegisterAds.xaml;Tendering1\UI8ExtendSesion.xaml;Tendering1\UI9JustificationSesion.xaml;UserControls\BusyIndicator.xaml;MainWindow.xaml;Contracts\ContractsCreate.xaml;Contracts\ContractsMainMenu.xaml;Contracts\ContractsSearch.xaml;Regulations\RegulationsMainMenu.xaml;Regulations\RegulationsPage1.xaml;Regulations\RegulationsSearch.xaml;Styles\GlassButton.xaml;Styles\Styles.xaml;Styles\Buttons.xaml;TenderingArchive\TenderingArchiveMain.xaml;TenderingArchive\TenderingArchiveSearch.xaml;Tenderingg\Evaluation1-1.xaml;Tenderingg\Consultant Forms\Evaluation1.xaml;Tenderingg\Consultant Forms\Evaluation1Search.xaml;Tenderingg\Evaluation2.xaml;Tenderingg\Evaluation2Search.xaml;Tenderingg\EvaluationReport.xaml;Tenderingg\TenderingMainMenu.xaml;UserControls\NavigationBar.xaml;Styles\NavigationResource.xaml;UserControls\TenderingHeaderControl.xaml;UserManagement\Contractors.xaml;UserManagement\ContractorsSearch.xaml;UserManagement\FindUser.xaml;UserManagement\LoginPage.xaml;UserManagement\NewUser.xaml;UserManagement\OrganizationalChart.xaml;UserManagement\StartPage.xaml;UserManagement\UserMainMenu.xaml;
+
+False
+

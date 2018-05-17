@@ -1,0 +1,172 @@
+﻿<Page x:Class="RTM.UserManagement.Contractors"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:date="clr-namespace:RTM"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024
+      "
+	Title="Contractors" Background="{x:Null}" Loaded="Page_Loaded">
+    <Page.Resources>
+        
+    </Page.Resources>
+    <Grid Width="1024" Height="768" Name="layoutRoot">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="0.232*"/>
+    		<ColumnDefinition Width="0.005*"/>
+    		<ColumnDefinition Width="0.763*"/>
+    	</Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18" />
+            <RowDefinition Height="429" />
+            <RowDefinition Height="129"/>
+            <RowDefinition Height="192" />
+        </Grid.RowDefinitions>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="244" Margin="154,0,158,112" x:Name="border5_Copy2" Opacity="0.4" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Grid.Row="1">
+        	<Label Height="0" x:Name="label7" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="111" Margin="154,0,158,127" x:Name="border5_Copy1" Opacity="0.4" VerticalAlignment="Bottom" Grid.ColumnSpan="3" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" Grid.RowSpan="2">
+        	<Label Height="0" x:Name="label6" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Margin="141,36,145,0" x:Name="Border" Opacity="0.4" Grid.RowSpan="3" Grid.ColumnSpan="3" Height="689" VerticalAlignment="Top" Grid.Row="1">
+        	<Label Height="0" x:Name="label2" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Margin="153,90,158,0" x:Name="border5_Copy" Opacity="0.4" Grid.ColumnSpan="3" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" Grid.RowSpan="2" Height="193" VerticalAlignment="Top">
+        	<Label Height="0" x:Name="label5" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Margin="154,5,158,42" x:Name="border5" Opacity="0.4" Grid.ColumnSpan="3" Grid.Row="2">
+            <Label Height="0" x:Name="label12" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Margin="0,252,78,83" x:Name="border1" Opacity="0.4" HorizontalAlignment="Right" Grid.Row="1" Grid.RowSpan="2">
+            <Label Height="0" x:Name="label4" Width="0" />
+        </Border>
+        <Label Content="فرم اطلاعات شرکت ها" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,34,155,344" x:Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <Button Content="ثبت" Margin="517,109,160,51" x:Name="SaveBtn" TabIndex="29" Grid.Row="3" Grid.Column="2" Click="SaveBtn_Click" />
+        <Label ClipToBounds="True" Content="استان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,163,164,0" x:Name="label1" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="55" Grid.Column="2" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" />
+        <Label Content="شهرستان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,194,708,0" x:Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" Grid.ColumnSpan="3" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="280.222,93.378,258.09,303.622" MaxLines="5" x:Name="CoName" TabIndex="0" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <Label Content="* نام شرکت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="524,91,162,0" x:Name="l1" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="280.222,129.378,258.09,267.622" MaxLines="5" x:Name="RegNumTxt" TabIndex="2" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,127.378,622,269.622" MaxLines="5" x:Name="CommercialName" TabIndex="3" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.ColumnSpan="3" Grid.Row="1" />
+        <Label Content="نام تجاری :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,126,525,0" x:Name="label8" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="80" Grid.Column="2" Grid.Row="1" />
+        <Label Content="* نوع شرکت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,161,524,0" x:Name="l4" VerticalContentAlignment="Center" Width="102" Grid.Column="2" Height="40" VerticalAlignment="Top" Grid.Row="1" />
+        <Label Content="* ‌آدرس :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,199,163,0" x:Name="l5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="74" Grid.Column="2" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" />
+        <Label Content="کد پستی :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,233,164,0" x:Name="label21" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="83" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" />
+        <Button Content="حذف" Margin="284,108,393,52" x:Name="DeleteBtn" TabIndex="31" Grid.Row="3" Grid.Column="2" Click="DeleteBtn_Click" />
+        <Button Content="ویرایش" Margin="400,109,277,51" x:Name="EditBtn" TabIndex="30" Grid.Row="3" Grid.Column="2" Click="EditBtn_Click" d:LayoutOverrides="HorizontalAlignment" />
+        <Label Content="* شناسه ملی‌ :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,90,523,0" x:Name="l2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="105" Grid.Column="2" Grid.Row="1" />
+        <CheckBox Content="مشاور" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalContentAlignment="Right" Margin="409,0,321,94" x:Name="ConsTick" TabIndex="17" VerticalContentAlignment="Center" Grid.Column="2" Height="30" VerticalAlignment="Bottom" Grid.Row="2" />
+        <Label Content="* شماره ثبت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,125,161,0" x:Name="l3" VerticalContentAlignment="Center" Width="98" RenderTransformOrigin="5.178,5.1" d:LayoutOverrides="HorizontalAlignment" Grid.Column="2" Height="40" VerticalAlignment="Top" Grid.Row="1" />
+        <Label Content="* نام :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,352,170,0" x:Name="l9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="56" Grid.Column="2" Grid.Row="1" />
+        <Label Content="تلفن همراه :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,388,169,0" x:Name="label10_Copy2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="88" Grid.Column="2" Grid.Row="1" />
+        <Label Content="* نام خانوادگی :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="153,355,0,0" x:Name="l10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="113" Grid.Column="2" Grid.Row="1" />
+        <Label Content="تلفن ثابت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="177,388,0,0" x:Name="label10_Copy4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Grid.Column="2" Grid.Row="1" />
+        <CheckBox Content="پیمانکار" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalContentAlignment="Right" Margin="466,0,252,94" x:Name="ContTick" TabIndex="16" VerticalContentAlignment="Center" Grid.Column="2" Height="30" VerticalAlignment="Bottom" Grid.Row="2" />
+        <Label Content="خدمات :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,1,168,0" x:Name="l11" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Grid.Column="2" Grid.Row="2" />
+        <CheckBox Content="خرید و تامین" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalContentAlignment="Left" Margin="26,0,0,70" x:Name="TypeTick2" TabIndex="19" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="132.812" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment" Height="30" VerticalAlignment="Bottom" Grid.Row="2" />
+        <CheckBox Content="طراحی و مهندسی" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalContentAlignment="Right" Margin="26,0,622,94" x:Name="TypeTick1" TabIndex="18" VerticalContentAlignment="Center" Grid.Column="2" Height="30" VerticalAlignment="Bottom" Grid.Row="2" />
+        <Label Content="زمینه فعالیت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="166,1,0,0" x:Name="l12" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="96" Grid.Column="2" Grid.Row="2" />
+        <CheckBox Content="ساخت و اجراء" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalContentAlignment="Left" Margin="131,6,0,0" x:Name="TypeTick3" TabIndex="20" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="132.812" d:LayoutOverrides="HorizontalAlignment" Grid.Row="2" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="3" />
+        <ComboBox   FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="0,95,248,0" x:Name="Reshte1" SelectedIndex="0" TabIndex="21" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Column="2" HorizontalAlignment="Right" Width="151.333" Grid.Row="2">
+            <ComboBoxItem Content="ساختمان"/>
+            <ComboBoxItem Content="آب"/>
+            <ComboBoxItem Content="راه و ترابری"/>
+            <ComboBoxItem Content="صنعت و معدن"/>
+            <ComboBoxItem Content="نیرو"/>
+            <ComboBoxItem Content="تاسیسات و تجهیزات"/>
+            <ComboBoxItem Content="کاوشهای زمینی"/>
+            <ComboBoxItem Content="ارتباطات"/>
+            <ComboBoxItem Content="کشاورزی"/>
+            <ComboBoxItem Content="خدمات"/>
+            <ComboBoxItem Content="آثار باستانی"/>
+        </ComboBox>
+        <Label ClipToBounds="True" Content="رشته 1 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,91,166,0" x:Name="label1_Copy" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="75" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" />
+        <ComboBox   FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="274,94,0,0" x:Name="Base1" SelectedIndex="0" TabIndex="22" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="57.333" Grid.Column="2" d:LayoutOverrides="HorizontalAlignment" Grid.Row="2">
+        	<ListBoxItem Content="1"/>
+        	<ComboBoxItem Content="2"/>
+        	<ComboBoxItem Content="3"/>
+        	<ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <Label ClipToBounds="True" Content="پایه 1 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="320,90,0,0" x:Name="label1_Copy1" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="62" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" />
+        <ComboBox   FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Margin="0,96,593,1" x:Name="Reshte2" SelectedIndex="0" TabIndex="23" VerticalContentAlignment="Center" Grid.Column="2" HorizontalAlignment="Right" Width="151.333" Grid.Row="2">
+            <ComboBoxItem Content="ساختمان"/>
+            <ComboBoxItem Content="آب"/>
+            <ComboBoxItem Content="راه و ترابری"/>
+            <ComboBoxItem Content="صنعت و معدن"/>
+            <ComboBoxItem Content="نیرو"/>
+            <ComboBoxItem Content="تاسیسات و تجهیزات"/>
+            <ComboBoxItem Content="کاوشهای زمینی"/>
+            <ComboBoxItem Content="ارتباطات"/>
+            <ComboBoxItem Content="کشاورزی"/>
+            <ComboBoxItem Content="خدمات"/>
+            <ComboBoxItem Content="آثار باستانی"/>
+        </ComboBox>
+        <Label ClipToBounds="True" Content="رشته 2 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="188,92,0,0" x:Name="label1_Copy2" TabIndex="1" VerticalContentAlignment="Center" Width="71" Grid.Column="2" Grid.Row="2" Height="40" VerticalAlignment="Top" Grid.RowSpan="2" />
+        <Label ClipToBounds="True" Content="پایه 2 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="219,92,745,0" x:Name="label1_Copy3" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Row="2" d:LayoutOverrides="HorizontalAlignment" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+        <ComboBox   FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Margin="0,2,247,158" x:Name="DocType" SelectedIndex="0" TabIndex="25" VerticalContentAlignment="Center" Grid.Column="2" HorizontalAlignment="Right" Width="250.333" Grid.Row="3" DisplayMemberPath="Title" SelectedValuePath="ContractorDocumentId" SelectionChanged="DocType_SelectionChanged" />
+        <Label ClipToBounds="True" Content="نوع مدرک :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,121,167,151" x:Name="label1_Copy10" TabIndex="1" VerticalContentAlignment="Center" Width="82" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" />
+        <ComboBox   FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="169,96,0,0" x:Name="Base2" SelectedIndex="0" TabIndex="24" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="57.333" Grid.Row="2">
+        	<ListBoxItem Content="1"/>
+        	<ComboBoxItem Content="2"/>
+        	<ComboBoxItem Content="3"/>
+        	<ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="73.312,200.378,258.09,196.622" MaxLines="5" x:Name="AddressTxt" TabIndex="6" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="280.222,236.378,258.09,160.622" MaxLines="5" x:Name="PostCodetxt" TabIndex="8" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="289.312,352.378,249,44.622" MaxLines="5" x:Name="FNameTxt" TabIndex="12" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="289.312,389.378,249,7.622" MaxLines="5" x:Name="CellTxt" TabIndex="14" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,91.378,0,305.622" MaxLines="5" x:Name="NationalId" TabIndex="1" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="242.812" d:LayoutOverrides="VerticalAlignment" Grid.ColumnSpan="3" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,352.378,0,44.622" MaxLines="5" x:Name="LNamrTxt" TabIndex="13" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="242.812" Grid.ColumnSpan="3" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,389.378,0,7.622" MaxLines="5" x:Name="PhoneTxt" TabIndex="15" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="242.812" Grid.ColumnSpan="3" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="280.222,164.378,258.09,232.622" MaxLines="5" x:Name="StateTxt" TabIndex="4" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,199.378,0,197.622" MaxLines="5" x:Name="CityTxt" TabIndex="7" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="83.688" Grid.ColumnSpan="2" Grid.Row="1" />
+        <Label Content="* فکس :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,268,164,0" x:Name="l7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="73" Grid.Column="2" Grid.Row="1" />
+        <Label Content="* تلفن ثابت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalContentAlignment="Left" Margin="162,270,524,0" x:Name="l8" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="280.222,272.378,258.09,124.622" MaxLines="5" x:Name="FaxTxt" TabIndex="10" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,272.378,0,124.622" MaxLines="5" x:Name="CoPhoneTxt" TabIndex="11" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="242.812" Grid.ColumnSpan="3" Grid.Row="1" />
+        <Label Content="* ایمیل :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="188,233,0,0" x:Name="l6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="69" Grid.Column="2" d:LayoutOverrides="VerticalAlignment" Grid.Row="1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="Segoe UI" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="159,235.378,0,161.622" MaxLines="5" x:Name="EmailTxt" TabIndex="9" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="242.812" Grid.ColumnSpan="3" Grid.Row="1" />
+        <Label Content="اطلاعات مدیر عامل" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,318,161,0" x:Name="label10_Copy9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="134" Grid.Column="2" Grid.Row="1" />
+        <DataGrid  AutoGenerateColumns="False" IsReadOnly="True"  CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" Height="138" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="160,3,0,0" x:Name="dataGrid" SelectionMode="Single" TabIndex="28" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="362.833" Background="{x:Null}" Grid.Row="3" d:LayoutOverrides="HorizontalAlignment" SelectionChanged="Grid_SelectionChanged" Grid.ColumnSpan="3">
+        	<DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True"  Header="زمان بارگذاري" Binding="{Binding Path=AttachedDate, Converter= {StaticResource dateConverter}}"/>
+        		<DataGridTextColumn  Header="ورژن" Binding="{Binding Version}"/>
+                
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="مشاهده" Margin="5" Click="ViewFile"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="حذف" Margin="5" Click="DeleteFile" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="ورژن :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,33,170,0" Name="label11" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="78" Grid.Column="2" Grid.Row="3" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" Margin="395.312,36.378,248,123.622" MaxLines="5" Name="VersionTxt" TabIndex="26" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="3" />
+        <Button Content="بارگذاری" Margin="285,38,392,122" Name="BrowseBtn" TabIndex="27" Grid.Column="2" Grid.Row="3" Click="BrowseBtn_Click" />
+        <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" Margin="159,164,622,233" Name="CompanyType" SelectedIndex="-1" TabIndex="5" Text="" VerticalContentAlignment="Center" Grid.Row="1" Grid.ColumnSpan="3">
+            <ComboBoxItem Content="سهامی عام" />
+            <ComboBoxItem Content="سهامی خاص" />
+            <ComboBoxItem Content="مسئولیت محدود" />
+            <ComboBoxItem Content="تضامنی" />
+            <ComboBoxItem Content="تعاونی" />
+            <ComboBoxItem Content="نسبی" />
+            <ComboBoxItem Content="انفرادی" />
+        </ComboBox>
+        <CheckBox Content="سرمایه گذار" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="131,0,0,70" Name="TypeTick4" TabIndex="20" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="132.812" Grid.Row="2" Grid.ColumnSpan="3" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="14" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Disabled" IsReadOnly="False" Margin="398.888,42.68,260.424,54.32" MaxLines="5" Name="TaxTxt" TabIndex="14" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2" />
+        <Label Content="کد اقتصادی :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,36,170,0" Name="label10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="93" Grid.Column="2" Grid.Row="2" />
+    </Grid>
+</Page>

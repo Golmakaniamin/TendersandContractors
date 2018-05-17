@@ -1,0 +1,139 @@
+﻿<Page x:Class="RTM.Contracts.ContractsCreate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="ContractsCreate" Background="{x:Null}" Loaded="Page_Loaded"  xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit"
+      x:Name="page">
+
+    <Grid Background="{x:Null}" Height="768" Width="1024" x:Name="layoutRoot" >
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="373" HorizontalAlignment="Left" Margin="126,0,0,326" Name="border2" Opacity="0.6" VerticalAlignment="Bottom" Width="756">
+            <Label Height="0" Name="label10" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="637" HorizontalAlignment="Right" Margin="0,0,126,72" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" Width="789">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="192" HorizontalAlignment="Left" Margin="126,0,0,128" Name="border1" Opacity="0.6" VerticalAlignment="Bottom" Width="759">
+            <Label Height="0" Name="label29" Width="0" />
+        </Border>
+        <Label Content="ایجاد قرارداد جدید" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,68,150,648" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" />
+        <Button Content="ثبت" Margin="252,0,0,88" Name="SaveBtn" TabIndex="22" Width="120" Click="SaveBtn_Click" HorizontalAlignment="Left" Height="32" VerticalAlignment="Bottom" />
+        <ComboBox SelectedValue="{Binding  ContractTypeId}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="136,116,0,0" Name="TypeCom" SelectedIndex="0" TabIndex="3" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="161" SelectedValuePath="ContractTypeId" DisplayMemberPath="ContractType1" KeyDown="TypeCom_KeyDown" />
+        <TextBox FlowDirection="RightToLeft" Text="{Binding  ContractTtile}"  FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" HorizontalContentAlignment="Right"  Margin="136.5,154,0,0" MaxLines="5" Name="TitleTxt" TabIndex="4"  TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="608.5" />
+        <Label Content="نوع قرارداد :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="294,111,0,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="88" ClipToBounds="True" TabIndex="1" />
+        <Label Content="* تاریخ قرارداد :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="754,189,0,0" Name="l3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <Label Content="* تاریخ مبادله پیمان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="486,228,0,0" Name="l7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="143" />
+        <Label Content="* تاریخ شروع بکار :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="744,230,0,0" Name="l6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="130" />
+        <ComboBox Text="{Binding  Location}" FlowDirection="RightToLeft"   FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="136,276,0,0" Name="LocationCom" SelectedIndex="0" TabIndex="12" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="136" SelectionChanged="LocationCom_SelectionChanged" KeyDown="LocationCom_KeyDown">
+            <ComboBoxItem Content="تهران" />
+            <ComboBoxItem Content="شهرری" />
+            <ComboBoxItem Content="رودهن و بومهن" />
+            <ComboBoxItem Content="دماوند" />
+            <ComboBoxItem Content="شمیرانات" />
+            <ComboBoxItem Content="فیروزکوه" />
+            <ComboBoxItem Content="شهریار" />
+            <ComboBoxItem Content="پاکدشت" />
+            <ComboBoxItem Content="ورامین" />
+            <ComboBoxItem Content="رباط کریم" />
+            <ComboBoxItem Content="حوزه استحفاظی استان تهران" />
+        </ComboBox>
+        <Label Content="محل اجرا :"  FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,272,678,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="75" />
+        <ComboBox SelectedValue="{Binding  ContractorId, Mode=TwoWay}" FlowDirection="RightToLeft" DisplayMemberPath="CompanyName"  FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" Margin="0,276,278,0" Name="comboBox2" SelectedIndex="0" TabIndex="11" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="395" SelectedValuePath="ContractorId" IsTextSearchEnabled="True" IsEditable="False" KeyDown="comboBox2_KeyDown"></ComboBox>
+        <Label Content="نام پیمانکار:" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,272,150,0" Name="label11" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <ComboBox SelectedValue="{Binding  SupervisingUnit}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" Margin="0,316,279,0" Name="SupervisionUnitCom"  TabIndex="13" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="227" DisplayMemberPath="Title" SelectedValuePath="ChartNodeId" SelectedIndex="0" KeyDown="SupervisionUnitCom_KeyDown" />
+        <Label Content="واحد نظارت :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,308,150,0" Name="label12" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <ComboBox SelectedValue="{Binding  SupervisingUnitHigher}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="136,316,0,0" Name="SupervisionSystemCom"  TabIndex="14" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="212" DisplayMemberPath="Title" SelectedValuePath="ChartNodeId" SelectedIndex="0" KeyDown="SupervisionSystemCom_KeyDown" />
+        <Label Content="دستگاه نظارت عالیه :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,312,530,0" Name="label13" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="143" />
+        <ComboBox SelectedValue="{Binding  Supervisor1}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" Margin="0,358,278,0" Name="Eng1Com" TabIndex="15" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="228" DisplayMemberPath="Family" SelectedValuePath="UserId" SelectedIndex="0" KeyDown="Eng1Com_KeyDown" />
+        <Label Content="کارشناس ناظر 1 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,354,150,0" Name="label14" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <ComboBox SelectedValue="{Binding  Supervisor2}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="136,358,0,0" Name="Eng2Com" SelectedIndex="0" TabIndex="16" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="210" DisplayMemberPath="Family" SelectedValuePath="UserId" KeyDown="Eng2Com_KeyDown" />
+        <Label Content="کارشناس ناظر 2 :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,354,530,0" Name="label15" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <ComboBox SelectedValue="{Binding  ConsultantId}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" Margin="350,396,0,0" Name="PartnerCom" SelectedIndex="0" TabIndex="17" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="396" DisplayMemberPath="CompanyName" SelectedValuePath="ContractorId" KeyDown="PartnerCom_KeyDown" />
+        <Label Content="مشاور :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,388,152,0" Name="label16" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <Button Content="ویرایش" Margin="0,0,526,88" Name="EditBtn" TabIndex="23" Width="120" HorizontalAlignment="Right" Click="EditBtn_Click" Height="32" VerticalAlignment="Bottom" />
+        <Label Content="* موضوع قرارداد :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,148,150,0" Name="l2" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <Label Content="* شماره ثبت مبادله پیمان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,188,395,0" Name="l4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="175" />
+        <TextBox Text="{Binding  AgreementNumber}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" HorizontalContentAlignment="Right"  Margin="369.386,193.111,0,542.889" MaxLines="5" Name="PeymanNumberTxt" TabIndex="6"  TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="87.5" />
+        <TextBox Text="{Binding Path=ContractBudget, StringFormat=\{0:N0\}}" FlowDirection="RightToLeft" FontFamily="Tahoma" FontSize="17" FontWeight="Normal" HorizontalContentAlignment="Right"  Margin="0,232,727,0" MaxLines="5" Name="PriceTxt" TabIndex="10"  TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Width="161" TextChanged="PriceTxt_TextChanged" KeyDown="PriceTxt_KeyDown" />
+        <TextBox Text="{Binding  ContractPeriod}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" HorizontalContentAlignment="Right"  Margin="186.566,190.54,0,545.46" MaxLines="5" Name="textBox9" TabIndex="7"  TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="60.286" MaxLength="3" KeyDown="PriceTxt_KeyDown" />
+        <TextBox Text="{Binding  ContractNumber}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" HorizontalContentAlignment="Right"  Margin="390.945,116,0,0" MaxLines="5" Name="CNumberTxt" TabIndex="2"  TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" LostKeyboardFocus="CNumberTxt_LostFocus" />
+        <Label Content="* مبلغ  :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="294,227,0,0" Name="l5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="67" />
+        <Label Content="* مدت قرارداد :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,186,663,0" Name="l8" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="100" />
+        <Label Content="* شماره قرارداد :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,111,383,0" Name="l1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+        <Label Content="ماه" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="136,187,0,0" Name="label26" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="26" />
+        <CheckBox IsChecked="{Binding  IsTendering}" FlowDirection="RightToLeft" Height="16" HorizontalAlignment="Right" Margin="0,124,161,0" Name="TenderCheck" VerticalAlignment="Top" TabIndex="0" Unchecked="TenderCheck_Checked" Checked="TenderCheck_Checked_1" />
+        <TextBox Text="{Binding  TenderingSystemCode}" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="16" FontWeight="Normal" Height="32" HorizontalAlignment="Right" HorizontalContentAlignment="Right"  Margin="0,116,277.861,0" MaxLines="5" Name="TenderNumberTxt" TabIndex="1"  TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="101.639" LostKeyboardFocus="TenderNumberTxt_LostFocus" IsEnabled="False" />
+        <Label Content="شماره مناقصه :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="733,112,0,0" Name="l0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="114" />
+        <Label Content="ضمائم قرارداد" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,440,142,0" Name="label9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="104" />
+        <Button Content="ضمیمه فایل" Margin="150,457,0,0" Name="BrowseBtn2" TabIndex="21" Click="BrowseBtn2_Click" HorizontalAlignment="Left" Width="104" Height="32" VerticalAlignment="Top" />
+        <my:DatePicker SelectedDate="{Binding  ContractDate}" FlowDirection="RightToLeft" Height="31" HorizontalAlignment="Left" Margin="638,196,0,0" Name="datePicker2" Text="انتخاب تاريخ" VerticalAlignment="Top" Width="107" TabIndex="5" />
+        <my:DatePicker SelectedDate="{Binding  AgreementDate}" FlowDirection="RightToLeft" Height="31" Margin="369,234,0,0" Name="datePicker3" Text="انتخاب تاريخ" VerticalAlignment="Top" HorizontalAlignment="Left" Width="102" TabIndex="9" />
+        <my:DatePicker SelectedDate="{Binding  StartDate}" FlowDirection="RightToLeft" Height="31" HorizontalAlignment="Left" Margin="638,236,0,0" Name="datePicker4" Text="انتخاب تاريخ" VerticalAlignment="Top" Width="107" TabIndex="8" />
+        <DataGrid IsReadOnly="False"  AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="15" FontWeight="Normal" Height="138" HorizontalAlignment="Left" HorizontalContentAlignment="Center"  Margin="150,492,0,0" Name="dataGrid" SelectionMode="Single" TabIndex="20" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="351" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="شماره ابلاغ" Binding="{Binding NotificationNumber}" />
+                <DataGridTemplateColumn Header="تاریخ ابلاغ" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <my:DatePicker SelectedDate="{Binding NotificationDate}" Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="درصد" MinWidth="40" Binding="{Binding Percent}" />
+                <!--<DataGridCheckBoxColumn Header="افزایش / کاهش" Binding="{Binding IncRed}" />-->
+                <!--<DataGridTextColumn Header="مبلغ" Binding="{Binding Amount}" FontFamily="Tahoma" FontSize="17" />-->
+                <DataGridTemplateColumn Header="مشاهده">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="مشاهده" Margin="5" Click="ViewFile"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="حذف">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="حذف" Margin="5" Click="DeleteFile" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="False"  CanUserAddRows="True" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="15" FontWeight="Normal" Height="138" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,492,161,0" Name="dataGrid1" SelectionMode="Single" TabIndex="18" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="351" ItemsSource="{Binding}" SelectionChanged="dataGrid1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="شماره ابلاغ" Binding="{Binding NotificationNumber}" />
+                <DataGridTemplateColumn Header="تاریخ ابلاغ" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <my:DatePicker SelectedDate="{Binding NotificationDate}"   Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridCheckBoxColumn Header="متمم" MinWidth="40" Binding="{Binding IsComplement}" />
+                <DataGridCheckBoxColumn Header="تمديد" MinWidth="40" Binding="{Binding IsExtend}" />
+                <DataGridTextColumn Header="مبلغ / ماه" Binding="{Binding Path=Amount, StringFormat=\{0:N0\}}" FontFamily="Tahoma" FontSize="17" />
+                <DataGridTemplateColumn Header="مشاهده">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="مشاهده" Margin="5" Click="ViewFile1"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="حذف">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="حذف" Margin="5" Click="DeleteFile1" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="سایر ابلاغ ها" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="17" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,460,162,0" Name="label7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="104" />
+        <Label Content="ابلاغ 25٪" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="17" Height="40" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,460,520,0" Name="label8" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="104" />
+        <Button Content="ضمیمه فایل" Margin="0,457,408,0" Name="BrowseBtn1" TabIndex="19" HorizontalAlignment="Right" Width="104" Click="BrowseBtn1_Click" Height="32" VerticalAlignment="Top" />
+        <Button Content="ثبت نهایی" Margin="126,0,0,88" Name="PermanentBtn" TabIndex="24" Width="120" Click="button1_Click" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+        <Button Content="مدیریت حواله ها" Margin="0,0,266,88" Name="DraftsBtn" TabIndex="26" Width="120" Click="DraftsBtn_Click" HorizontalAlignment="Right" Height="32" VerticalAlignment="Bottom" />
+        <Button Content="اسناد قرارداد" Margin="512,0,0,88" Name="DocsBtn" TabIndex="25" Width="120" Click="DocsBtn_Click" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+    </Grid>
+</Page>

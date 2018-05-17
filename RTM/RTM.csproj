@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20D0E22D-5A11-4F37-8833-EC2AFBE38CE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RTM</RootNamespace>
+    <AssemblyName>RTM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <PublishUrl>publish\RTM\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/RTM/</UpdateUrl>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\RTM.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B1D5D96069E95C248544B211465638D68D4AA5FB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RTM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>noun_project_1050.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Blend">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Microsoft.Expression.Blend.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="RTMFileServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\RTMFileServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Reporting" />
+    <Reference Include="Telerik.Reporting.Design, Version=6.0.12.215, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BaseInfo.xaml.cs">
+      <DependentUpon>BaseInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Converters\ActionConverter.cs" />
+    <Compile Include="Classes\Converters\CompanyNameConverter.cs" />
+    <Compile Include="Classes\Converters\CompanySNConverter.cs" />
+    <Compile Include="Classes\Converters\ContractTypeConverter.cs" />
+    <Compile Include="Classes\Converters\IssuingReferenceConverter.cs" />
+    <Compile Include="Classes\Converters\NavigationBarNameConverter.cs" />
+    <Compile Include="Classes\Converters\OrganizationalChartConverter.cs" />
+    <Compile Include="Classes\Converters\PositionConverter.cs" />
+    <Compile Include="Classes\Converters\SubsystemConverter.cs" />
+    <Compile Include="Classes\Converters\TenderingConverters.cs" />
+    <Compile Include="Classes\Converters\TenderingTitleConverter.cs" />
+    <Compile Include="Classes\Converters\WarrantyConverter.cs" />
+    <Compile Include="Classes\Enumerators.cs" />
+    <Compile Include="Classes\Errors.cs" />
+    <Compile Include="Classes\FilingManager.cs" />
+    <Compile Include="Classes\PNumberTString.cs" />
+    <Compile Include="Classes\ReportQueries\ReportManager.cs" />
+    <Compile Include="Classes\ReportQueries\Reports.cs" />
+    <Compile Include="Classes\UniqueConstraints.cs" />
+    <Compile Include="Contracts\AccessToTendersManagement.xaml.cs">
+      <DependentUpon>AccessToTendersManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Download_Viewer.xaml.cs">
+      <DependentUpon>Download_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\WebDocRecieve.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDocRecieve.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RTM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RTM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Notices\CreateNotices.xaml.cs">
+      <DependentUpon>CreateNotices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Notices\NoticeRequest.xaml.cs">
+      <DependentUpon>NoticeRequest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Notices\NoticeSearch.xaml.cs">
+      <DependentUpon>NoticeSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Contractor_Viewer.xaml.cs">
+      <DependentUpon>Contractor_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Contract_Viewer.xaml.cs">
+      <DependentUpon>Contract_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Evaluation_Viewer.xaml.cs">
+      <DependentUpon>Evaluation_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Regulation_Viewer.xaml.cs">
+      <DependentUpon>Regulation_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Tender_Viewer.xaml.cs">
+      <DependentUpon>Tender_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\User_Viewer.xaml.cs">
+      <DependentUpon>User_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Havale\Havale_Viewer.xaml.cs">
+      <DependentUpon>Havale_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Havale\PaymentDraftRep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentDraftRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Havale\Transcript.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transcript.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report10\Report10_Viewer.xaml.cs">
+      <DependentUpon>Report10_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report10\TenderResult.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TenderResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tendering1\ContractorSelection.xaml.cs">
+      <DependentUpon>ContractorSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Contractors_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contractors_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Contracts_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contracts_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Evaluations_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Evaluations_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Log_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Log_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Log_Viewer.xaml.cs">
+      <DependentUpon>Log_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\GenralRep\Regulations_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Regulations_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Tenders_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tenders_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\GenralRep\Users_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Users_.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PriceEvalReport\Bids.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bids.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PriceEvalReport\PriceEval_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PriceEval_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PriceEvalReport\PriceEval_Viewer.xaml.cs">
+      <DependentUpon>PriceEval_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report7\Report7_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report7_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report7\Report7_Viewer.xaml.cs">
+      <DependentUpon>Report7_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report8\Report8_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report8_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report8\Report8_Viewer.xaml.cs">
+      <DependentUpon>Report8_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLog\SystemLogsManagement.xaml.cs">
+      <DependentUpon>SystemLogsManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report1\Report1_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report1\Report1_People.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1_People.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report1\Report1_Viewer.xaml.cs">
+      <DependentUpon>Report1_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report6\Report6_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report6_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report6\Report6_Viewer.xaml.cs">
+      <DependentUpon>Report6_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\Tazmin.xaml.cs">
+      <DependentUpon>Tazmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\TenderAdvancedSearch.xaml.cs">
+      <DependentUpon>TenderAdvancedSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\PriceEvaluation.xaml.cs">
+      <DependentUpon>PriceEvaluation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\PriceEvaluation1.xaml.cs">
+      <DependentUpon>PriceEvaluation1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\SelfStateManagment.xaml.cs">
+      <DependentUpon>SelfStateManagment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Web_DocContractor.xaml.cs">
+      <DependentUpon>Web_DocContractor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContractHeaderControl.xaml.cs">
+      <DependentUpon>ContractHeaderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Comission.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comission.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\EvalRep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EvalRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\People.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>People.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rep2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rep2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rep3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rep3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report2\Report2_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report2\Report2_Viewer.xaml.cs">
+      <DependentUpon>Report2_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report3\Report3_Main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3_Main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report3\Report3_Viewer.xaml.cs">
+      <DependentUpon>Report3_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report4\Report4_Main.cs">
+      <DependentUpon>Report4_Main.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report4\Report4_Viewer.xaml.cs">
+      <DependentUpon>Report4_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report5\Report5_Main.cs">
+      <DependentUpon>Report5_Main.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Report5\Report5_Viewer.xaml.cs">
+      <DependentUpon>Report5_Viewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\ContractDocuments.xaml.cs">
+      <DependentUpon>ContractDocuments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\NewPaymentTransfer.xaml.cs">
+      <DependentUpon>NewPaymentTransfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\SearchRequestInformation.xaml.cs">
+      <DependentUpon>SearchRequestInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\SearchTenderInformation.xaml.cs">
+      <DependentUpon>SearchTenderInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\TransfersManagement.xaml.cs">
+      <DependentUpon>TransfersManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI10DocsPresentation.xaml.cs">
+      <DependentUpon>UI10DocsPresentation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI13packetPresentationt.xaml.cs">
+      <DependentUpon>UI13packetPresentationt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI14OnePhaseReopening.xaml.cs">
+      <DependentUpon>UI14OnePhaseReopening.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI15RegisterBankGaurantees.xaml.cs">
+      <DependentUpon>UI15RegisterBankGaurantees.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI16RegisterBills.xaml.cs">
+      <DependentUpon>UI16RegisterBills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI17RegisterParticipationBills.xaml.cs">
+      <DependentUpon>UI17RegisterParticipationBills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI18RegisterPriceOffer.xaml.cs">
+      <DependentUpon>UI18RegisterPriceOffer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI19TenderResult.xaml.cs">
+      <DependentUpon>UI19TenderResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI1choosingCntrctrReq.xaml.cs">
+      <DependentUpon>UI1choosingCntrctrReq.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI21TwoPhaseReopeningSesion.xaml.cs">
+      <DependentUpon>UI21TwoPhaseReopeningSesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI22TowPhaseRegisterPriceOffer.xaml.cs">
+      <DependentUpon>UI22TowPhaseRegisterPriceOffer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI2CreditControl.xaml.cs">
+      <DependentUpon>UI2CreditControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI3PresidentOrder.xaml.cs">
+      <DependentUpon>UI3PresidentOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI4HoldingTenderSesion.xaml.cs">
+      <DependentUpon>UI4HoldingTenderSesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI5TenderDocs.xaml.cs">
+      <DependentUpon>UI5TenderDocs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI6TenderingNotice.xaml.cs">
+      <DependentUpon>UI6TenderingNotice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI7RegisterAds.xaml.cs">
+      <DependentUpon>UI7RegisterAds.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI8ExtendSesion.xaml.cs">
+      <DependentUpon>UI8ExtendSesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tendering1\UI9JustificationSesion.xaml.cs">
+      <DependentUpon>UI9JustificationSesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BusyIndicator.xaml.cs">
+      <DependentUpon>BusyIndicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ContractorWithTotalScore.cs" />
+    <Compile Include="Classes\Converters\DoubleToStringConverter.cs" />
+    <Compile Include="Classes\EvalStandardScore.cs" />
+    <Compile Include="Classes\FileServiceProxy.cs" />
+    <Compile Include="Classes\DataManagement.cs" />
+    <Compile Include="Classes\ErrorHandler.cs" />
+    <Compile Include="Classes\NavigationHandler.cs" />
+    <Compile Include="Classes\Converters\DateConverter.cs" />
+    <Compile Include="Classes\OpenFileHandler.cs" />
+    <Compile Include="Classes\Converters\OrganizationConverter.cs" />
+    <Compile Include="Contracts\ContractsCreate.xaml.cs">
+      <DependentUpon>ContractsCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\ContractsMainMenu.xaml.cs">
+      <DependentUpon>ContractsMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\ContractsSearch.xaml.cs">
+      <DependentUpon>ContractsSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Regulations\RegulationsMainMenu.xaml.cs">
+      <DependentUpon>RegulationsMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Regulations\RegulationsPage1.xaml.cs">
+      <DependentUpon>RegulationsPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Regulations\RegulationsSearch.xaml.cs">
+      <DependentUpon>RegulationsSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TileButton.cs" />
+    <Compile Include="Classes\UserData.cs" />
+    <Compile Include="TenderingArchive\TenderingArchiveMain.xaml.cs">
+      <DependentUpon>TenderingArchiveMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TenderingArchive\TenderingArchiveSearch.xaml.cs">
+      <DependentUpon>TenderingArchiveSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Evaluation1-1.xaml.cs">
+      <DependentUpon>Evaluation1-1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Consultant Forms\Evaluation1.xaml.cs">
+      <DependentUpon>Evaluation1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Consultant Forms\Evaluation1Search.xaml.cs">
+      <DependentUpon>Evaluation1Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Evaluation2.xaml.cs">
+      <DependentUpon>Evaluation2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\Evaluation2Search.xaml.cs">
+      <DependentUpon>Evaluation2Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\EvaluationReport.xaml.cs">
+      <DependentUpon>EvaluationReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenderingg\TenderingMainMenu.xaml.cs">
+      <DependentUpon>TenderingMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NavigationBar.xaml.cs">
+      <DependentUpon>NavigationBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TenderingHeaderControl.xaml.cs">
+      <DependentUpon>TenderingHeaderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Contractors.xaml.cs">
+      <DependentUpon>Contractors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\ContractorsSearch.xaml.cs">
+      <DependentUpon>ContractorsSearch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\FindUser.xaml.cs">
+      <DependentUpon>FindUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\NewUser.xaml.cs">
+      <DependentUpon>NewUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\OrganizationalChart.xaml.cs">
+      <DependentUpon>OrganizationalChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\UserMainMenu.xaml.cs">
+      <DependentUpon>UserMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BaseInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Contracts\AccessToTendersManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\GenralRep\Download_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\Notices\CreateNotices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\Notices\NoticeRequest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\Notices\NoticeSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Contractor_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Contract_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Evaluation_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Regulation_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Tender_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\User_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\Havale\Havale_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\Report10\Report10_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tendering1\ContractorSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\GenralRep\Log_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\PriceEvalReport\PriceEval_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report7\Report7_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report8\Report8_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemLog\SystemLogsManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report1\Report1_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report6\Report6_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\Tazmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tendering1\TenderAdvancedSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\PriceEvaluation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\PriceEvaluation1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\SelfStateManagment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tenderingg\Web_DocContractor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ContractHeaderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report2\Report2_Viewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report\Report3\Report3_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report4\Report4_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\Report5\Report5_Viewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Contracts\ContractDocuments.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Contracts\NewPaymentTransfer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\SearchRequestInformation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\SearchTenderInformation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Contracts\TransfersManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI10DocsPresentation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI13packetPresentationt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI14OnePhaseReopening.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI15RegisterBankGaurantees.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI16RegisterBills.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI17RegisterParticipationBills.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI18RegisterPriceOffer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI19TenderResult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI1choosingCntrctrReq.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI21TwoPhaseReopeningSesion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI22TowPhaseRegisterPriceOffer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI2CreditControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI3PresidentOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI4HoldingTenderSesion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI5TenderDocs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI6TenderingNotice.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI7RegisterAds.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI8ExtendSesion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tendering1\UI9JustificationSesion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\BusyIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Contracts\ContractsCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Contracts\ContractsMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Contracts\ContractsSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Properties\DesignTimeResources.xaml" Condition="'$(DesignTime)'=='true' OR ('$(SolutionPath)'!='' AND Exists('$(SolutionPath)') AND '$(BuildingInsideVisualStudio)'!='true' AND '$(BuildingInsideExpressionBlend)'!='true')">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDesignTimeResources>true</ContainsDesignTimeResources>
+    </Page>
+    <Page Include="Regulations\RegulationsMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Regulations\RegulationsPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Regulations\RegulationsSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\GlassButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Buttons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TenderingArchive\TenderingArchiveMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TenderingArchive\TenderingArchiveSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\Evaluation1-1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\Consultant Forms\Evaluation1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\Consultant Forms\Evaluation1Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\Evaluation2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\Evaluation2Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tenderingg\EvaluationReport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tenderingg\TenderingMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\NavigationBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\NavigationResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\TenderingHeaderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserManagement\Contractors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\ContractorsSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\FindUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserManagement\NewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManagement\OrganizationalChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserManagement\StartPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserManagement\UserMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Report\Comission.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Comission.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\EvalRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EvalRep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Contractors_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Contractors_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Contracts_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Contracts_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Evaluations_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Evaluations_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Log_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Log_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Regulations_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Regulations_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Tenders_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Tenders_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\Users_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Users_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\GenralRep\WebDocRecieve.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WebDocRecieve.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Havale\PaymentDraftRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PaymentDraftRep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Havale\Transcript.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Transcript.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\People.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>People.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PriceEvalReport\Bids.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bids.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PriceEvalReport\PriceEval_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PriceEval_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rep2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rep2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rep3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rep3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <BlendEmbeddedFont Include="Fonts\BMitra.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\BMitraBd.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\Mirta.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\MirtaBold.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\MitraNormal.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\BNazanin.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\BNaznnBd.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
+    <EmbeddedResource Include="Report\Report10\TenderResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TenderResult.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report1\Report1_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report1\Report1_People.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1_People.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report2\Report2_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report3\Report3_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report3_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report4\Report4_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report5\Report5_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report5_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report6\Report6_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report6_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report7\Report7_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report8\Report8_Main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report8_Main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="HelpFile\help.chm" />
+    <None Include="Pictures\goodwp.com_18222.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EntityDeploy Include="RTM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RTM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="RTM.edmx.diagram">
+      <DependentUpon>RTM.edmx</DependentUpon>
+    </None>
+    <None Include="RTM_TemporaryKey.pfx" />
+    <Resource Include="Pictures\blue-background_1920x1080_224-hd.jpg" />
+    <Resource Include="Pictures\Clean Green Abstract PC Desktop Wallpapers.jpg" />
+    <Resource Include="Pictures\OrangePicture.jpg" />
+    <Resource Include="Pictures\BluePic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pictures\Background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\DataSources\RTMEntities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Pictures\BluePic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Image1.png" />
+    <Resource Include="Pictures\Image2.png" />
+    <Resource Include="Pictures\Image3.png" />
+    <Resource Include="Pictures\Logo %28Edareh Rah%29.jpg" />
+    <Resource Include="Pictures\Logo %28Ratec%29.jpg" />
+    <Resource Include="Pictures\Personnel.png" />
+    <Resource Include="Pictures\Archives.png" />
+    <Resource Include="Pictures\Contract.png" />
+    <Resource Include="Pictures\Employees.png" />
+    <Resource Include="Pictures\Lock.png" />
+    <Resource Include="Pictures\Regulations.png" />
+    <Resource Include="Pictures\Settings.png" />
+    <Resource Include="Pictures\ShortList.png" />
+    <Resource Include="Pictures\Trending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLs\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="DLLs\CrystalDecisions.ReportSource.dll" />
+    <Content Include="DLLs\CrystalDecisions.Shared.dll" />
+    <Content Include="DLLs\RTMFileServer.dll" />
+    <Content Include="DLLs\SAPBusinessObjects.WPF.Viewer.dll" />
+    <Content Include="DLLs\SAPBusinessObjects.WPF.ViewerShared.dll" />
+    <Content Include="DLLs\Telerik.Reporting.Design.dll" />
+    <Content Include="DLLs\Telerik.Reporting.dll" />
+    <Content Include="DLLs\WPFToolkit.dll" />
+    <Resource Include="Logo %28Edareh Rah%29.jpg" />
+    <Resource Include="noun_project_1050.ico" />
+    <Resource Include="noun_project_4436.ico" />
+    <Resource Include="Pictures\help.png" />
+    <Resource Include="Pictures\ABC.png" />
+    <Resource Include="Pictures\xxxx.png" />
+    <Resource Include="Pictures\profile.png" />
+    <Resource Include="Pictures\Arm.PNG" />
+    <Resource Include="Pictures\xxx.png" />
+    <Resource Include="Pictures\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\Report9\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\.NETFramework\v4.0\Microsoft.Expression.Blend.WPF.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

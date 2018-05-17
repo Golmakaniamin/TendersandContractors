@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RTMModelStoreContainer" CdmEntityContainer="RTMEntities">
+    <EntitySetMapping Name="AccessRights">
+      <EntityTypeMapping TypeName="RTMModel.AccessRight">
+        <MappingFragment StoreEntitySet="AccessRights">
+          <ScalarProperty Name="AccessId" ColumnName="AccessId" />
+          <ScalarProperty Name="ContractRead" ColumnName="ContractRead" />
+          <ScalarProperty Name="ContractWrite" ColumnName="ContractWrite" />
+          <ScalarProperty Name="ContractDelete" ColumnName="ContractDelete" />
+          <ScalarProperty Name="ContractPermanentWrite" ColumnName="ContractPermanentWrite" />
+          <ScalarProperty Name="TenderingRead" ColumnName="TenderingRead" />
+          <ScalarProperty Name="TenderingWrite" ColumnName="TenderingWrite" />
+          <ScalarProperty Name="TenderingDelete" ColumnName="TenderingDelete" />
+          <ScalarProperty Name="TenderingPermanentWrite" ColumnName="TenderingPermanentWrite" />
+          <ScalarProperty Name="TenderingArchiveRead" ColumnName="TenderingArchiveRead" />
+          <ScalarProperty Name="TenderingArchiveWrite" ColumnName="TenderingArchiveWrite" />
+          <ScalarProperty Name="TenderingArchiveDelete" ColumnName="TenderingArchiveDelete" />
+          <ScalarProperty Name="TenderingArchivePermanentWrite" ColumnName="TenderingArchivePermanentWrite" />
+          <ScalarProperty Name="RegulationRead" ColumnName="RegulationRead" />
+          <ScalarProperty Name="RegulationWrite" ColumnName="RegulationWrite" />
+          <ScalarProperty Name="RegulationDelete" ColumnName="RegulationDelete" />
+          <ScalarProperty Name="RegulationPermanentWrite" ColumnName="RegulationPermanentWrite" />
+          <ScalarProperty Name="ContractLog" ColumnName="ContractLog" />
+          <ScalarProperty Name="RegulationLog" ColumnName="RegulationLog" />
+          <ScalarProperty Name="TenderingLog" ColumnName="TenderingLog" />
+          <ScalarProperty Name="TenderingArchiveLog" ColumnName="TenderingArchiveLog" />
+          <ScalarProperty Name="CreatingUser" ColumnName="CreatingUser" />
+          <ScalarProperty Name="SysAdmin" ColumnName="SysAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertisements">
+      <EntityTypeMapping TypeName="RTMModel.Advertisement">
+        <MappingFragment StoreEntitySet="Advertisement">
+          <ScalarProperty Name="AdvertisementId" ColumnName="AdvertisementId" />
+          <ScalarProperty Name="NoticeId" ColumnName="NoticeId" />
+          <ScalarProperty Name="AdevtisementType" ColumnName="AdevtisementType" />
+          <ScalarProperty Name="AdvertisementNumber" ColumnName="AdvertisementNumber" />
+          <ScalarProperty Name="AdertisementDate" ColumnName="AdertisementDate" />
+          <ScalarProperty Name="NewspaperName" ColumnName="NewspaperName" />
+          <ScalarProperty Name="NewsPaperNumber" ColumnName="NewsPaperNumber" />
+          <ScalarProperty Name="AdvertisementAlternationCount" ColumnName="AdvertisementAlternationCount" />
+          <ScalarProperty Name="AttachementAddress" ColumnName="AttachementAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bids">
+      <EntityTypeMapping TypeName="RTMModel.Bid">
+        <MappingFragment StoreEntitySet="Bid">
+          <ScalarProperty Name="BidId" ColumnName="BidId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="Bid1" ColumnName="Bid" />
+          <ScalarProperty Name="BidEvaluation" ColumnName="BidEvaluation" />
+          <ScalarProperty Name="Plus" ColumnName="Plus" />
+          <ScalarProperty Name="Minus" ColumnName="Minus" />
+          <ScalarProperty Name="Coefficient" ColumnName="Coefficient" />
+          <ScalarProperty Name="BalancedPrice" ColumnName="BalancedPrice" />
+          <ScalarProperty Name="ImpactCoefficient" ColumnName="ImpactCoefficient" />
+          <ScalarProperty Name="QualityScore" ColumnName="QualityScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="RTMModel.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="Contractid" ColumnName="Contractid" />
+          <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+          <ScalarProperty Name="ContractTtile" ColumnName="ContractTtile" />
+          <ScalarProperty Name="ContractTypeId" ColumnName="ContractTypeId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="AgreementDate" ColumnName="AgreementDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="AgreementNumber" ColumnName="AgreementNumber" />
+          <ScalarProperty Name="ContractBudget" ColumnName="ContractBudget" />
+          <ScalarProperty Name="ContractPeriod" ColumnName="ContractPeriod" />
+          <ScalarProperty Name="SupervisingUnit" ColumnName="SupervisingUnit" />
+          <ScalarProperty Name="SupervisingUnitHigher" ColumnName="SupervisingUnitHigher" />
+          <ScalarProperty Name="Supervisor1" ColumnName="Supervisor1" />
+          <ScalarProperty Name="Supervisor2" ColumnName="Supervisor2" />
+          <ScalarProperty Name="Has25Percent" ColumnName="Has25Percent" />
+          <ScalarProperty Name="C25PercentNumber" ColumnName="25PercentNumber" />
+          <ScalarProperty Name="Amount25Percent" ColumnName="Amount25Percent" />
+          <ScalarProperty Name="Date25Percent" ColumnName="Date25Percent" />
+          <ScalarProperty Name="Increment25Percent" ColumnName="Increment25Percent" />
+          <ScalarProperty Name="HasExtended" ColumnName="HasExtended" />
+          <ScalarProperty Name="ExtendedInformNumber" ColumnName="ExtendedInformNumber" />
+          <ScalarProperty Name="ExtendedInformDate" ColumnName="ExtendedInformDate" />
+          <ScalarProperty Name="ExtendedDate" ColumnName="ExtendedDate" />
+          <ScalarProperty Name="HasComplement" ColumnName="HasComplement" />
+          <ScalarProperty Name="ComplementedInformNumber" ColumnName="ComplementedInformNumber" />
+          <ScalarProperty Name="ComplementedDate" ColumnName="ComplementedDate" />
+          <ScalarProperty Name="ComplementAmount" ColumnName="ComplementAmount" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="IsTendering" ColumnName="IsTendering" />
+          <ScalarProperty Name="TenderingSystemCode" ColumnName="TenderingSystemCode" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="tmp1" ColumnName="tmp1" />
+          <ScalarProperty Name="tmp2" ColumnName="tmp2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractDocFileRelations">
+      <EntityTypeMapping TypeName="RTMModel.ContractDocFileRelation">
+        <MappingFragment StoreEntitySet="ContractDocFileRelation">
+          <ScalarProperty Name="CDFId" ColumnName="CDFId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="ContractDocId" ColumnName="ContractDocId" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractDocuments">
+      <EntityTypeMapping TypeName="RTMModel.ContractDocument">
+        <MappingFragment StoreEntitySet="ContractDocument">
+          <ScalarProperty Name="ContractDocumentId" ColumnName="ContractDocumentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DocumentIndex" ColumnName="DocumentIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractFiles">
+      <EntityTypeMapping TypeName="RTMModel.ContractFile">
+        <MappingFragment StoreEntitySet="ContractFile">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="NotificationNumber" ColumnName="NotificationNumber" />
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+          <ScalarProperty Name="IncRed" ColumnName="IncRed" />
+          <ScalarProperty Name="Is25Percent" ColumnName="Is25Percent" />
+          <ScalarProperty Name="IsExtend" ColumnName="IsExtend" />
+          <ScalarProperty Name="IsComplement" ColumnName="IsComplement" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contractors">
+      <EntityTypeMapping TypeName="RTMModel.Contractor">
+        <MappingFragment StoreEntitySet="Contractor">
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CommercialName" ColumnName="CommercialName" />
+          <ScalarProperty Name="RecordNumber" ColumnName="RecordNumber" />
+          <ScalarProperty Name="NationalIdNumber" ColumnName="NationalIdNumber" />
+          <ScalarProperty Name="CompanyType" ColumnName="CompanyType" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="PostalBox" ColumnName="PostalBox" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="CeoName" ColumnName="CeoName" />
+          <ScalarProperty Name="CeoFamily" ColumnName="CeoFamily" />
+          <ScalarProperty Name="CeoSocialNumber" ColumnName="CeoSocialNumber" />
+          <ScalarProperty Name="CeoEmailAddress" ColumnName="CeoEmailAddress" />
+          <ScalarProperty Name="CeoMobilePhone" ColumnName="CeoMobilePhone" />
+          <ScalarProperty Name="CeoTelephone" ColumnName="CeoTelephone" />
+          <ScalarProperty Name="IsContractor" ColumnName="IsContractor" />
+          <ScalarProperty Name="IsConsultant" ColumnName="IsConsultant" />
+          <ScalarProperty Name="FieldofWork1" ColumnName="FieldofWork1" />
+          <ScalarProperty Name="FieldofWork2" ColumnName="FieldofWork2" />
+          <ScalarProperty Name="FieldofWork3" ColumnName="FieldofWork3" />
+          <ScalarProperty Name="CompanyField1" ColumnName="CompanyField1" />
+          <ScalarProperty Name="CompanyBase1" ColumnName="CompanyBase1" />
+          <ScalarProperty Name="CompanyField2" ColumnName="CompanyField2" />
+          <ScalarProperty Name="CompanyBase2" ColumnName="CompanyBase2" />
+          <ScalarProperty Name="IsInWaitingList" ColumnName="IsInWaitingList" />
+          <ScalarProperty Name="WaitingListNote" ColumnName="WaitingListNote" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ApprovedNote" ColumnName="ApprovedNote" />
+          <ScalarProperty Name="IsDocumentDefected" ColumnName="IsDocumentDefected" />
+          <ScalarProperty Name="DocumentDefectNote" ColumnName="DocumentDefectNote" />
+          <ScalarProperty Name="IsRejected" ColumnName="IsRejected" />
+          <ScalarProperty Name="RejectionNote" ColumnName="RejectionNote" />
+          <ScalarProperty Name="Field1File" ColumnName="Field1File" />
+          <ScalarProperty Name="Field2File" ColumnName="Field2File" />
+          <ScalarProperty Name="BlackListed" ColumnName="BlackListed" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Design" ColumnName="Design" />
+          <ScalarProperty Name="Procurement" ColumnName="Procurement" />
+          <ScalarProperty Name="BuildAndOperation" ColumnName="BuildAndOperation" />
+          <ScalarProperty Name="Finance" ColumnName="Finance" />
+          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+          <ScalarProperty Name="TaxNumber" ColumnName="TaxNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorDocFileRelations">
+      <EntityTypeMapping TypeName="RTMModel.ContractorDocFileRelation">
+        <MappingFragment StoreEntitySet="ContractorDocFileRelation">
+          <ScalarProperty Name="CDFRId" ColumnName="CDFRId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="ContractorDocumentId" ColumnName="ContractorDocumentId" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorDocuments">
+      <EntityTypeMapping TypeName="RTMModel.ContractorDocument">
+        <MappingFragment StoreEntitySet="ContractorDocument">
+          <ScalarProperty Name="ContractorDocumentId" ColumnName="ContractorDocumentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DocumentIndex" ColumnName="DocumentIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorFiles">
+      <EntityTypeMapping TypeName="RTMModel.ContractorFile">
+        <MappingFragment StoreEntitySet="ContractorFile">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorMeetingJustifications">
+      <EntityTypeMapping TypeName="RTMModel.ContractorMeetingJustification">
+        <MappingFragment StoreEntitySet="ContractorMeetingJustification">
+          <ScalarProperty Name="ContractorMeetingId" ColumnName="ContractorMeetingId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="Representative" ColumnName="Representative" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorMeetingOpenPackets">
+      <EntityTypeMapping TypeName="RTMModel.ContractorMeetingOpenPacket">
+        <MappingFragment StoreEntitySet="ContractorMeetingOpenPacket">
+          <ScalarProperty Name="CMOId" ColumnName="CMOId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="DocumentCondition" ColumnName="DocumentCondition" />
+          <ScalarProperty Name="PacketEval" ColumnName="PacketEval" />
+          <ScalarProperty Name="WarrantyEval" ColumnName="WarrantyEval" />
+          <ScalarProperty Name="IsCertifiedToOpenBid" ColumnName="IsCertifiedToOpenBid" />
+          <ScalarProperty Name="Representative" ColumnName="Representative" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorRequests">
+      <EntityTypeMapping TypeName="RTMModel.ContractorRequest">
+        <MappingFragment StoreEntitySet="ContractorRequest">
+          <ScalarProperty Name="ContractorRequestId" ColumnName="ContractorRequestId" />
+          <ScalarProperty Name="SelectContractor" ColumnName="SelectContractor" />
+          <ScalarProperty Name="SelectConsultant" ColumnName="SelectConsultant" />
+          <ScalarProperty Name="RequestNumber" ColumnName="RequestNumber" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="ProjectTitle" ColumnName="ProjectTitle" />
+          <ScalarProperty Name="TenderingTitleId" ColumnName="TenderingTitleId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="SupervisionId" ColumnName="SupervisionId" />
+          <ScalarProperty Name="Estimatation" ColumnName="Estimatation" />
+          <ScalarProperty Name="IsPriceList" ColumnName="IsPriceList" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="HasQualityEvaluation" ColumnName="HasQualityEvaluation" />
+          <ScalarProperty Name="RequiredField" ColumnName="RequiredField" />
+          <ScalarProperty Name="RequiredMinRank" ColumnName="RequiredMinRank" />
+          <ScalarProperty Name="RequestStatus" ColumnName="RequestStatus" />
+          <ScalarProperty Name="TenderingType" ColumnName="TenderingType" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="HasFunding" ColumnName="HasFunding" />
+          <ScalarProperty Name="FundingPlace" ColumnName="FundingPlace" />
+          <ScalarProperty Name="FundingPlaceCode" ColumnName="FundingPlaceCode" />
+          <ScalarProperty Name="FundingRequestDate" ColumnName="FundingRequestDate" />
+          <ScalarProperty Name="FundingRequestNumber" ColumnName="FundingRequestNumber" />
+          <ScalarProperty Name="FundingControlAssignee" ColumnName="FundingControlAssignee" />
+          <ScalarProperty Name="FundingControlDate" ColumnName="FundingControlDate" />
+          <ScalarProperty Name="FundingControlNote" ColumnName="FundingControlNote" />
+          <ScalarProperty Name="HasCEOAccepted" ColumnName="HasCEOAccepted" />
+          <ScalarProperty Name="CeoNote" ColumnName="CeoNote" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RequestingUnit" ColumnName="RequestingUnit" />
+          <ScalarProperty Name="NoticeNumber" ColumnName="NoticeNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorRequestContractors">
+      <EntityTypeMapping TypeName="RTMModel.ContractorRequestContractor">
+        <MappingFragment StoreEntitySet="ContractorRequestContractor">
+          <ScalarProperty Name="ContractorRequestContractorId" ColumnName="ContractorRequestContractorId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="ContractorRequestId" ColumnName="ContractorRequestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTenderingDocumentRecieves">
+      <EntityTypeMapping TypeName="RTMModel.ContractorTenderingDocumentRecieve">
+        <MappingFragment StoreEntitySet="ContractorTenderingDocumentRecieve">
+          <ScalarProperty Name="ContractorTenderingBuyId" ColumnName="ContractorTenderingBuyId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="ContractorRepresentativeName" ColumnName="ContractorRepresentativeName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="DraftAmount" ColumnName="DraftAmount" />
+          <ScalarProperty Name="PaymentDraftNumber" ColumnName="PaymentDraftNumber" />
+          <ScalarProperty Name="PaymentDraftDate" ColumnName="PaymentDraftDate" />
+          <ScalarProperty Name="SecretaryRecordNumber" ColumnName="SecretaryRecordNumber" />
+          <ScalarProperty Name="DraftScannedFileLocation" ColumnName="DraftScannedFileLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTenderingShortLists">
+      <EntityTypeMapping TypeName="RTMModel.ContractorTenderingShortList">
+        <MappingFragment StoreEntitySet="ContractorTenderingShortList">
+          <ScalarProperty Name="CoTenShortId" ColumnName="CoTenShortId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTenderingSubmitPackets">
+      <EntityTypeMapping TypeName="RTMModel.ContractorTenderingSubmitPacket">
+        <MappingFragment StoreEntitySet="ContractorTenderingSubmitPacket">
+          <ScalarProperty Name="ContractorSubmitingDocumentId" ColumnName="ContractorSubmitingDocumentId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="SecretaryNumber" ColumnName="SecretaryNumber" />
+          <ScalarProperty Name="SubmitDate" ColumnName="SubmitDate" />
+          <ScalarProperty Name="WithdrawDate" ColumnName="WithdrawDate" />
+          <ScalarProperty Name="RepresentativeName" ColumnName="RepresentativeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTenderingTechWins">
+      <EntityTypeMapping TypeName="RTMModel.ContractorTenderingTechWin">
+        <MappingFragment StoreEntitySet="ContractorTenderingTechWin">
+          <ScalarProperty Name="ContractorTenderingId" ColumnName="ContractorTenderingId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="WarrantyBudget" ColumnName="WarrantyBudget" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTenderingWins">
+      <EntityTypeMapping TypeName="RTMModel.ContractorTenderingWin">
+        <MappingFragment StoreEntitySet="ContractorTenderingWin">
+          <ScalarProperty Name="ContractorTenderingId" ColumnName="ContractorTenderingId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="WarrantyBudget" ColumnName="WarrantyBudget" />
+          <ScalarProperty Name="ExpertEstimateBudget" ColumnName="ExpertEstimateBudget" />
+          <ScalarProperty Name="ExpertCoefficient" ColumnName="ExpertCoefficient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractTypes">
+      <EntityTypeMapping TypeName="RTMModel.ContractType">
+        <MappingFragment StoreEntitySet="ContractType">
+          <ScalarProperty Name="ContractTypeId" ColumnName="ContractTypeId" />
+          <ScalarProperty Name="ContractType1" ColumnName="ContractType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvalStandards">
+      <EntityTypeMapping TypeName="RTMModel.EvalStandard">
+        <MappingFragment StoreEntitySet="EvalStandard">
+          <ScalarProperty Name="StandardId" ColumnName="StandardId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="ConsultantStandard" ColumnName="ConsultantStandard" />
+          <ScalarProperty Name="ContractorStandard" ColumnName="ContractorStandard" />
+          <ScalarProperty Name="ParentStandardId" ColumnName="ParentStandardId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Evaluations">
+      <EntityTypeMapping TypeName="RTMModel.Evaluation">
+        <MappingFragment StoreEntitySet="Evaluation">
+          <ScalarProperty Name="EvaluationId" ColumnName="EvaluationId" />
+          <ScalarProperty Name="MinimumScore" ColumnName="MinimumScore" />
+          <ScalarProperty Name="MeetingDate" ColumnName="MeetingDate" />
+          <ScalarProperty Name="HasTendering" ColumnName="HasTendering" />
+          <ScalarProperty Name="TenderingNumber" ColumnName="TenderingNumber" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="IsConsultantMeeting" ColumnName="IsConsultantMeeting" />
+          <ScalarProperty Name="IsContractorMeeting" ColumnName="IsContractorMeeting" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NoticeNumber" ColumnName="NoticeNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MeetingType" ColumnName="MeetingType" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationAttachementFiles">
+      <EntityTypeMapping TypeName="RTMModel.EvaluationAttachementFile">
+        <MappingFragment StoreEntitySet="EvaluationAttachementFile">
+          <ScalarProperty Name="EvaluationFileId" ColumnName="EvaluationFileId" />
+          <ScalarProperty Name="EvaluationId" ColumnName="EvaluationId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationContractors">
+      <EntityTypeMapping TypeName="RTMModel.EvaluationContractor">
+        <MappingFragment StoreEntitySet="EvaluationContractor">
+          <ScalarProperty Name="EvaluationContractorId" ColumnName="EvaluationContractorId" />
+          <ScalarProperty Name="EvaluationId" ColumnName="EvaluationId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvaluationStandardRelations">
+      <EntityTypeMapping TypeName="RTMModel.EvaluationStandardRelation">
+        <MappingFragment StoreEntitySet="EvaluationStandardRelation">
+          <ScalarProperty Name="EvalStandardId" ColumnName="EvalStandardId" />
+          <ScalarProperty Name="EvaluationId" ColumnName="EvaluationId" />
+          <ScalarProperty Name="StandardId" ColumnName="StandardId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IssuingReferences">
+      <EntityTypeMapping TypeName="RTMModel.IssuingReference">
+        <MappingFragment StoreEntitySet="IssuingReference">
+          <ScalarProperty Name="IssuingReferenceId" ColumnName="IssuingReferenceId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="RTMModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Subsystem" ColumnName="Subsystem" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meetings">
+      <EntityTypeMapping TypeName="RTMModel.Meeting">
+        <MappingFragment StoreEntitySet="Meeting">
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="MeetingType" ColumnName="MeetingType" />
+          <ScalarProperty Name="MeetingDate" ColumnName="MeetingDate" />
+          <ScalarProperty Name="MeetingNumber" ColumnName="MeetingNumber" />
+          <ScalarProperty Name="MeetingPlace" ColumnName="MeetingPlace" />
+          <ScalarProperty Name="MeetingDescription" ColumnName="MeetingDescription" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="ExtendedRecieveDate" ColumnName="ExtendedRecieveDate" />
+          <ScalarProperty Name="ExtendByCommittee" ColumnName="ExtendByCommittee" />
+          <ScalarProperty Name="ExtendByApplicant" ColumnName="ExtendByApplicant" />
+          <ScalarProperty Name="NeedsTechnicalEvaluation" ColumnName="NeedsTechnicalEvaluation" />
+          <ScalarProperty Name="OpenBidEnvelopeDate" ColumnName="OpenBidEnvelopeDate" />
+          <ScalarProperty Name="MinTechnicalScore" ColumnName="MinTechnicalScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeetingUserParticipants">
+      <EntityTypeMapping TypeName="RTMModel.MeetingUserParticipant">
+        <MappingFragment StoreEntitySet="MeetingUserParticipant">
+          <ScalarProperty Name="MeetingParticipantId" ColumnName="MeetingParticipantId" />
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MinRanks">
+      <EntityTypeMapping TypeName="RTMModel.MinRank">
+        <MappingFragment StoreEntitySet="MinRank">
+          <ScalarProperty Name="RankId" ColumnName="RankId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="NumberOfPermissiveJobs" ColumnName="NumberOfPermissiveJobs" />
+          <ScalarProperty Name="MaxContractBudget" ColumnName="MaxContractBudget" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notices">
+      <EntityTypeMapping TypeName="RTMModel.Notice">
+        <MappingFragment StoreEntitySet="Notice">
+          <ScalarProperty Name="NoticeId" ColumnName="NoticeId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="NoticeType" ColumnName="NoticeType" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="NoticeNumber" ColumnName="NoticeNumber" />
+          <ScalarProperty Name="PresentingPlace" ColumnName="PresentingPlace" />
+          <ScalarProperty Name="RecievePlace" ColumnName="RecievePlace" />
+          <ScalarProperty Name="OpenSuggestionPlace" ColumnName="OpenSuggestionPlace" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="AccountOwner" ColumnName="AccountOwner" />
+          <ScalarProperty Name="DocumentSellPrice" ColumnName="DocumentSellPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NoticeTenderings">
+      <EntityTypeMapping TypeName="RTMModel.NoticeTendering">
+        <MappingFragment StoreEntitySet="NoticeTendering">
+          <ScalarProperty Name="NoticeTenderingId" ColumnName="NoticeTenderingId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="NoticeId" ColumnName="NoticeId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="AccountOwnerName" ColumnName="AccountOwnerName" />
+          <ScalarProperty Name="DocumentSalePrice" ColumnName="DocumentSalePrice" />
+          <ScalarProperty Name="LocationOfferingDocuments" ColumnName="LocationOfferingDocuments" />
+          <ScalarProperty Name="LocationRecievingDocuments" ColumnName="LocationRecievingDocuments" />
+          <ScalarProperty Name="LocationOpenning" ColumnName="LocationOpenning" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationalCharts">
+      <EntityTypeMapping TypeName="RTMModel.OrganizationalChart">
+        <MappingFragment StoreEntitySet="OrganizationalChart">
+          <ScalarProperty Name="ChartNodeId" ColumnName="ChartNodeId" />
+          <ScalarProperty Name="ParentNodeId" ColumnName="ParentNodeId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IsRoot" ColumnName="IsRoot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Packets">
+      <EntityTypeMapping TypeName="RTMModel.Packet">
+        <MappingFragment StoreEntitySet="Packet">
+          <ScalarProperty Name="PacketId" ColumnName="PacketId" />
+          <ScalarProperty Name="PacketAResult" ColumnName="PacketAResult" />
+          <ScalarProperty Name="PacketBResult" ColumnName="PacketBResult" />
+          <ScalarProperty Name="PacketCResult" ColumnName="PacketCResult" />
+          <ScalarProperty Name="EvaluationResult" ColumnName="EvaluationResult" />
+          <ScalarProperty Name="ProposedAmout" ColumnName="ProposedAmout" />
+          <ScalarProperty Name="ProposedCoefficient" ColumnName="ProposedCoefficient" />
+          <ScalarProperty Name="DifferencePercentage" ColumnName="DifferencePercentage" />
+          <ScalarProperty Name="CompayRepresnted" ColumnName="CompayRepresnted" />
+          <ScalarProperty Name="RepresentativeName" ColumnName="RepresentativeName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PacketContractorTenderings">
+      <EntityTypeMapping TypeName="RTMModel.PacketContractorTendering">
+        <MappingFragment StoreEntitySet="PacketContractorTendering">
+          <ScalarProperty Name="PCTId" ColumnName="PCTId" />
+          <ScalarProperty Name="PacketId" ColumnName="PacketId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentDrafts">
+      <EntityTypeMapping TypeName="RTMModel.PaymentDraft">
+        <MappingFragment StoreEntitySet="PaymentDraft">
+          <ScalarProperty Name="TypeComment" ColumnName="TypeComment" />
+          <ScalarProperty Name="PaymentDraftId" ColumnName="PaymentDraftId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PaymentType2" ColumnName="PaymentType2" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CurrentSituationDraft" ColumnName="CurrentSituationDraft" />
+          <ScalarProperty Name="PerviousSituationDraft" ColumnName="PerviousSituationDraft" />
+          <ScalarProperty Name="PayableAmount" ColumnName="PayableAmount" />
+          <ScalarProperty Name="EmployerInsurancePercentage" ColumnName="EmployerInsurancePercentage" />
+          <ScalarProperty Name="SoilMechanicLanPercentage" ColumnName="SoilMechanicLanPercentage" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="HasEmployerInsurance" ColumnName="HasEmployerInsurance" />
+          <ScalarProperty Name="EmplyerInsuranceDeficit" ColumnName="EmplyerInsuranceDeficit" />
+          <ScalarProperty Name="HasContractorInsurance" ColumnName="HasContractorInsurance" />
+          <ScalarProperty Name="ContractorInsuranceDeficit" ColumnName="ContractorInsuranceDeficit" />
+          <ScalarProperty Name="HasTax" ColumnName="HasTax" />
+          <ScalarProperty Name="TaxDeficit" ColumnName="TaxDeficit" />
+          <ScalarProperty Name="HasJobWellDone" ColumnName="HasJobWellDone" />
+          <ScalarProperty Name="JobWellDoneDeficit" ColumnName="JobWellDoneDeficit" />
+          <ScalarProperty Name="PaymentDraftNumber" ColumnName="PaymentDraftNumber" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="OtherPercent" ColumnName="OtherPercent" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelTitle" ColumnName="ModelTitle" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentDraftTranscripts">
+      <EntityTypeMapping TypeName="RTMModel.PaymentDraftTranscript">
+        <MappingFragment StoreEntitySet="PaymentDraftTranscript">
+          <ScalarProperty Name="PaymentDraftTranscriptId" ColumnName="PaymentDraftTranscriptId" />
+          <ScalarProperty Name="PaymentDraftId" ColumnName="PaymentDraftId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FullAttachment" ColumnName="FullAttachment" />
+          <ScalarProperty Name="AttachmentCount" ColumnName="AttachmentCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentFiles">
+      <EntityTypeMapping TypeName="RTMModel.PaymentFile">
+        <MappingFragment StoreEntitySet="PaymentFile">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="PaymentDraftId" ColumnName="PaymentDraftId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="RTMModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="PositionTitle" ColumnName="PositionTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regulations">
+      <EntityTypeMapping TypeName="RTMModel.Regulation">
+        <MappingFragment StoreEntitySet="Regulation">
+          <ScalarProperty Name="RegulationId" ColumnName="RegulationId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IssuingReferenceId" ColumnName="IssuingReferenceId" />
+          <ScalarProperty Name="ActingReferenceId" ColumnName="ActingReferenceId" />
+          <ScalarProperty Name="IssuingDate" ColumnName="IssuingDate" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IssueEveryOne" ColumnName="IssueEveryOne" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+          <ScalarProperty Name="tmp1" ColumnName="tmp1" />
+          <ScalarProperty Name="tmp2" ColumnName="tmp2" />
+          <ScalarProperty Name="tmp3" ColumnName="tmp3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegulationFiles">
+      <EntityTypeMapping TypeName="RTMModel.RegulationFile">
+        <MappingFragment StoreEntitySet="RegulationFile">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+          <ScalarProperty Name="RegulationId" ColumnName="RegulationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shortlists">
+      <EntityTypeMapping TypeName="RTMModel.Shortlist">
+        <MappingFragment StoreEntitySet="Shortlist">
+          <ScalarProperty Name="ShortListId" ColumnName="ShortListId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ValidityDate" ColumnName="ValidityDate" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShortlistContractors">
+      <EntityTypeMapping TypeName="RTMModel.ShortlistContractor">
+        <MappingFragment StoreEntitySet="ShortlistContractor">
+          <ScalarProperty Name="ShortListContractorId" ColumnName="ShortListContractorId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="ShortListId" ColumnName="ShortListId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stages">
+      <EntityTypeMapping TypeName="RTMModel.Stage">
+        <MappingFragment StoreEntitySet="Stage">
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="StageTitle" ColumnName="StageTitle" />
+          <ScalarProperty Name="StageNumber" ColumnName="StageNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tenderings">
+      <EntityTypeMapping TypeName="RTMModel.Tendering">
+        <MappingFragment StoreEntitySet="Tendering">
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="ContractorRequestId" ColumnName="ContractorRequestId" />
+          <ScalarProperty Name="IsNotice" ColumnName="IsNotice" />
+          <ScalarProperty Name="TenderingSystemCode" ColumnName="TenderingSystemCode" />
+          <ScalarProperty Name="TenderingNumber" ColumnName="TenderingNumber" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="TenderingType" ColumnName="TenderingType" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="TenderingRecordDate" ColumnName="TenderingRecordDate" />
+          <ScalarProperty Name="TenderingTitle" ColumnName="TenderingTitle" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="GuarantyPrice" ColumnName="GuarantyPrice" />
+          <ScalarProperty Name="HasConsultant" ColumnName="HasConsultant" />
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="DraftWarranty" ColumnName="DraftWarranty" />
+          <ScalarProperty Name="LcWarranty" ColumnName="LcWarranty" />
+          <ScalarProperty Name="StockWarranty" ColumnName="StockWarranty" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDocForSale" ColumnName="IsDocForSale" />
+          <ScalarProperty Name="HasBriefingSession" ColumnName="HasBriefingSession" />
+          <ScalarProperty Name="BriefingSessionDate" ColumnName="BriefingSessionDate" />
+          <ScalarProperty Name="DocumentSalePrice" ColumnName="DocumentSalePrice" />
+          <ScalarProperty Name="HasQualityEvaluation" ColumnName="HasQualityEvaluation" />
+          <ScalarProperty Name="AdvertisingAlternationCount" ColumnName="AdvertisingAlternationCount" />
+          <ScalarProperty Name="RecievingDocumentsDate" ColumnName="RecievingDocumentsDate" />
+          <ScalarProperty Name="RecievingDocumentDeadline" ColumnName="RecievingDocumentDeadline" />
+          <ScalarProperty Name="SuggestionRecieveDate" ColumnName="SuggestionRecieveDate" />
+          <ScalarProperty Name="SuggestionOpenDate" ColumnName="SuggestionOpenDate" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="PermanentRecord" ColumnName="PermanentRecord" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RequestPermanentCheck" ColumnName="RequestPermanentCheck" />
+          <ScalarProperty Name="RecordDateHour" ColumnName="RecordDateHour" />
+          <ScalarProperty Name="RecordDateMinute" ColumnName="RecordDateMinute" />
+          <ScalarProperty Name="SuggestionRecieveDateHour" ColumnName="SuggestionRecieveDateHour" />
+          <ScalarProperty Name="SuggestionRecieveDateMinute" ColumnName="SuggestionRecieveDateMinute" />
+          <ScalarProperty Name="SuggestionOpenDateHour" ColumnName="SuggestionOpenDateHour" />
+          <ScalarProperty Name="SuggestionOpenDateMinute" ColumnName="SuggestionOpenDateMinute" />
+          <ScalarProperty Name="BriefingHour" ColumnName="BriefingHour" />
+          <ScalarProperty Name="BriefingMinute" ColumnName="BriefingMinute" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="PersianDate1" ColumnName="PersianDate1" />
+          <ScalarProperty Name="PersianDate2" ColumnName="PersianDate2" />
+          <ScalarProperty Name="PersianDate3" ColumnName="PersianDate3" />
+          <ScalarProperty Name="tmp1" ColumnName="tmp1" />
+          <ScalarProperty Name="tmp2" ColumnName="tmp2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingDocuments">
+      <EntityTypeMapping TypeName="RTMModel.TenderingDocument">
+        <MappingFragment StoreEntitySet="TenderingDocument">
+          <ScalarProperty Name="TenderingDocumentId" ColumnName="TenderingDocumentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DocumentIndex" ColumnName="DocumentIndex" />
+          <ScalarProperty Name="IsDoc" ColumnName="IsDoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingDocumentFiles">
+      <EntityTypeMapping TypeName="RTMModel.TenderingDocumentFile">
+        <MappingFragment StoreEntitySet="TenderingDocumentFile">
+          <ScalarProperty Name="TenderingDocumentFileId" ColumnName="TenderingDocumentFileId" />
+          <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AttachedDate" ColumnName="AttachedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingDocumentFileRelations">
+      <EntityTypeMapping TypeName="RTMModel.TenderingDocumentFileRelation">
+        <MappingFragment StoreEntitySet="TenderingDocumentFileRelation">
+          <ScalarProperty Name="TenderDocFileRelId" ColumnName="TenderDocFileRelId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="TenderingDocumentId" ColumnName="TenderingDocumentId" />
+          <ScalarProperty Name="TenderingDocumentFileId" ColumnName="TenderingDocumentFileId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="AdvertisementId" ColumnName="AdvertisementId" />
+          <ScalarProperty Name="MeetingId" ColumnName="MeetingId" />
+          <ScalarProperty Name="WarrantyId" ColumnName="WarrantyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingFileDownloads">
+      <EntityTypeMapping TypeName="RTMModel.TenderingFileDownload">
+        <MappingFragment StoreEntitySet="TenderingFileDownload">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="contractorId" ColumnName="contractorId" />
+          <ScalarProperty Name="PersianDate" ColumnName="PersianDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingResults">
+      <EntityTypeMapping TypeName="RTMModel.TenderingResult">
+        <MappingFragment StoreEntitySet="TenderingResult">
+          <ScalarProperty Name="TenderingResultId" ColumnName="TenderingResultId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FirstContractorWinnerId" ColumnName="FirstContractorWinnerId" />
+          <ScalarProperty Name="FirstBid" ColumnName="FirstBid" />
+          <ScalarProperty Name="FirstCoeffecient" ColumnName="FirstCoeffecient" />
+          <ScalarProperty Name="FirstPlus" ColumnName="FirstPlus" />
+          <ScalarProperty Name="FirstMinus" ColumnName="FirstMinus" />
+          <ScalarProperty Name="SecondContractorWinnerId" ColumnName="SecondContractorWinnerId" />
+          <ScalarProperty Name="SecondBid" ColumnName="SecondBid" />
+          <ScalarProperty Name="SecondCoefficient" ColumnName="SecondCoefficient" />
+          <ScalarProperty Name="SecondPlus" ColumnName="SecondPlus" />
+          <ScalarProperty Name="SecondMinus" ColumnName="SecondMinus" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Renewal" ColumnName="Renewal" />
+          <ScalarProperty Name="RenewalNote" ColumnName="RenewalNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TenderingTitles">
+      <EntityTypeMapping TypeName="RTMModel.TenderingTitle">
+        <MappingFragment StoreEntitySet="TenderingTitle">
+          <ScalarProperty Name="TenderingTitleId" ColumnName="TenderingTitleId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RTMModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="SocialNumber" ColumnName="SocialNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="AccessId" ColumnName="AccessId" />
+          <ScalarProperty Name="OrganizationPosition" ColumnName="OrganizationPosition" />
+          <ScalarProperty Name="TechnicalCommittee" ColumnName="TechnicalCommittee" />
+          <ScalarProperty Name="ConsultantCommittee" ColumnName="ConsultantCommittee" />
+          <ScalarProperty Name="TenderingCommittee" ColumnName="TenderingCommittee" />
+          <ScalarProperty Name="PaymentDraftCommittee" ColumnName="PaymentDraftCommittee" />
+          <ScalarProperty Name="ManagingPaymentDraft" ColumnName="ManagingPaymentDraft" />
+          <ScalarProperty Name="ManagingContractAccess" ColumnName="ManagingContractAccess" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserContractAccesses">
+      <EntityTypeMapping TypeName="RTMModel.UserContractAccess">
+        <MappingFragment StoreEntitySet="UserContractAccess">
+          <ScalarProperty Name="UserContractId" ColumnName="UserContractId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserEvaluationMembers">
+      <EntityTypeMapping TypeName="RTMModel.UserEvaluationMember">
+        <MappingFragment StoreEntitySet="UserEvaluationMember">
+          <ScalarProperty Name="UserEvalId" ColumnName="UserEvalId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EvaluationId" ColumnName="EvaluationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTenderingMembers">
+      <EntityTypeMapping TypeName="RTMModel.UserTenderingMember">
+        <MappingFragment StoreEntitySet="UserTenderingMember">
+          <ScalarProperty Name="UserTenderingMemberId" ColumnName="UserTenderingMemberId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTenderingParticipations">
+      <EntityTypeMapping TypeName="RTMModel.UserTenderingParticipation">
+        <MappingFragment StoreEntitySet="UserTenderingParticipation">
+          <ScalarProperty Name="UserTenderingId" ColumnName="UserTenderingId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warranties">
+      <EntityTypeMapping TypeName="RTMModel.Warranty">
+        <MappingFragment StoreEntitySet="Warranty">
+          <ScalarProperty Name="WarrantyId" ColumnName="WarrantyId" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="TenderingId" ColumnName="TenderingId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="ValidityDate" ColumnName="ValidityDate" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="StockTitle" ColumnName="StockTitle" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranch" ColumnName="BankBranch" />
+          <ScalarProperty Name="BankCity" ColumnName="BankCity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AuthenticateUser" FunctionName="RTMModel.Store.AuthenticateUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RTMModel.AuthenticateUser_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="SocialNumber" ColumnName="SocialNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="AccessId" ColumnName="AccessId" />
+          <ScalarProperty Name="OrganizationPosition" ColumnName="OrganizationPosition" />
+          <ScalarProperty Name="TechnicalCommittee" ColumnName="TechnicalCommittee" />
+          <ScalarProperty Name="ConsultantCommittee" ColumnName="ConsultantCommittee" />
+          <ScalarProperty Name="TenderingCommittee" ColumnName="TenderingCommittee" />
+          <ScalarProperty Name="PaymentDraftCommittee" ColumnName="PaymentDraftCommittee" />
+          <ScalarProperty Name="ManagingPaymentDraft" ColumnName="ManagingPaymentDraft" />
+          <ScalarProperty Name="ManagingContractAccess" ColumnName="ManagingContractAccess" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CreateNewUSer" FunctionName="RTMModel.Store.CreateNewUSer" />
+    <FunctionImportMapping FunctionImportName="UserSearch" FunctionName="RTMModel.Store.UserSearch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RTMModel.UserSearch_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="SocialNumber" ColumnName="SocialNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="AccessId" ColumnName="AccessId" />
+          <ScalarProperty Name="OrganizationPosition" ColumnName="OrganizationPosition" />
+          <ScalarProperty Name="TechnicalCommittee" ColumnName="TechnicalCommittee" />
+          <ScalarProperty Name="ConsultantCommittee" ColumnName="ConsultantCommittee" />
+          <ScalarProperty Name="TenderingCommittee" ColumnName="TenderingCommittee" />
+          <ScalarProperty Name="PaymentDraftCommittee" ColumnName="PaymentDraftCommittee" />
+          <ScalarProperty Name="ManagingPaymentDraft" ColumnName="ManagingPaymentDraft" />
+          <ScalarProperty Name="ManagingContractAccess" ColumnName="ManagingContractAccess" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowDetailContractInfo" FunctionName="RTMModel.Store.ShowDetailContractInfo" />
+  </EntityContainerMapping>
+</Mapping>

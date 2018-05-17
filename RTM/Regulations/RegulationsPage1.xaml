@@ -1,0 +1,74 @@
+﻿<Page x:Class="RTM.Regulations.RegulationsPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:dp="http://schemas.microsoft.com/wpf/2008/toolkit"
+      mc:Ignorable="d" x:Name="page"
+      Loaded="Page_Loaded"
+      
+	Title="RegulationsPage1" xmlns:my="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit,Version=3.5.40128.1,Culture=neutral,PublicKeyToken=31bf3856ad364e35">
+    <Grid x:Name="layoutRoot">
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="768" Width="1024" >
+            <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="508" HorizontalAlignment="Right" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" Width="834" Margin="0,0,90,139">
+                <Label Height="0" Name="label2" Width="0" />
+            </Border>
+            <Label Content="ثبت و ویرایش آیین نامه" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,121,105,596" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" FontWeight="Normal" />
+            <Button Content="ثبت" Margin="271,583,0,153" Name="SaveBtn" Width="120" TabIndex="10" Click="SaveBtn_Click" HorizontalAlignment="Left" />
+            <Button Margin="145,583,0,153" Name="ConfirmBtn" Width="120" Content="تایید نهایی" TabIndex="11" Click="ConfirmBtn_Click" HorizontalAlignment="Left" />
+            <Button Content="ویرایش" Margin="0,583,507,153" Name="EditBtn" Width="120" HorizontalAlignment="Right" TabIndex="9" Click="EditBtn_Click" />
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="32" Margin="497,185,231,0" Name="TypeCom" SelectedIndex="0" VerticalAlignment="Top" VerticalContentAlignment="Center" FontWeight="Normal" TabIndex="0" Text="{Binding ElementName=page, Path=CurrentRegulation.Type}">
+                <ComboBoxItem Content="قانون"></ComboBoxItem>
+                <ComboBoxItem Content="آئين نامه"></ComboBoxItem>
+                <ComboBoxItem Content="بخشنامه"></ComboBoxItem>
+                <ComboBoxItem Content="دستورالعمل"></ComboBoxItem>
+                <ComboBoxItem Content="نشریه"></ComboBoxItem>
+            </ComboBox>
+            <TextBox Height="32" Margin="271,373,231,0" Name="TitleTxt" VerticalAlignment="Top" UseLayoutRounding="False" VerticalContentAlignment="Center" TextAlignment="Left" MaxLines="5" HorizontalScrollBarVisibility="Auto" HorizontalContentAlignment="Right" FontSize="20" FontFamily="/RTM;component/Fonts/#B Nazanin" FlowDirection="RightToLeft" FontWeight="Normal" TabIndex="5" Text="{Binding ElementName=page, Path=CurrentRegulation.Title, Mode=TwoWay}"/>
+            <!--<TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="32" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="0,337,230.571,0" MaxLines="5" Name="DateTxt"  TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="263.429" FontWeight="Normal" IsReadOnly="True" />-->
+            <DataGrid AutoGenerateColumns="False" Height="169" CanUserAddRows="False"  HorizontalAlignment="Left" Margin="271,408,0,0" Name="Grid" VerticalAlignment="Top" Width="522" VerticalContentAlignment="Center" SelectionMode="Single" HorizontalContentAlignment="Center" FontSize="20" FontFamily="/RTM;component/Fonts/#B Nazanin" FlowDirection="RightToLeft"   CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FontWeight="Normal" TabIndex="8" IsReadOnly="True" SelectionChanged="Grid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn IsReadOnly="True"  Header="زمان بارگذاري" Binding="{Binding Path=AttachedDate, Converter= {StaticResource dateConverter}}"/>
+                    <DataGridTextColumn  Header="توضيحات" Binding="{Binding Version}"/>
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="مشاهده" Margin="5" Click="View_Click"  />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="حذف" Margin="5" Click="DeleteFile_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="افزودن فایل" Margin="142,452,762,0" Name="BrowseBtn" Width="120" Height="30" VerticalAlignment="Top" TabIndex="7" Click="BrowseBtn_Click" />
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="497,223,231,0" Name="GroupCom" SelectedIndex="0" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="1" Text="{Binding ElementName=page, Path=CurrentRegulation.Group}">
+                <ComboBoxItem Content="مناقصات"></ComboBoxItem>
+                <ComboBoxItem Content="ارزيابي"></ComboBoxItem>
+                <ComboBoxItem Content="قراردادها"></ComboBoxItem>
+                <ComboBoxItem Content="حقوقي"></ComboBoxItem>
+            </ComboBox>
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Margin="497,261,230,475" Name="ActingCom" VerticalContentAlignment="Center" TabIndex="2" DisplayMemberPath="Title" SelectedValuePath="ChartNodeId" SelectedValue="{Binding ElementName=page, Path=CurrentRegulation.ActingReferenceId}" SelectedIndex="0" />
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="497,299,231,0" Name="ReferenceCom" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="3" SelectedValue="{Binding ElementName=page, Path=CurrentRegulation.IssuingReferenceId}" DisplayMemberPath="Title" SelectedValuePath="IssuingReferenceId" SelectedIndex="0" />
+            <Label Content="نوع :" Height="40" HorizontalAlignment="Left" Margin="799,181,0,0" Name="label1" VerticalAlignment="Top" FontSize="20" FontFamily="/RTM;component/Fonts/#B Nazanin" FlowDirection="RightToLeft" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="120" />
+            <Label Content="گروه :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="799,219,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+            <Label Content="واحد اقدام کننده :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,256,105,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="129" />
+            <Label Content="مرجع صادر کننده :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="790,294,0,0" Name="label5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="129" />
+            <Label Content="تاریخ صدور :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="799,333,0,0" Name="label6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+
+            <Label Content=" عنوان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="799,369,0,0" Name="label7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="120" />
+            <my:DatePicker HorizontalAlignment="Left" Margin="498,340,0,0" Name="datePicker1" VerticalAlignment="Top" FlowDirection="RightToLeft" Width="296" SelectedDateChanged="datePicker1_SelectedDateChanged" SelectedDate="{Binding ElementName=page, Path=CurrentRegulation.IssuingDate}" Height="28" TabIndex="4" />
+            <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="33.32" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="142,413.32,762,0" MaxLines="5" Name="VersionTxt" TabIndex="6"  TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+            <Label Content="توضيحات :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="145,370,0,0" Name="label8" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="117" />
+            <Label Content="(کلمات کلیدی)" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,391,110,0" Name="label9" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="106" />
+        </Grid>
+    </Grid>
+</Page>

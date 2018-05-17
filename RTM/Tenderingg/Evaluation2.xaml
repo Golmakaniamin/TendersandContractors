@@ -1,0 +1,49 @@
+﻿<Page x:Class="RTM.Tenderingg.Evaluation2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RTM.Classes"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      
+	Title="Evaluation2" Height="768" Width="1024" Background="{x:Null}" Loaded="Page_Loaded">
+    <Page.Resources>
+        <local:DoubleToStringConverter x:Key="doubleConverter"/>
+    </Page.Resources>
+    <Grid Height="768" Width="1024" Background="{x:Null}" Name="layoutRoot">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="557" HorizontalAlignment="Right" Margin="0,0,100,89" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" Width="832">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Label Content="جلسه ارزیابی کیفی" FontFamily="B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,119,124,598" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" />
+        <Button Content="ثبت" Margin="230,634,674,102" Name="EditBtn" TabIndex="3" Width="120" Click="EditBtn_Click_1" />
+        <Button Content="ثبت نهایی" Margin="0,634,800,102" Name="ConfirmBtn" TabIndex="8" Width="120" HorizontalAlignment="Right" Click="ConfirmBtn_Click" />
+        <DataGrid AutoGenerateColumns="False" CanUserSortColumns="True" CanUserAddRows="False" IsReadOnly="True"   CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False"  FlowDirection="RightToLeft" FontFamily="Arial" FontSize="18" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="104,322,0,0" Name="Grid" SelectionMode="Single" TabIndex="0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="634" SelectionChanged="Grid_SelectionChanged">
+            <DataGrid.Columns >
+                <DataGridTextColumn  Header=" نام شرکت" Binding="{Binding Path=contractor.CompanyName}"/>
+                <DataGridTextColumn  Header="نام مديرعامل" Binding="{Binding Path=contractor.CeoFamily}"/>
+                <DataGridTextColumn  Header="شناسه ملي" Binding="{Binding Path=contractor.NationalIdNumber}"/>
+                <DataGridTextColumn  Header="جمع امتياز" Binding="{Binding Path=totalScore, Converter={StaticResource doubleConverter}}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid  AutoGenerateColumns="False"   CanUserAddRows="False"  CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="Arial" FontSize="18" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" IsEnabled="True" Margin="106,135,0,0" Name="dataGrid1" SelectionMode="Single" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="633" SelectionChanged="dataGrid1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True"  Header=" اسم معيار" Binding="{Binding Path=Title}" Width="200" />
+                <DataGridTextColumn  Header ="وزن" Binding="{Binding Path=Weight, Mode=TwoWay}"/>
+                <DataGridTextColumn  Header="امتياز" Binding="{Binding Path=Score, Mode=TwoWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="چاپ صورتجلسه" Margin="776,634,114,102" Name="button2" TabIndex="4" Click="button2_Click" />
+        <Button HorizontalAlignment="Right" Margin="0,635,254,101" Name="AddFile" TabIndex="5" Width="135" Content="بارگذاری صورتجلسه" Click="AddFile_Click" />
+        <Button Content="مشاهده صورتجلسه" HorizontalAlignment="Right" Margin="0,0,394,101" Name="OpenFileBtn" TabIndex="6" Width="135" Height="32" VerticalAlignment="Bottom" Click="OpenFile_Click" />
+        <Label Style="{StaticResource TitleLabel}" FontSize="14"  Height="31" HorizontalAlignment="Left" Margin="749,391,0,0"  Name="HasFile" FlowDirection="RightToLeft"  VerticalAlignment="Top" Width="147" FontFamily="B Nazanin" HorizontalContentAlignment="Center" Background="White" Visibility="Hidden" />
+        <Label Content="توجه : همه امتیازها از 100 وارد شوند" FontFamily="B Nazanin" FontSize="12" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,320,122,418" Name="label1" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" FontStyle="Normal" Background="{x:Null}"></Label>
+        <Label Content=": جمع وزن ها" FontFamily="B Nazanin" FontSize="12" FontStyle="Normal" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,355,122,387" Name="label3" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Background="{x:Null}" />
+        <Label Content="....." FontFamily="B Nazanin" FontSize="12" FontStyle="Normal" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,351,188,381" Name="SumTxt" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Background="{x:Null}" />
+        <Button Content="حذف صورتجلسه" Height="32" HorizontalAlignment="Left" Margin="356,0,0,101" Name="DelBtn" TabIndex="7" VerticalAlignment="Bottom" Width="135" Click="DelBtn_Click" />
+        <TextBox IsReadOnly="True"  FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="837.5,268,0,0" MaxLines="5" Name="MinTxt" TabIndex="2" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="54" />
+        <Label  Content="حداقل امتیاز مورد قبول :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="18" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="730,232,0,0" Name="l22" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="171" />
+        <Label Content="* توضیحات :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="754,497,0,221" Name="label49" VerticalContentAlignment="Center" Width="144" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="18" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="104.5,506,285.5,140" MaxLines="5" Name="RecordDescriptionTxt" TabIndex="2" TextAlignment="Left" TextWrapping="Wrap" UseLayoutRounding="False" VerticalAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Auto" DataContext="{Binding}" />
+    </Grid>
+</Page>

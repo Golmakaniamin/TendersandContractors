@@ -1,0 +1,45 @@
+﻿<Page x:Class="RTM.Tenderingg.SelfStateManagment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"  
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="SelfState" Background="{x:Null}" Height="768" Width="1024" x:Name="SelfState" Margin="0" Loaded="SelfState_Loaded">
+
+    <Grid Width="1024" Height="768" Margin="0">
+        <Border AllowDrop="True" Background="White" BorderBrush="#FF9A9696" BorderThickness="1" CornerRadius="0" Height="644" HorizontalAlignment="Right" Margin="0,0,20,43" x:Name="border1_Copy1" Opacity="0.4" VerticalAlignment="Bottom" Width="986" />
+        <Border AllowDrop="True" Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="319" HorizontalAlignment="Right" Margin="0,0,38,51" x:Name="border1_Copy" Opacity="0.4" VerticalAlignment="Bottom" Width="953" d:LayoutOverrides="VerticalAlignment" />
+        <Label Height="0" x:Name="label22" Width="0" Margin="518,384,506,384" />
+        <Border AllowDrop="True" Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="279" HorizontalAlignment="Right" Margin="0,0,38,372" x:Name="border1" Opacity="0.4" VerticalAlignment="Bottom" Width="953" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="203.5" HorizontalContentAlignment="Center" x:Name="dataGrid" SelectionMode="Single" TabIndex="0" VerticalContentAlignment="Center" VerticalAlignment="Bottom" UseLayoutRounding="False" Margin="230.5,0,51.5,410" IsReadOnly="True">
+        	<DataGrid.Columns>
+        		<!--<DataGridTextColumn x:Name="Nom" Binding="{Binding Nom}" Header="ردیف" />-->
+                <DataGridTextColumn  Header="نام شرکت" Binding="{Binding Path=CompanyName}"/>
+                <DataGridTextColumn Header="شناسه ملی" Binding="{Binding Path=NationalIdNumber}"/>
+                <DataGridTextColumn  Header="نام مديرعامل" Binding="{Binding Path=CeoName}"/>
+                <DataGridTextColumn  Header="نام خانوادگي مديرعامل" Binding="{Binding Path=CeoFamily}"/>
+                <DataGridTextColumn  Header="رمز عبور" Binding="{Binding Path=Password}"/>
+                
+        	</DataGrid.Columns>
+        </DataGrid>
+        <Label Content="مدیریت سامانه خوداظهاری" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="790,71.333,0,0" x:Name="label24" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="182" />
+        <Label Content="پیمانکاران/ مشاوران در حال انتظار" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="746,107,0,0" x:Name="label1_Copy1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="220" />
+        <Button Content="تایید منتخب" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" Margin="0,319,800,0" x:Name="ConfirmBtn" TabIndex="2" VerticalAlignment="Top" Width="177" Click="ConfirmBtn_Click" />
+        <Button Content="مشاهده اطلاعات" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" Margin="0,281,800,0" x:Name="ShowInfoBtn" TabIndex="1" VerticalAlignment="Top" Width="177" Click="ShowInfoBtn_Click" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="230" HorizontalContentAlignment="Center" x:Name="dataGrid2" SelectionMode="Single" TabIndex="3" VerticalContentAlignment="Center" VerticalAlignment="Bottom" UseLayoutRounding="False" Margin="230.5,0,51.5,98" d:LayoutOverrides="VerticalAlignment" IsReadOnly="True">
+        	<DataGrid.Columns>
+                <DataGridTextColumn  Header="نام شرکت" Binding="{Binding Path=CompanyName}"/>
+                <DataGridTextColumn Header="شناسه ملی" Binding="{Binding Path=NationalIdNumber}"/>
+                <DataGridTextColumn  Header="نام مديرعامل" Binding="{Binding Path=CeoName}"/>
+                <DataGridTextColumn  Header="نام خانوادگي مديرعامل" Binding="{Binding Path=CeoFamily}"/>
+                <DataGridTextColumn  Header="رمز عبور" Binding="{Binding Path=Password}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="پیمانکاران/ مشاوران تایید شده" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="762,0,0,325" x:Name="label1_Copy2" VerticalContentAlignment="Center" Width="220" Height="50" VerticalAlignment="Bottom" />
+        <Button Content="بازگرداندن به لیست انتظار" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" HorizontalAlignment="Right" Margin="0,0,800,104" x:Name="BackToTopGridBtn" TabIndex="5" Width="177" Height="32" VerticalAlignment="Bottom" Click="BackToTopGridBtn_Click" />
+        <Button Content="مشاهده اطلاعات" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" HorizontalAlignment="Right" Margin="0,0,800,141" x:Name="ChosenShowInfoBtn" TabIndex="4" Width="177" Height="32" VerticalAlignment="Bottom" Click="ChosenShowInfoBtn_Click" />
+    </Grid>
+</Page>

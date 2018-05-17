@@ -1,0 +1,13 @@
+﻿<Page x:Class="RTM.Report.Report8.Report8_Viewer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="ReportViewer" xmlns:my="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" Loaded="Page_Loaded">
+
+    <Grid Height="768" Width="1024">
+        <my:CrystalReportsViewer HorizontalAlignment="Left" Margin="12,87,0,0" Name="crystalReportsViewer1" VerticalAlignment="Top" Height="621" Width="1000" Loaded="crystalReportsViewer1_Loaded" />
+    </Grid>
+</Page>

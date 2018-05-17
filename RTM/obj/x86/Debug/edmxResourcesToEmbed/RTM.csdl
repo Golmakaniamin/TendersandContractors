@@ -1,0 +1,2499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RTMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="RTMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccessRights" EntityType="RTMModel.AccessRight" />
+    <EntitySet Name="Advertisements" EntityType="RTMModel.Advertisement" />
+    <EntitySet Name="Bids" EntityType="RTMModel.Bid" />
+    <EntitySet Name="Contracts" EntityType="RTMModel.Contract" />
+    <EntitySet Name="ContractDocFileRelations" EntityType="RTMModel.ContractDocFileRelation" />
+    <EntitySet Name="ContractDocuments" EntityType="RTMModel.ContractDocument" />
+    <EntitySet Name="ContractFiles" EntityType="RTMModel.ContractFile" />
+    <EntitySet Name="Contractors" EntityType="RTMModel.Contractor" />
+    <EntitySet Name="ContractorDocFileRelations" EntityType="RTMModel.ContractorDocFileRelation" />
+    <EntitySet Name="ContractorDocuments" EntityType="RTMModel.ContractorDocument" />
+    <EntitySet Name="ContractorFiles" EntityType="RTMModel.ContractorFile" />
+    <EntitySet Name="ContractorMeetingJustifications" EntityType="RTMModel.ContractorMeetingJustification" />
+    <EntitySet Name="ContractorMeetingOpenPackets" EntityType="RTMModel.ContractorMeetingOpenPacket" />
+    <EntitySet Name="ContractorRequests" EntityType="RTMModel.ContractorRequest" />
+    <EntitySet Name="ContractorRequestContractors" EntityType="RTMModel.ContractorRequestContractor" />
+    <EntitySet Name="ContractorTenderingDocumentRecieves" EntityType="RTMModel.ContractorTenderingDocumentRecieve" />
+    <EntitySet Name="ContractorTenderingShortLists" EntityType="RTMModel.ContractorTenderingShortList" />
+    <EntitySet Name="ContractorTenderingSubmitPackets" EntityType="RTMModel.ContractorTenderingSubmitPacket" />
+    <EntitySet Name="ContractorTenderingTechWins" EntityType="RTMModel.ContractorTenderingTechWin" />
+    <EntitySet Name="ContractorTenderingWins" EntityType="RTMModel.ContractorTenderingWin" />
+    <EntitySet Name="ContractTypes" EntityType="RTMModel.ContractType" />
+    <EntitySet Name="EvalStandards" EntityType="RTMModel.EvalStandard" />
+    <EntitySet Name="Evaluations" EntityType="RTMModel.Evaluation" />
+    <EntitySet Name="EvaluationAttachementFiles" EntityType="RTMModel.EvaluationAttachementFile" />
+    <EntitySet Name="EvaluationContractors" EntityType="RTMModel.EvaluationContractor" />
+    <EntitySet Name="EvaluationStandardRelations" EntityType="RTMModel.EvaluationStandardRelation" />
+    <EntitySet Name="IssuingReferences" EntityType="RTMModel.IssuingReference" />
+    <EntitySet Name="Logs" EntityType="RTMModel.Log" />
+    <EntitySet Name="Meetings" EntityType="RTMModel.Meeting" />
+    <EntitySet Name="MeetingUserParticipants" EntityType="RTMModel.MeetingUserParticipant" />
+    <EntitySet Name="MinRanks" EntityType="RTMModel.MinRank" />
+    <EntitySet Name="Notices" EntityType="RTMModel.Notice" />
+    <EntitySet Name="NoticeTenderings" EntityType="RTMModel.NoticeTendering" />
+    <EntitySet Name="OrganizationalCharts" EntityType="RTMModel.OrganizationalChart" />
+    <EntitySet Name="Packets" EntityType="RTMModel.Packet" />
+    <EntitySet Name="PacketContractorTenderings" EntityType="RTMModel.PacketContractorTendering" />
+    <EntitySet Name="PaymentDrafts" EntityType="RTMModel.PaymentDraft" />
+    <EntitySet Name="PaymentDraftTranscripts" EntityType="RTMModel.PaymentDraftTranscript" />
+    <EntitySet Name="PaymentFiles" EntityType="RTMModel.PaymentFile" />
+    <EntitySet Name="Positions" EntityType="RTMModel.Position" />
+    <EntitySet Name="Regulations" EntityType="RTMModel.Regulation" />
+    <EntitySet Name="RegulationFiles" EntityType="RTMModel.RegulationFile" />
+    <EntitySet Name="Shortlists" EntityType="RTMModel.Shortlist" />
+    <EntitySet Name="ShortlistContractors" EntityType="RTMModel.ShortlistContractor" />
+    <EntitySet Name="Stages" EntityType="RTMModel.Stage" />
+    <EntitySet Name="Tenderings" EntityType="RTMModel.Tendering" />
+    <EntitySet Name="TenderingDocuments" EntityType="RTMModel.TenderingDocument" />
+    <EntitySet Name="TenderingDocumentFiles" EntityType="RTMModel.TenderingDocumentFile" />
+    <EntitySet Name="TenderingDocumentFileRelations" EntityType="RTMModel.TenderingDocumentFileRelation" />
+    <EntitySet Name="TenderingFileDownloads" EntityType="RTMModel.TenderingFileDownload" />
+    <EntitySet Name="TenderingResults" EntityType="RTMModel.TenderingResult" />
+    <EntitySet Name="TenderingTitles" EntityType="RTMModel.TenderingTitle" />
+    <EntitySet Name="Users" EntityType="RTMModel.User" />
+    <EntitySet Name="UserContractAccesses" EntityType="RTMModel.UserContractAccess" />
+    <EntitySet Name="UserEvaluationMembers" EntityType="RTMModel.UserEvaluationMember" />
+    <EntitySet Name="UserTenderingMembers" EntityType="RTMModel.UserTenderingMember" />
+    <EntitySet Name="UserTenderingParticipations" EntityType="RTMModel.UserTenderingParticipation" />
+    <EntitySet Name="Warranties" EntityType="RTMModel.Warranty" />
+    <AssociationSet Name="FK_User_AccessRights" Association="RTMModel.FK_User_AccessRights">
+      <End Role="AccessRights" EntitySet="AccessRights" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advertisement_Notice" Association="RTMModel.FK_Advertisement_Notice">
+      <End Role="Notice" EntitySet="Notices" />
+      <End Role="Advertisement" EntitySet="Advertisements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_Advertisement" Association="RTMModel.FK_TenderingDocumentFileRelation_Advertisement">
+      <End Role="Advertisement" EntitySet="Advertisements" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bid1Stage_Contractor" Association="RTMModel.FK_Bid1Stage_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="Bid" EntitySet="Bids" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bid1Stage_Tendering" Association="RTMModel.FK_Bid1Stage_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="Bid" EntitySet="Bids" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_Contractor" Association="RTMModel.FK_Contract_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_Contractor1" Association="RTMModel.FK_Contract_Contractor1">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_ContractType" Association="RTMModel.FK_Contract_ContractType">
+      <End Role="ContractType" EntitySet="ContractTypes" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_OrganizationalChart" Association="RTMModel.FK_Contract_OrganizationalChart">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_OrganizationalChart1" Association="RTMModel.FK_Contract_OrganizationalChart1">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_User" Association="RTMModel.FK_Contract_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contract_User1" Association="RTMModel.FK_Contract_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractDocFileRelation_Contract" Association="RTMModel.FK_ContractDocFileRelation_Contract">
+      <End Role="Contract" EntitySet="Contracts" />
+      <End Role="ContractDocFileRelation" EntitySet="ContractDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentDraft_Contract" Association="RTMModel.FK_PaymentDraft_Contract">
+      <End Role="Contract" EntitySet="Contracts" />
+      <End Role="PaymentDraft" EntitySet="PaymentDrafts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserContractAccess_Contract" Association="RTMModel.FK_UserContractAccess_Contract">
+      <End Role="Contract" EntitySet="Contracts" />
+      <End Role="UserContractAccess" EntitySet="UserContractAccesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractDocFileRelation_ContractDocument" Association="RTMModel.FK_ContractDocFileRelation_ContractDocument">
+      <End Role="ContractDocument" EntitySet="ContractDocuments" />
+      <End Role="ContractDocFileRelation" EntitySet="ContractDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractDocFileRelation_ContractFile" Association="RTMModel.FK_ContractDocFileRelation_ContractFile">
+      <End Role="ContractFile" EntitySet="ContractFiles" />
+      <End Role="ContractDocFileRelation" EntitySet="ContractDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorDocFileRelation_Contractor" Association="RTMModel.FK_ContractorDocFileRelation_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorDocFileRelation" EntitySet="ContractorDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorMeetingJustification_Contractor" Association="RTMModel.FK_ContractorMeetingJustification_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorMeetingJustification" EntitySet="ContractorMeetingJustifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorMeetingOpenPacket1_Contractor1" Association="RTMModel.FK_ContractorMeetingOpenPacket1_Contractor1">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorMeetingOpenPacket" EntitySet="ContractorMeetingOpenPackets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorRequestContractor_Contractor" Association="RTMModel.FK_ContractorRequestContractor_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorRequestContractor" EntitySet="ContractorRequestContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingDocumentBuy_Contractor" Association="RTMModel.FK_ContractorTenderingDocumentBuy_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorTenderingDocumentRecieve" EntitySet="ContractorTenderingDocumentRecieves" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingShortList_Contractor" Association="RTMModel.FK_ContractorTenderingShortList_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorTenderingShortList" EntitySet="ContractorTenderingShortLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingSubmitPacket_Contractor" Association="RTMModel.FK_ContractorTenderingSubmitPacket_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorTenderingSubmitPacket" EntitySet="ContractorTenderingSubmitPackets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingTechWin_Contractor" Association="RTMModel.FK_ContractorTenderingTechWin_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorTenderingTechWin" EntitySet="ContractorTenderingTechWins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingWin_Contractor" Association="RTMModel.FK_ContractorTenderingWin_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ContractorTenderingWin" EntitySet="ContractorTenderingWins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationContractor_Contractor" Association="RTMModel.FK_EvaluationContractor_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="EvaluationContractor" EntitySet="EvaluationContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationStandardRelation_Contractor" Association="RTMModel.FK_EvaluationStandardRelation_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="EvaluationStandardRelation" EntitySet="EvaluationStandardRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PacketContractorTendering_Contractor" Association="RTMModel.FK_PacketContractorTendering_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="PacketContractorTendering" EntitySet="PacketContractorTenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShortlistContractor_Contractor" Association="RTMModel.FK_ShortlistContractor_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="ShortlistContractor" EntitySet="ShortlistContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tendering_Contractor" Association="RTMModel.FK_Tendering_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="Tendering" EntitySet="Tenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_Contractor" Association="RTMModel.FK_TenderingDocumentFileRelation_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Warranty_Contractor" Association="RTMModel.FK_Warranty_Contractor">
+      <End Role="Contractor" EntitySet="Contractors" />
+      <End Role="Warranty" EntitySet="Warranties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorDocFileRelation_ContractorDocument" Association="RTMModel.FK_ContractorDocFileRelation_ContractorDocument">
+      <End Role="ContractorDocument" EntitySet="ContractorDocuments" />
+      <End Role="ContractorDocFileRelation" EntitySet="ContractorDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorDocFileRelation_ContractorFile" Association="RTMModel.FK_ContractorDocFileRelation_ContractorFile">
+      <End Role="ContractorFile" EntitySet="ContractorFiles" />
+      <End Role="ContractorDocFileRelation" EntitySet="ContractorDocFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorMeetingJustification_Meeting" Association="RTMModel.FK_ContractorMeetingJustification_Meeting">
+      <End Role="Meeting" EntitySet="Meetings" />
+      <End Role="ContractorMeetingJustification" EntitySet="ContractorMeetingJustifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorMeetingOpenPacket1_Meeting" Association="RTMModel.FK_ContractorMeetingOpenPacket1_Meeting">
+      <End Role="Meeting" EntitySet="Meetings" />
+      <End Role="ContractorMeetingOpenPacket" EntitySet="ContractorMeetingOpenPackets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorRequest_Orrganizitionalchart" Association="RTMModel.FK_ContractorRequest_Orrganizitionalchart">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="ContractorRequest" EntitySet="ContractorRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorRequest_TenderingTitle" Association="RTMModel.FK_ContractorRequest_TenderingTitle">
+      <End Role="TenderingTitle" EntitySet="TenderingTitles" />
+      <End Role="ContractorRequest" EntitySet="ContractorRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorRequest_User" Association="RTMModel.FK_ContractorRequest_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ContractorRequest" EntitySet="ContractorRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorRequestContractor_ContractorRequest" Association="RTMModel.FK_ContractorRequestContractor_ContractorRequest">
+      <End Role="ContractorRequest" EntitySet="ContractorRequests" />
+      <End Role="ContractorRequestContractor" EntitySet="ContractorRequestContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tendering_ContractorRequest" Association="RTMModel.FK_Tendering_ContractorRequest">
+      <End Role="ContractorRequest" EntitySet="ContractorRequests" />
+      <End Role="Tendering" EntitySet="Tenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingDocumentBuy_Tendering" Association="RTMModel.FK_ContractorTenderingDocumentBuy_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="ContractorTenderingDocumentRecieve" EntitySet="ContractorTenderingDocumentRecieves" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingShortList_Tendering" Association="RTMModel.FK_ContractorTenderingShortList_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="ContractorTenderingShortList" EntitySet="ContractorTenderingShortLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingSubmitPacket_Tendering" Association="RTMModel.FK_ContractorTenderingSubmitPacket_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="ContractorTenderingSubmitPacket" EntitySet="ContractorTenderingSubmitPackets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingTechWin_Tendering" Association="RTMModel.FK_ContractorTenderingTechWin_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="ContractorTenderingTechWin" EntitySet="ContractorTenderingTechWins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContractorTenderingWin_Tendering" Association="RTMModel.FK_ContractorTenderingWin_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="ContractorTenderingWin" EntitySet="ContractorTenderingWins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvalStandard_EvalStandard" Association="RTMModel.FK_EvalStandard_EvalStandard">
+      <End Role="EvalStandard" EntitySet="EvalStandards" />
+      <End Role="EvalStandard1" EntitySet="EvalStandards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationStandardRelation_EvalStandard" Association="RTMModel.FK_EvaluationStandardRelation_EvalStandard">
+      <End Role="EvalStandard" EntitySet="EvalStandards" />
+      <End Role="EvaluationStandardRelation" EntitySet="EvaluationStandardRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationAttachementFile_Evaluation" Association="RTMModel.FK_EvaluationAttachementFile_Evaluation">
+      <End Role="Evaluation" EntitySet="Evaluations" />
+      <End Role="EvaluationAttachementFile" EntitySet="EvaluationAttachementFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationContractor_Evaluation" Association="RTMModel.FK_EvaluationContractor_Evaluation">
+      <End Role="Evaluation" EntitySet="Evaluations" />
+      <End Role="EvaluationContractor" EntitySet="EvaluationContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EvaluationStandardRelation_Evaluation" Association="RTMModel.FK_EvaluationStandardRelation_Evaluation">
+      <End Role="Evaluation" EntitySet="Evaluations" />
+      <End Role="EvaluationStandardRelation" EntitySet="EvaluationStandardRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserEvaluationMember_Evaluation" Association="RTMModel.FK_UserEvaluationMember_Evaluation">
+      <End Role="Evaluation" EntitySet="Evaluations" />
+      <End Role="UserEvaluationMember" EntitySet="UserEvaluationMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regulation_IssuingReference" Association="RTMModel.FK_Regulation_IssuingReference">
+      <End Role="IssuingReference" EntitySet="IssuingReferences" />
+      <End Role="Regulation" EntitySet="Regulations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Meeting_Tendering" Association="RTMModel.FK_Meeting_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MeetingParticipant_Meeting" Association="RTMModel.FK_MeetingParticipant_Meeting">
+      <End Role="Meeting" EntitySet="Meetings" />
+      <End Role="MeetingUserParticipant" EntitySet="MeetingUserParticipants" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_Meeting" Association="RTMModel.FK_TenderingDocumentFileRelation_Meeting">
+      <End Role="Meeting" EntitySet="Meetings" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MeetingParticipant_User" Association="RTMModel.FK_MeetingParticipant_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="MeetingUserParticipant" EntitySet="MeetingUserParticipants" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MinRank_Tendering" Association="RTMModel.FK_MinRank_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="MinRank" EntitySet="MinRanks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notice_Tendering" Association="RTMModel.FK_Notice_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="Notice" EntitySet="Notices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NoticeTendering_Notice" Association="RTMModel.FK_NoticeTendering_Notice">
+      <End Role="Notice" EntitySet="Notices" />
+      <End Role="NoticeTendering" EntitySet="NoticeTenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NoticeTendering_Tendering" Association="RTMModel.FK_NoticeTendering_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="NoticeTendering" EntitySet="NoticeTenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationalChart_OrganizationalChart" Association="RTMModel.FK_OrganizationalChart_OrganizationalChart">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="OrganizationalChart1" EntitySet="OrganizationalCharts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regulation_OrganizationalChart" Association="RTMModel.FK_Regulation_OrganizationalChart">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="Regulation" EntitySet="Regulations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_OrganizationalChart" Association="RTMModel.FK_User_OrganizationalChart">
+      <End Role="OrganizationalChart" EntitySet="OrganizationalCharts" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PacketContractorTendering_Packet" Association="RTMModel.FK_PacketContractorTendering_Packet">
+      <End Role="Packet" EntitySet="Packets" />
+      <End Role="PacketContractorTendering" EntitySet="PacketContractorTenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PacketContractorTendering_Tendering" Association="RTMModel.FK_PacketContractorTendering_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="PacketContractorTendering" EntitySet="PacketContractorTenderings" />
+    </AssociationSet>
+    <AssociationSet Name="C_FK_PaymentFile_PaymentDraft" Association="RTMModel.C_FK_PaymentFile_PaymentDraft">
+      <End Role="PaymentDraft" EntitySet="PaymentDrafts" />
+      <End Role="PaymentFile" EntitySet="PaymentFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentDraftTranscript_PaymentDraft" Association="RTMModel.FK_PaymentDraftTranscript_PaymentDraft">
+      <End Role="PaymentDraft" EntitySet="PaymentDrafts" />
+      <End Role="PaymentDraftTranscript" EntitySet="PaymentDraftTranscripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Position" Association="RTMModel.FK_User_Position">
+      <End Role="Position" EntitySet="Positions" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegulationFile_Regulation" Association="RTMModel.FK_RegulationFile_Regulation">
+      <End Role="Regulation" EntitySet="Regulations" />
+      <End Role="RegulationFile" EntitySet="RegulationFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShortlistContractor_Shortlist" Association="RTMModel.FK_ShortlistContractor_Shortlist">
+      <End Role="Shortlist" EntitySet="Shortlists" />
+      <End Role="ShortlistContractor" EntitySet="ShortlistContractors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tendering_Stage" Association="RTMModel.FK_Tendering_Stage">
+      <End Role="Stage" EntitySet="Stages" />
+      <End Role="Tendering" EntitySet="Tenderings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_Tendering" Association="RTMModel.FK_TenderingDocumentFileRelation_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingResult_Tendering" Association="RTMModel.FK_TenderingResult_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="TenderingResult" EntitySet="TenderingResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserTenderingAccess_Tendering" Association="RTMModel.FK_UserTenderingAccess_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="UserTenderingParticipation" EntitySet="UserTenderingParticipations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserTenderingMember_Tendering" Association="RTMModel.FK_UserTenderingMember_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="UserTenderingMember" EntitySet="UserTenderingMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Warranty_Tendering" Association="RTMModel.FK_Warranty_Tendering">
+      <End Role="Tendering" EntitySet="Tenderings" />
+      <End Role="Warranty" EntitySet="Warranties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_TenderingDocument" Association="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocument">
+      <End Role="TenderingDocument" EntitySet="TenderingDocuments" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TenderingDocumentFileRelation_TenderingDocumentFile" Association="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocumentFile">
+      <End Role="TenderingDocumentFile" EntitySet="TenderingDocumentFiles" />
+      <End Role="TenderingDocumentFileRelation" EntitySet="TenderingDocumentFileRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserContractAccess_User" Association="RTMModel.FK_UserContractAccess_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserContractAccess" EntitySet="UserContractAccesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserEvaluationMember_User" Association="RTMModel.FK_UserEvaluationMember_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserEvaluationMember" EntitySet="UserEvaluationMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserTenderingAccess_User" Association="RTMModel.FK_UserTenderingAccess_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserTenderingParticipation" EntitySet="UserTenderingParticipations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserTenderingMember_User" Association="RTMModel.FK_UserTenderingMember_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserTenderingMember" EntitySet="UserTenderingMembers" />
+    </AssociationSet>
+    <FunctionImport Name="AuthenticateUser" ReturnType="Collection(RTMModel.AuthenticateUser_Result)">
+      <Parameter Name="UserNameEntered" Mode="In" Type="String" />
+      <Parameter Name="PasswordEntered" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CreateNewUSer">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Picture" Mode="In" Type="Binary" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Family" Mode="In" Type="String" />
+      <Parameter Name="SocialNumber" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="Position" Mode="In" Type="String" />
+      <Parameter Name="AccessId" Mode="In" Type="Int32" />
+      <Parameter Name="Organization" Mode="In" Type="String" />
+      <Parameter Name="result" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UserSearch" ReturnType="Collection(RTMModel.UserSearch_Result)">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Family" Mode="In" Type="String" />
+      <Parameter Name="Organization" Mode="In" Type="String" />
+      <Parameter Name="Position" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ShowDetailContractInfo">
+      <Parameter Name="ContractNumber" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="AccessRight">
+    <Key>
+      <PropertyRef Name="AccessId" />
+    </Key>
+    <Property Name="AccessId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractRead" Type="Boolean" Nullable="false" />
+    <Property Name="ContractWrite" Type="Boolean" Nullable="false" />
+    <Property Name="ContractDelete" Type="Boolean" Nullable="false" />
+    <Property Name="ContractPermanentWrite" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingRead" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingWrite" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingDelete" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingPermanentWrite" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingArchiveRead" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingArchiveWrite" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingArchiveDelete" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingArchivePermanentWrite" Type="Boolean" Nullable="false" />
+    <Property Name="RegulationRead" Type="Boolean" Nullable="false" />
+    <Property Name="RegulationWrite" Type="Boolean" Nullable="false" />
+    <Property Name="RegulationDelete" Type="Boolean" Nullable="false" />
+    <Property Name="RegulationPermanentWrite" Type="Boolean" Nullable="false" />
+    <Property Name="ContractLog" Type="Boolean" Nullable="false" />
+    <Property Name="RegulationLog" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingLog" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingArchiveLog" Type="Boolean" Nullable="false" />
+    <Property Name="CreatingUser" Type="Boolean" Nullable="false" />
+    <Property Name="SysAdmin" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="RTMModel.FK_User_AccessRights" FromRole="AccessRights" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Advertisement">
+    <Key>
+      <PropertyRef Name="AdvertisementId" />
+    </Key>
+    <Property Name="AdvertisementId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoticeId" Type="Int32" Nullable="false" />
+    <Property Name="AdevtisementType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertisementNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AdertisementDate" Type="DateTime" Precision="7" />
+    <Property Name="NewspaperName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NewsPaperNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AdvertisementAlternationCount" Type="Int32" />
+    <Property Name="AttachementAddress" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Notice" Relationship="RTMModel.FK_Advertisement_Notice" FromRole="Advertisement" ToRole="Notice" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Advertisement" FromRole="Advertisement" ToRole="TenderingDocumentFileRelation" />
+  </EntityType>
+  <EntityType Name="Bid">
+    <Key>
+      <PropertyRef Name="BidId" />
+    </Key>
+    <Property Name="BidId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="Bid1" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BidEvaluation" Type="Boolean" Nullable="false" />
+    <Property Name="Plus" Type="Double" />
+    <Property Name="Minus" Type="Double" />
+    <Property Name="Coefficient" Type="Double" />
+    <Property Name="BalancedPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ImpactCoefficient" Type="Double" />
+    <Property Name="QualityScore" Type="Double" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_Bid1Stage_Contractor" FromRole="Bid" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_Bid1Stage_Tendering" FromRole="Bid" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="Contractid" />
+    </Key>
+    <Property Name="Contractid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ContractTtile" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ContractTypeId" Type="Int32" />
+    <Property Name="Location" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ContractDate" Type="DateTime" Precision="7" />
+    <Property Name="AgreementDate" Type="DateTime" Precision="7" />
+    <Property Name="StartDate" Type="DateTime" Precision="7" />
+    <Property Name="AgreementNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ContractBudget" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ContractPeriod" Type="Int32" />
+    <Property Name="SupervisingUnit" Type="Int32" />
+    <Property Name="SupervisingUnitHigher" Type="Int32" />
+    <Property Name="Supervisor1" Type="Int32" />
+    <Property Name="Supervisor2" Type="Int32" />
+    <Property Name="Has25Percent" Type="Boolean" />
+    <Property Name="C25PercentNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Amount25Percent" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Date25Percent" Type="DateTime" Precision="7" />
+    <Property Name="Increment25Percent" Type="Boolean" />
+    <Property Name="HasExtended" Type="Boolean" />
+    <Property Name="ExtendedInformNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ExtendedInformDate" Type="DateTime" Precision="7" />
+    <Property Name="ExtendedDate" Type="DateTime" Precision="7" />
+    <Property Name="HasComplement" Type="Boolean" />
+    <Property Name="ComplementedInformNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ComplementedDate" Type="DateTime" Precision="7" />
+    <Property Name="ComplementAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ContractorId" Type="Int32" />
+    <Property Name="ConsultantId" Type="Int32" />
+    <Property Name="IsTendering" Type="Boolean" />
+    <Property Name="TenderingSystemCode" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PermanentRecord" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="PersianDate" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp1" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_Contract_Contractor" FromRole="Contract" ToRole="Contractor" />
+    <NavigationProperty Name="Contractor1" Relationship="RTMModel.FK_Contract_Contractor1" FromRole="Contract" ToRole="Contractor" />
+    <NavigationProperty Name="ContractType" Relationship="RTMModel.FK_Contract_ContractType" FromRole="Contract" ToRole="ContractType" />
+    <NavigationProperty Name="OrganizationalChart" Relationship="RTMModel.FK_Contract_OrganizationalChart" FromRole="Contract" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="OrganizationalChart1" Relationship="RTMModel.FK_Contract_OrganizationalChart1" FromRole="Contract" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_Contract_User" FromRole="Contract" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="RTMModel.FK_Contract_User1" FromRole="Contract" ToRole="User" />
+    <NavigationProperty Name="ContractDocFileRelations" Relationship="RTMModel.FK_ContractDocFileRelation_Contract" FromRole="Contract" ToRole="ContractDocFileRelation" />
+    <NavigationProperty Name="PaymentDrafts" Relationship="RTMModel.FK_PaymentDraft_Contract" FromRole="Contract" ToRole="PaymentDraft" />
+    <NavigationProperty Name="UserContractAccesses" Relationship="RTMModel.FK_UserContractAccess_Contract" FromRole="Contract" ToRole="UserContractAccess" />
+  </EntityType>
+  <EntityType Name="ContractDocFileRelation">
+    <Key>
+      <PropertyRef Name="CDFId" />
+    </Key>
+    <Property Name="CDFId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractId" Type="Int32" Nullable="false" />
+    <Property Name="ContractDocId" Type="Int32" Nullable="false" />
+    <Property Name="FileId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contract" Relationship="RTMModel.FK_ContractDocFileRelation_Contract" FromRole="ContractDocFileRelation" ToRole="Contract" />
+    <NavigationProperty Name="ContractDocument" Relationship="RTMModel.FK_ContractDocFileRelation_ContractDocument" FromRole="ContractDocFileRelation" ToRole="ContractDocument" />
+    <NavigationProperty Name="ContractFile" Relationship="RTMModel.FK_ContractDocFileRelation_ContractFile" FromRole="ContractDocFileRelation" ToRole="ContractFile" />
+  </EntityType>
+  <EntityType Name="ContractDocument">
+    <Key>
+      <PropertyRef Name="ContractDocumentId" />
+    </Key>
+    <Property Name="ContractDocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentIndex" Type="Int32" />
+    <NavigationProperty Name="ContractDocFileRelations" Relationship="RTMModel.FK_ContractDocFileRelation_ContractDocument" FromRole="ContractDocument" ToRole="ContractDocFileRelation" />
+  </EntityType>
+  <EntityType Name="ContractFile">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="NotificationNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NotificationDate" Type="DateTime" Precision="7" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Percent" Type="Int32" />
+    <Property Name="IncRed" Type="Boolean" />
+    <Property Name="Is25Percent" Type="Boolean" Nullable="false" />
+    <Property Name="IsExtend" Type="Boolean" Nullable="false" />
+    <Property Name="IsComplement" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ContractDocFileRelations" Relationship="RTMModel.FK_ContractDocFileRelation_ContractFile" FromRole="ContractFile" ToRole="ContractDocFileRelation" />
+  </EntityType>
+  <EntityType Name="Contractor">
+    <Key>
+      <PropertyRef Name="ContractorId" />
+    </Key>
+    <Property Name="ContractorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CommercialName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RecordNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="NationalIdNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalBox" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CeoName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CeoFamily" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CeoSocialNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CeoEmailAddress" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CeoMobilePhone" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CeoTelephone" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="IsContractor" Type="Boolean" />
+    <Property Name="IsConsultant" Type="Boolean" />
+    <Property Name="FieldofWork1" Type="Boolean" />
+    <Property Name="FieldofWork2" Type="Boolean" />
+    <Property Name="FieldofWork3" Type="Boolean" />
+    <Property Name="CompanyField1" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyBase1" Type="Int32" />
+    <Property Name="CompanyField2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyBase2" Type="Int32" />
+    <Property Name="IsInWaitingList" Type="Boolean" />
+    <Property Name="WaitingListNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="ApprovedNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="IsDocumentDefected" Type="Boolean" />
+    <Property Name="DocumentDefectNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="IsRejected" Type="Boolean" />
+    <Property Name="RejectionNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Field1File" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Field2File" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BlackListed" Type="Boolean" />
+    <Property Name="PermanentRecord" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Design" Type="Boolean" Nullable="false" />
+    <Property Name="Procurement" Type="Boolean" Nullable="false" />
+    <Property Name="BuildAndOperation" Type="Boolean" Nullable="false" />
+    <Property Name="Finance" Type="Boolean" Nullable="false" />
+    <Property Name="RecordDate" Type="DateTime" Precision="7" />
+    <Property Name="TaxNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Bids" Relationship="RTMModel.FK_Bid1Stage_Contractor" FromRole="Contractor" ToRole="Bid" />
+    <NavigationProperty Name="Contracts" Relationship="RTMModel.FK_Contract_Contractor" FromRole="Contractor" ToRole="Contract" />
+    <NavigationProperty Name="Contracts1" Relationship="RTMModel.FK_Contract_Contractor1" FromRole="Contractor" ToRole="Contract" />
+    <NavigationProperty Name="ContractorDocFileRelations" Relationship="RTMModel.FK_ContractorDocFileRelation_Contractor" FromRole="Contractor" ToRole="ContractorDocFileRelation" />
+    <NavigationProperty Name="ContractorMeetingJustifications" Relationship="RTMModel.FK_ContractorMeetingJustification_Contractor" FromRole="Contractor" ToRole="ContractorMeetingJustification" />
+    <NavigationProperty Name="ContractorMeetingOpenPackets" Relationship="RTMModel.FK_ContractorMeetingOpenPacket1_Contractor1" FromRole="Contractor" ToRole="ContractorMeetingOpenPacket" />
+    <NavigationProperty Name="ContractorRequestContractors" Relationship="RTMModel.FK_ContractorRequestContractor_Contractor" FromRole="Contractor" ToRole="ContractorRequestContractor" />
+    <NavigationProperty Name="ContractorTenderingDocumentRecieves" Relationship="RTMModel.FK_ContractorTenderingDocumentBuy_Contractor" FromRole="Contractor" ToRole="ContractorTenderingDocumentRecieve" />
+    <NavigationProperty Name="ContractorTenderingShortLists" Relationship="RTMModel.FK_ContractorTenderingShortList_Contractor" FromRole="Contractor" ToRole="ContractorTenderingShortList" />
+    <NavigationProperty Name="ContractorTenderingSubmitPackets" Relationship="RTMModel.FK_ContractorTenderingSubmitPacket_Contractor" FromRole="Contractor" ToRole="ContractorTenderingSubmitPacket" />
+    <NavigationProperty Name="ContractorTenderingTechWins" Relationship="RTMModel.FK_ContractorTenderingTechWin_Contractor" FromRole="Contractor" ToRole="ContractorTenderingTechWin" />
+    <NavigationProperty Name="ContractorTenderingWins" Relationship="RTMModel.FK_ContractorTenderingWin_Contractor" FromRole="Contractor" ToRole="ContractorTenderingWin" />
+    <NavigationProperty Name="EvaluationContractors" Relationship="RTMModel.FK_EvaluationContractor_Contractor" FromRole="Contractor" ToRole="EvaluationContractor" />
+    <NavigationProperty Name="EvaluationStandardRelations" Relationship="RTMModel.FK_EvaluationStandardRelation_Contractor" FromRole="Contractor" ToRole="EvaluationStandardRelation" />
+    <NavigationProperty Name="PacketContractorTenderings" Relationship="RTMModel.FK_PacketContractorTendering_Contractor" FromRole="Contractor" ToRole="PacketContractorTendering" />
+    <NavigationProperty Name="ShortlistContractors" Relationship="RTMModel.FK_ShortlistContractor_Contractor" FromRole="Contractor" ToRole="ShortlistContractor" />
+    <NavigationProperty Name="Tenderings" Relationship="RTMModel.FK_Tendering_Contractor" FromRole="Contractor" ToRole="Tendering" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Contractor" FromRole="Contractor" ToRole="TenderingDocumentFileRelation" />
+    <NavigationProperty Name="Warranties" Relationship="RTMModel.FK_Warranty_Contractor" FromRole="Contractor" ToRole="Warranty" />
+  </EntityType>
+  <EntityType Name="ContractorDocFileRelation">
+    <Key>
+      <PropertyRef Name="CDFRId" />
+    </Key>
+    <Property Name="CDFRId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorDocumentId" Type="Int32" Nullable="false" />
+    <Property Name="FileId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorDocFileRelation_Contractor" FromRole="ContractorDocFileRelation" ToRole="Contractor" />
+    <NavigationProperty Name="ContractorDocument" Relationship="RTMModel.FK_ContractorDocFileRelation_ContractorDocument" FromRole="ContractorDocFileRelation" ToRole="ContractorDocument" />
+    <NavigationProperty Name="ContractorFile" Relationship="RTMModel.FK_ContractorDocFileRelation_ContractorFile" FromRole="ContractorDocFileRelation" ToRole="ContractorFile" />
+  </EntityType>
+  <EntityType Name="ContractorDocument">
+    <Key>
+      <PropertyRef Name="ContractorDocumentId" />
+    </Key>
+    <Property Name="ContractorDocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentIndex" Type="Int32" />
+    <NavigationProperty Name="ContractorDocFileRelations" Relationship="RTMModel.FK_ContractorDocFileRelation_ContractorDocument" FromRole="ContractorDocument" ToRole="ContractorDocFileRelation" />
+  </EntityType>
+  <EntityType Name="ContractorFile">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="ContractorDocFileRelations" Relationship="RTMModel.FK_ContractorDocFileRelation_ContractorFile" FromRole="ContractorFile" ToRole="ContractorDocFileRelation" />
+  </EntityType>
+  <EntityType Name="ContractorMeetingJustification">
+    <Key>
+      <PropertyRef Name="ContractorMeetingId" />
+    </Key>
+    <Property Name="ContractorMeetingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="MeetingId" Type="Int32" Nullable="false" />
+    <Property Name="Representative" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorMeetingJustification_Contractor" FromRole="ContractorMeetingJustification" ToRole="Contractor" />
+    <NavigationProperty Name="Meeting" Relationship="RTMModel.FK_ContractorMeetingJustification_Meeting" FromRole="ContractorMeetingJustification" ToRole="Meeting" />
+  </EntityType>
+  <EntityType Name="ContractorMeetingOpenPacket">
+    <Key>
+      <PropertyRef Name="CMOId" />
+    </Key>
+    <Property Name="CMOId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="MeetingId" Type="Int32" Nullable="false" />
+    <Property Name="DocumentCondition" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PacketEval" Type="Boolean" Nullable="false" />
+    <Property Name="WarrantyEval" Type="Boolean" Nullable="false" />
+    <Property Name="IsCertifiedToOpenBid" Type="Boolean" Nullable="false" />
+    <Property Name="Representative" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorMeetingOpenPacket1_Contractor1" FromRole="ContractorMeetingOpenPacket" ToRole="Contractor" />
+    <NavigationProperty Name="Meeting" Relationship="RTMModel.FK_ContractorMeetingOpenPacket1_Meeting" FromRole="ContractorMeetingOpenPacket" ToRole="Meeting" />
+  </EntityType>
+  <EntityType Name="ContractorRequest">
+    <Key>
+      <PropertyRef Name="ContractorRequestId" />
+    </Key>
+    <Property Name="ContractorRequestId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SelectContractor" Type="Boolean" Nullable="false" />
+    <Property Name="SelectConsultant" Type="Boolean" Nullable="false" />
+    <Property Name="RequestNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RequestDate" Type="DateTime" Precision="7" />
+    <Property Name="ProjectTitle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="TenderingTitleId" Type="Int32" />
+    <Property Name="Location" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SupervisionId" Type="Int32" />
+    <Property Name="Estimatation" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IsPriceList" Type="Boolean" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="HasQualityEvaluation" Type="Boolean" />
+    <Property Name="RequiredField" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RequiredMinRank" Type="Int32" />
+    <Property Name="RequestStatus" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="TenderingType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="HasFunding" Type="Boolean" />
+    <Property Name="FundingPlace" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FundingPlaceCode" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FundingRequestDate" Type="DateTime" Precision="7" />
+    <Property Name="FundingRequestNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FundingControlAssignee" Type="Int32" />
+    <Property Name="FundingControlDate" Type="DateTime" Precision="7" />
+    <Property Name="FundingControlNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="HasCEOAccepted" Type="Boolean" Nullable="false" />
+    <Property Name="CeoNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="RequestingUnit" Type="Int32" />
+    <Property Name="NoticeNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="OrganizationalChart" Relationship="RTMModel.FK_ContractorRequest_Orrganizitionalchart" FromRole="ContractorRequest" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="TenderingTitle" Relationship="RTMModel.FK_ContractorRequest_TenderingTitle" FromRole="ContractorRequest" ToRole="TenderingTitle" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_ContractorRequest_User" FromRole="ContractorRequest" ToRole="User" />
+    <NavigationProperty Name="ContractorRequestContractors" Relationship="RTMModel.FK_ContractorRequestContractor_ContractorRequest" FromRole="ContractorRequest" ToRole="ContractorRequestContractor" />
+    <NavigationProperty Name="Tenderings" Relationship="RTMModel.FK_Tendering_ContractorRequest" FromRole="ContractorRequest" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractorRequestContractor">
+    <Key>
+      <PropertyRef Name="ContractorRequestContractorId" />
+    </Key>
+    <Property Name="ContractorRequestContractorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorRequestId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorRequestContractor_Contractor" FromRole="ContractorRequestContractor" ToRole="Contractor" />
+    <NavigationProperty Name="ContractorRequest" Relationship="RTMModel.FK_ContractorRequestContractor_ContractorRequest" FromRole="ContractorRequestContractor" ToRole="ContractorRequest" />
+  </EntityType>
+  <EntityType Name="ContractorTenderingDocumentRecieve">
+    <Key>
+      <PropertyRef Name="ContractorTenderingBuyId" />
+    </Key>
+    <Property Name="ContractorTenderingBuyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorRepresentativeName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DraftAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PaymentDraftNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PaymentDraftDate" Type="DateTime" Precision="7" />
+    <Property Name="SecretaryRecordNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DraftScannedFileLocation" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorTenderingDocumentBuy_Contractor" FromRole="ContractorTenderingDocumentRecieve" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_ContractorTenderingDocumentBuy_Tendering" FromRole="ContractorTenderingDocumentRecieve" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractorTenderingShortList">
+    <Key>
+      <PropertyRef Name="CoTenShortId" />
+    </Key>
+    <Property Name="CoTenShortId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorTenderingShortList_Contractor" FromRole="ContractorTenderingShortList" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_ContractorTenderingShortList_Tendering" FromRole="ContractorTenderingShortList" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractorTenderingSubmitPacket">
+    <Key>
+      <PropertyRef Name="ContractorSubmitingDocumentId" />
+    </Key>
+    <Property Name="ContractorSubmitingDocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="SecretaryNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="SubmitDate" Type="DateTime" Precision="7" />
+    <Property Name="WithdrawDate" Type="DateTime" Precision="7" />
+    <Property Name="RepresentativeName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorTenderingSubmitPacket_Contractor" FromRole="ContractorTenderingSubmitPacket" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_ContractorTenderingSubmitPacket_Tendering" FromRole="ContractorTenderingSubmitPacket" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractorTenderingTechWin">
+    <Key>
+      <PropertyRef Name="ContractorTenderingId" />
+    </Key>
+    <Property Name="ContractorTenderingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="WarrantyBudget" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorTenderingTechWin_Contractor" FromRole="ContractorTenderingTechWin" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_ContractorTenderingTechWin_Tendering" FromRole="ContractorTenderingTechWin" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractorTenderingWin">
+    <Key>
+      <PropertyRef Name="ContractorTenderingId" />
+    </Key>
+    <Property Name="ContractorTenderingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="WarrantyBudget" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ExpertEstimateBudget" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ExpertCoefficient" Type="Int32" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ContractorTenderingWin_Contractor" FromRole="ContractorTenderingWin" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_ContractorTenderingWin_Tendering" FromRole="ContractorTenderingWin" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="ContractType">
+    <Key>
+      <PropertyRef Name="ContractTypeId" />
+    </Key>
+    <Property Name="ContractTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractType1" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Contracts" Relationship="RTMModel.FK_Contract_ContractType" FromRole="ContractType" ToRole="Contract" />
+  </EntityType>
+  <EntityType Name="EvalStandard">
+    <Key>
+      <PropertyRef Name="StandardId" />
+    </Key>
+    <Property Name="StandardId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Index" Type="Int32" />
+    <Property Name="ConsultantStandard" Type="Boolean" Nullable="false" />
+    <Property Name="ContractorStandard" Type="Boolean" Nullable="false" />
+    <Property Name="ParentStandardId" Type="Int32" />
+    <NavigationProperty Name="EvalStandard1" Relationship="RTMModel.FK_EvalStandard_EvalStandard" FromRole="EvalStandard" ToRole="EvalStandard1" />
+    <NavigationProperty Name="EvalStandard2" Relationship="RTMModel.FK_EvalStandard_EvalStandard" FromRole="EvalStandard1" ToRole="EvalStandard" />
+    <NavigationProperty Name="EvaluationStandardRelations" Relationship="RTMModel.FK_EvaluationStandardRelation_EvalStandard" FromRole="EvalStandard" ToRole="EvaluationStandardRelation" />
+  </EntityType>
+  <EntityType Name="Evaluation">
+    <Key>
+      <PropertyRef Name="EvaluationId" />
+    </Key>
+    <Property Name="EvaluationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MinimumScore" Type="Double" />
+    <Property Name="MeetingDate" Type="DateTime" Precision="7" />
+    <Property Name="HasTendering" Type="Boolean" />
+    <Property Name="TenderingNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PermanentRecord" Type="Boolean" />
+    <Property Name="IsConsultantMeeting" Type="Boolean" />
+    <Property Name="IsContractorMeeting" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="NoticeNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="MeetingType" Type="Boolean" Nullable="false" />
+    <Property Name="PersianDate" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EvaluationAttachementFiles" Relationship="RTMModel.FK_EvaluationAttachementFile_Evaluation" FromRole="Evaluation" ToRole="EvaluationAttachementFile" />
+    <NavigationProperty Name="EvaluationContractors" Relationship="RTMModel.FK_EvaluationContractor_Evaluation" FromRole="Evaluation" ToRole="EvaluationContractor" />
+    <NavigationProperty Name="EvaluationStandardRelations" Relationship="RTMModel.FK_EvaluationStandardRelation_Evaluation" FromRole="Evaluation" ToRole="EvaluationStandardRelation" />
+    <NavigationProperty Name="UserEvaluationMembers" Relationship="RTMModel.FK_UserEvaluationMember_Evaluation" FromRole="Evaluation" ToRole="UserEvaluationMember" />
+  </EntityType>
+  <EntityType Name="EvaluationAttachementFile">
+    <Key>
+      <PropertyRef Name="EvaluationFileId" />
+    </Key>
+    <Property Name="EvaluationFileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EvaluationId" Type="Int32" Nullable="false" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Evaluation" Relationship="RTMModel.FK_EvaluationAttachementFile_Evaluation" FromRole="EvaluationAttachementFile" ToRole="Evaluation" />
+  </EntityType>
+  <EntityType Name="EvaluationContractor">
+    <Key>
+      <PropertyRef Name="EvaluationContractorId" />
+    </Key>
+    <Property Name="EvaluationContractorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EvaluationId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_EvaluationContractor_Contractor" FromRole="EvaluationContractor" ToRole="Contractor" />
+    <NavigationProperty Name="Evaluation" Relationship="RTMModel.FK_EvaluationContractor_Evaluation" FromRole="EvaluationContractor" ToRole="Evaluation" />
+  </EntityType>
+  <EntityType Name="EvaluationStandardRelation">
+    <Key>
+      <PropertyRef Name="EvalStandardId" />
+    </Key>
+    <Property Name="EvalStandardId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EvaluationId" Type="Int32" Nullable="false" />
+    <Property Name="StandardId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="Score" Type="Double" Nullable="false" />
+    <Property Name="Weight" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_EvaluationStandardRelation_Contractor" FromRole="EvaluationStandardRelation" ToRole="Contractor" />
+    <NavigationProperty Name="EvalStandard" Relationship="RTMModel.FK_EvaluationStandardRelation_EvalStandard" FromRole="EvaluationStandardRelation" ToRole="EvalStandard" />
+    <NavigationProperty Name="Evaluation" Relationship="RTMModel.FK_EvaluationStandardRelation_Evaluation" FromRole="EvaluationStandardRelation" ToRole="Evaluation" />
+  </EntityType>
+  <EntityType Name="IssuingReference">
+    <Key>
+      <PropertyRef Name="IssuingReferenceId" />
+    </Key>
+    <Property Name="IssuingReferenceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Regulations" Relationship="RTMModel.FK_Regulation_IssuingReference" FromRole="IssuingReference" ToRole="Regulation" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Action" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="Date" Type="DateTime" Precision="7" />
+    <Property Name="Description" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Subsystem" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="MachineName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PersianDate" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Meeting">
+    <Key>
+      <PropertyRef Name="MeetingId" />
+    </Key>
+    <Property Name="MeetingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="MeetingType" Type="Int32" />
+    <Property Name="MeetingDate" Type="DateTime" Precision="7" />
+    <Property Name="MeetingNumber" Type="Int32" />
+    <Property Name="MeetingPlace" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="MeetingDescription" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="PermanentRecord" Type="Boolean" Nullable="false" />
+    <Property Name="ExtendedRecieveDate" Type="DateTime" Precision="7" />
+    <Property Name="ExtendByCommittee" Type="Boolean" Nullable="false" />
+    <Property Name="ExtendByApplicant" Type="Boolean" Nullable="false" />
+    <Property Name="NeedsTechnicalEvaluation" Type="Boolean" Nullable="false" />
+    <Property Name="OpenBidEnvelopeDate" Type="DateTime" Precision="7" />
+    <Property Name="MinTechnicalScore" Type="Double" />
+    <NavigationProperty Name="ContractorMeetingJustifications" Relationship="RTMModel.FK_ContractorMeetingJustification_Meeting" FromRole="Meeting" ToRole="ContractorMeetingJustification" />
+    <NavigationProperty Name="ContractorMeetingOpenPackets" Relationship="RTMModel.FK_ContractorMeetingOpenPacket1_Meeting" FromRole="Meeting" ToRole="ContractorMeetingOpenPacket" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_Meeting_Tendering" FromRole="Meeting" ToRole="Tendering" />
+    <NavigationProperty Name="MeetingUserParticipants" Relationship="RTMModel.FK_MeetingParticipant_Meeting" FromRole="Meeting" ToRole="MeetingUserParticipant" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Meeting" FromRole="Meeting" ToRole="TenderingDocumentFileRelation" />
+  </EntityType>
+  <EntityType Name="MeetingUserParticipant">
+    <Key>
+      <PropertyRef Name="MeetingParticipantId" />
+    </Key>
+    <Property Name="MeetingParticipantId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MeetingId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Meeting" Relationship="RTMModel.FK_MeetingParticipant_Meeting" FromRole="MeetingUserParticipant" ToRole="Meeting" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_MeetingParticipant_User" FromRole="MeetingUserParticipant" ToRole="User" />
+  </EntityType>
+  <EntityType Name="MinRank">
+    <Key>
+      <PropertyRef Name="RankId" />
+    </Key>
+    <Property Name="RankId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="Branch" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Rank" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfPermissiveJobs" Type="Int32" />
+    <Property Name="MaxContractBudget" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_MinRank_Tendering" FromRole="MinRank" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="Notice">
+    <Key>
+      <PropertyRef Name="NoticeId" />
+    </Key>
+    <Property Name="NoticeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="NoticeType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RegisterDate" Type="DateTime" Precision="7" />
+    <Property Name="NoticeNumber" Type="Int32" />
+    <Property Name="PresentingPlace" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="RecievePlace" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="OpenSuggestionPlace" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="PermanentRecord" Type="Boolean" />
+    <Property Name="BankName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankBranch" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AccountOwner" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentSellPrice" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Advertisements" Relationship="RTMModel.FK_Advertisement_Notice" FromRole="Notice" ToRole="Advertisement" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_Notice_Tendering" FromRole="Notice" ToRole="Tendering" />
+    <NavigationProperty Name="NoticeTenderings" Relationship="RTMModel.FK_NoticeTendering_Notice" FromRole="Notice" ToRole="NoticeTendering" />
+  </EntityType>
+  <EntityType Name="NoticeTendering">
+    <Key>
+      <PropertyRef Name="NoticeTenderingId" />
+    </Key>
+    <Property Name="NoticeTenderingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="NoticeId" Type="Int32" Nullable="false" />
+    <Property Name="BankName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankBranch" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AccountOwnerName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentSalePrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="LocationOfferingDocuments" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LocationRecievingDocuments" Type="String" MaxLength="256" Unicode="true" FixedLength="true" />
+    <Property Name="LocationOpenning" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Notice" Relationship="RTMModel.FK_NoticeTendering_Notice" FromRole="NoticeTendering" ToRole="Notice" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_NoticeTendering_Tendering" FromRole="NoticeTendering" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="OrganizationalChart">
+    <Key>
+      <PropertyRef Name="ChartNodeId" />
+    </Key>
+    <Property Name="ChartNodeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentNodeId" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="IsRoot" Type="Boolean" />
+    <NavigationProperty Name="Contracts" Relationship="RTMModel.FK_Contract_OrganizationalChart" FromRole="OrganizationalChart" ToRole="Contract" />
+    <NavigationProperty Name="Contracts1" Relationship="RTMModel.FK_Contract_OrganizationalChart1" FromRole="OrganizationalChart" ToRole="Contract" />
+    <NavigationProperty Name="ContractorRequests" Relationship="RTMModel.FK_ContractorRequest_Orrganizitionalchart" FromRole="OrganizationalChart" ToRole="ContractorRequest" />
+    <NavigationProperty Name="OrganizationalChart1" Relationship="RTMModel.FK_OrganizationalChart_OrganizationalChart" FromRole="OrganizationalChart" ToRole="OrganizationalChart1" />
+    <NavigationProperty Name="OrganizationalChart2" Relationship="RTMModel.FK_OrganizationalChart_OrganizationalChart" FromRole="OrganizationalChart1" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="Regulations" Relationship="RTMModel.FK_Regulation_OrganizationalChart" FromRole="OrganizationalChart" ToRole="Regulation" />
+    <NavigationProperty Name="Users" Relationship="RTMModel.FK_User_OrganizationalChart" FromRole="OrganizationalChart" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Packet">
+    <Key>
+      <PropertyRef Name="PacketId" />
+    </Key>
+    <Property Name="PacketId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PacketAResult" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PacketBResult" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PacketCResult" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EvaluationResult" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProposedAmout" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ProposedCoefficient" Type="Int32" />
+    <Property Name="DifferencePercentage" Type="Int32" />
+    <Property Name="CompayRepresnted" Type="Boolean" />
+    <Property Name="RepresentativeName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PacketContractorTenderings" Relationship="RTMModel.FK_PacketContractorTendering_Packet" FromRole="Packet" ToRole="PacketContractorTendering" />
+  </EntityType>
+  <EntityType Name="PacketContractorTendering">
+    <Key>
+      <PropertyRef Name="PCTId" />
+    </Key>
+    <Property Name="PCTId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PacketId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_PacketContractorTendering_Contractor" FromRole="PacketContractorTendering" ToRole="Contractor" />
+    <NavigationProperty Name="Packet" Relationship="RTMModel.FK_PacketContractorTendering_Packet" FromRole="PacketContractorTendering" ToRole="Packet" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_PacketContractorTendering_Tendering" FromRole="PacketContractorTendering" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="PaymentDraft">
+    <Key>
+      <PropertyRef Name="PaymentDraftId" />
+    </Key>
+    <Property Name="PaymentDraftId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractId" Type="Int32" />
+    <Property Name="PaymentType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PaymentType2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Precision="7" />
+    <Property Name="CurrentSituationDraft" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PerviousSituationDraft" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PayableAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="EmployerInsurancePercentage" Type="Double" />
+    <Property Name="SoilMechanicLanPercentage" Type="Double" />
+    <Property Name="Notes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HasEmployerInsurance" Type="Boolean" />
+    <Property Name="EmplyerInsuranceDeficit" Type="Double" />
+    <Property Name="HasContractorInsurance" Type="Boolean" />
+    <Property Name="ContractorInsuranceDeficit" Type="Double" />
+    <Property Name="HasTax" Type="Boolean" />
+    <Property Name="TaxDeficit" Type="Double" />
+    <Property Name="HasJobWellDone" Type="Boolean" />
+    <Property Name="JobWellDoneDeficit" Type="Double" />
+    <Property Name="PaymentDraftNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Other" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="OtherPercent" Type="Single" />
+    <Property Name="ModelNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ModelTitle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PermanentRecord" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Contract" Relationship="RTMModel.FK_PaymentDraft_Contract" FromRole="PaymentDraft" ToRole="Contract" />
+    <NavigationProperty Name="PaymentFiles" Relationship="RTMModel.C_FK_PaymentFile_PaymentDraft" FromRole="PaymentDraft" ToRole="PaymentFile" />
+    <NavigationProperty Name="PaymentDraftTranscripts" Relationship="RTMModel.FK_PaymentDraftTranscript_PaymentDraft" FromRole="PaymentDraft" ToRole="PaymentDraftTranscript" />
+    <Property Type="String" Name="TypeComment" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PaymentDraftTranscript">
+    <Key>
+      <PropertyRef Name="PaymentDraftTranscriptId" />
+    </Key>
+    <Property Name="PaymentDraftTranscriptId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentDraftId" Type="Int32" />
+    <Property Name="Location" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FullAttachment" Type="Boolean" Nullable="false" />
+    <Property Name="AttachmentCount" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="PaymentDraft" Relationship="RTMModel.FK_PaymentDraftTranscript_PaymentDraft" FromRole="PaymentDraftTranscript" ToRole="PaymentDraft" />
+  </EntityType>
+  <EntityType Name="PaymentFile">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentDraftId" Type="Int32" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="Index" Type="Int32" />
+    <NavigationProperty Name="PaymentDraft" Relationship="RTMModel.C_FK_PaymentFile_PaymentDraft" FromRole="PaymentFile" ToRole="PaymentDraft" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="PositionId" />
+    </Key>
+    <Property Name="PositionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PositionTitle" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Users" Relationship="RTMModel.FK_User_Position" FromRole="Position" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Regulation">
+    <Key>
+      <PropertyRef Name="RegulationId" />
+    </Key>
+    <Property Name="RegulationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Group" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="IssuingReferenceId" Type="Int32" Nullable="false" />
+    <Property Name="ActingReferenceId" Type="Int32" Nullable="false" />
+    <Property Name="IssuingDate" Type="DateTime" Precision="7" />
+    <Property Name="PermanentRecord" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="IssueEveryOne" Type="Boolean" />
+    <Property Name="PersianDate" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp1" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp3" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="IssuingReference" Relationship="RTMModel.FK_Regulation_IssuingReference" FromRole="Regulation" ToRole="IssuingReference" />
+    <NavigationProperty Name="OrganizationalChart" Relationship="RTMModel.FK_Regulation_OrganizationalChart" FromRole="Regulation" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="RegulationFiles" Relationship="RTMModel.FK_RegulationFile_Regulation" FromRole="Regulation" ToRole="RegulationFile" />
+  </EntityType>
+  <EntityType Name="RegulationFile">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="RegulationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Regulation" Relationship="RTMModel.FK_RegulationFile_Regulation" FromRole="RegulationFile" ToRole="Regulation" />
+  </EntityType>
+  <EntityType Name="Shortlist">
+    <Key>
+      <PropertyRef Name="ShortListId" />
+    </Key>
+    <Property Name="ShortListId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreationDate" Type="DateTime" Precision="7" />
+    <Property Name="ValidityDate" Type="DateTime" Precision="7" />
+    <Property Name="PermanentRecord" Type="Boolean" />
+    <NavigationProperty Name="ShortlistContractors" Relationship="RTMModel.FK_ShortlistContractor_Shortlist" FromRole="Shortlist" ToRole="ShortlistContractor" />
+  </EntityType>
+  <EntityType Name="ShortlistContractor">
+    <Key>
+      <PropertyRef Name="ShortListContractorId" />
+    </Key>
+    <Property Name="ShortListContractorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" />
+    <Property Name="ShortListId" Type="Int32" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_ShortlistContractor_Contractor" FromRole="ShortlistContractor" ToRole="Contractor" />
+    <NavigationProperty Name="Shortlist" Relationship="RTMModel.FK_ShortlistContractor_Shortlist" FromRole="ShortlistContractor" ToRole="Shortlist" />
+  </EntityType>
+  <EntityType Name="Stage">
+    <Key>
+      <PropertyRef Name="StageId" />
+    </Key>
+    <Property Name="StageId" Type="Int32" Nullable="false" />
+    <Property Name="StageTitle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="StageNumber" Type="Int32" />
+    <NavigationProperty Name="Tenderings" Relationship="RTMModel.FK_Tendering_Stage" FromRole="Stage" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="Tendering">
+    <Key>
+      <PropertyRef Name="TenderingId" />
+    </Key>
+    <Property Name="TenderingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorRequestId" Type="Int32" />
+    <Property Name="IsNotice" Type="Boolean" Nullable="false" />
+    <Property Name="TenderingSystemCode" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="TenderingNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ProjectCode" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="TenderingType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FiscalYear" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TenderingRecordDate" Type="DateTime" Precision="7" />
+    <Property Name="TenderingTitle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Location" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="GuarantyPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="HasConsultant" Type="Boolean" Nullable="false" />
+    <Property Name="ConsultantId" Type="Int32" />
+    <Property Name="DraftWarranty" Type="Boolean" Nullable="false" />
+    <Property Name="LcWarranty" Type="Boolean" Nullable="false" />
+    <Property Name="StockWarranty" Type="Boolean" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="IsDocForSale" Type="Boolean" Nullable="false" />
+    <Property Name="HasBriefingSession" Type="Boolean" Nullable="false" />
+    <Property Name="BriefingSessionDate" Type="DateTime" Precision="7" />
+    <Property Name="DocumentSalePrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="HasQualityEvaluation" Type="Boolean" Nullable="false" />
+    <Property Name="AdvertisingAlternationCount" Type="Int32" />
+    <Property Name="RecievingDocumentsDate" Type="DateTime" Precision="7" />
+    <Property Name="RecievingDocumentDeadline" Type="DateTime" Precision="7" />
+    <Property Name="SuggestionRecieveDate" Type="DateTime" Precision="7" />
+    <Property Name="SuggestionOpenDate" Type="DateTime" Precision="7" />
+    <Property Name="StageId" Type="Int32" />
+    <Property Name="PermanentRecord" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="RequestPermanentCheck" Type="Boolean" Nullable="false" />
+    <Property Name="RecordDateHour" Type="Int32" />
+    <Property Name="RecordDateMinute" Type="Int32" />
+    <Property Name="SuggestionRecieveDateHour" Type="Int32" />
+    <Property Name="SuggestionRecieveDateMinute" Type="Int32" />
+    <Property Name="SuggestionOpenDateHour" Type="Int32" />
+    <Property Name="SuggestionOpenDateMinute" Type="Int32" />
+    <Property Name="BriefingHour" Type="Int32" />
+    <Property Name="BriefingMinute" Type="Int32" />
+    <Property Name="MinScore" Type="Double" />
+    <Property Name="PersianDate1" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PersianDate2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PersianDate3" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp1" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="tmp2" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Bids" Relationship="RTMModel.FK_Bid1Stage_Tendering" FromRole="Tendering" ToRole="Bid" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_Tendering_Contractor" FromRole="Tendering" ToRole="Contractor" />
+    <NavigationProperty Name="ContractorRequest" Relationship="RTMModel.FK_Tendering_ContractorRequest" FromRole="Tendering" ToRole="ContractorRequest" />
+    <NavigationProperty Name="ContractorTenderingDocumentRecieves" Relationship="RTMModel.FK_ContractorTenderingDocumentBuy_Tendering" FromRole="Tendering" ToRole="ContractorTenderingDocumentRecieve" />
+    <NavigationProperty Name="ContractorTenderingShortLists" Relationship="RTMModel.FK_ContractorTenderingShortList_Tendering" FromRole="Tendering" ToRole="ContractorTenderingShortList" />
+    <NavigationProperty Name="ContractorTenderingSubmitPackets" Relationship="RTMModel.FK_ContractorTenderingSubmitPacket_Tendering" FromRole="Tendering" ToRole="ContractorTenderingSubmitPacket" />
+    <NavigationProperty Name="ContractorTenderingTechWins" Relationship="RTMModel.FK_ContractorTenderingTechWin_Tendering" FromRole="Tendering" ToRole="ContractorTenderingTechWin" />
+    <NavigationProperty Name="ContractorTenderingWins" Relationship="RTMModel.FK_ContractorTenderingWin_Tendering" FromRole="Tendering" ToRole="ContractorTenderingWin" />
+    <NavigationProperty Name="Meetings" Relationship="RTMModel.FK_Meeting_Tendering" FromRole="Tendering" ToRole="Meeting" />
+    <NavigationProperty Name="MinRanks" Relationship="RTMModel.FK_MinRank_Tendering" FromRole="Tendering" ToRole="MinRank" />
+    <NavigationProperty Name="Notices" Relationship="RTMModel.FK_Notice_Tendering" FromRole="Tendering" ToRole="Notice" />
+    <NavigationProperty Name="NoticeTenderings" Relationship="RTMModel.FK_NoticeTendering_Tendering" FromRole="Tendering" ToRole="NoticeTendering" />
+    <NavigationProperty Name="PacketContractorTenderings" Relationship="RTMModel.FK_PacketContractorTendering_Tendering" FromRole="Tendering" ToRole="PacketContractorTendering" />
+    <NavigationProperty Name="Stage" Relationship="RTMModel.FK_Tendering_Stage" FromRole="Tendering" ToRole="Stage" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Tendering" FromRole="Tendering" ToRole="TenderingDocumentFileRelation" />
+    <NavigationProperty Name="TenderingResults" Relationship="RTMModel.FK_TenderingResult_Tendering" FromRole="Tendering" ToRole="TenderingResult" />
+    <NavigationProperty Name="UserTenderingParticipations" Relationship="RTMModel.FK_UserTenderingAccess_Tendering" FromRole="Tendering" ToRole="UserTenderingParticipation" />
+    <NavigationProperty Name="UserTenderingMembers" Relationship="RTMModel.FK_UserTenderingMember_Tendering" FromRole="Tendering" ToRole="UserTenderingMember" />
+    <NavigationProperty Name="Warranties" Relationship="RTMModel.FK_Warranty_Tendering" FromRole="Tendering" ToRole="Warranty" />
+  </EntityType>
+  <EntityType Name="TenderingDocument">
+    <Key>
+      <PropertyRef Name="TenderingDocumentId" />
+    </Key>
+    <Property Name="TenderingDocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentIndex" Type="Int32" />
+    <Property Name="IsDoc" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocument" FromRole="TenderingDocument" ToRole="TenderingDocumentFileRelation" />
+  </EntityType>
+  <EntityType Name="TenderingDocumentFile">
+    <Key>
+      <PropertyRef Name="TenderingDocumentFileId" />
+    </Key>
+    <Property Name="TenderingDocumentFileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileGuid" Type="Guid" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="AttachedDate" Type="DateTime" Precision="7" />
+    <Property Name="Name" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FileContent" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TenderingDocumentFileRelations" Relationship="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocumentFile" FromRole="TenderingDocumentFile" ToRole="TenderingDocumentFileRelation" />
+  </EntityType>
+  <EntityType Name="TenderingDocumentFileRelation">
+    <Key>
+      <PropertyRef Name="TenderDocFileRelId" />
+    </Key>
+    <Property Name="TenderDocFileRelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingDocumentId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingDocumentFileId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorId" Type="Int32" />
+    <Property Name="AdvertisementId" Type="Int32" />
+    <Property Name="MeetingId" Type="Int32" />
+    <Property Name="WarrantyId" Type="Int32" />
+    <NavigationProperty Name="Advertisement" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Advertisement" FromRole="TenderingDocumentFileRelation" ToRole="Advertisement" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Contractor" FromRole="TenderingDocumentFileRelation" ToRole="Contractor" />
+    <NavigationProperty Name="Meeting" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Meeting" FromRole="TenderingDocumentFileRelation" ToRole="Meeting" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_TenderingDocumentFileRelation_Tendering" FromRole="TenderingDocumentFileRelation" ToRole="Tendering" />
+    <NavigationProperty Name="TenderingDocument" Relationship="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocument" FromRole="TenderingDocumentFileRelation" ToRole="TenderingDocument" />
+    <NavigationProperty Name="TenderingDocumentFile" Relationship="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocumentFile" FromRole="TenderingDocumentFileRelation" ToRole="TenderingDocumentFile" />
+  </EntityType>
+  <EntityType Name="TenderingFileDownload">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="number" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="contractorId" Type="Int32" Nullable="false" />
+    <Property Name="PersianDate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TenderingResult">
+    <Key>
+      <PropertyRef Name="TenderingResultId" />
+    </Key>
+    <Property Name="TenderingResultId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenderingId" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="7" />
+    <Property Name="FirstContractorWinnerId" Type="Int32" />
+    <Property Name="FirstBid" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="FirstCoeffecient" Type="Double" />
+    <Property Name="FirstPlus" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="FirstMinus" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SecondContractorWinnerId" Type="Int32" />
+    <Property Name="SecondBid" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SecondCoefficient" Type="Double" />
+    <Property Name="SecondPlus" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SecondMinus" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Notes" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Renewal" Type="Boolean" Nullable="false" />
+    <Property Name="RenewalNote" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_TenderingResult_Tendering" FromRole="TenderingResult" ToRole="Tendering" />
+  </EntityType>
+  <EntityType Name="TenderingTitle">
+    <Key>
+      <PropertyRef Name="TenderingTitleId" />
+    </Key>
+    <Property Name="TenderingTitleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Code" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="ContractorRequests" Relationship="RTMModel.FK_ContractorRequest_TenderingTitle" FromRole="TenderingTitle" ToRole="ContractorRequest" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Family" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="LastLogin" Type="DateTime" Precision="7" />
+    <Property Name="SocialNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PositionId" Type="Int32" Nullable="false" />
+    <Property Name="AccessId" Type="Int32" Nullable="false" />
+    <Property Name="OrganizationPosition" Type="Int32" Nullable="false" />
+    <Property Name="TechnicalCommittee" Type="Boolean" />
+    <Property Name="ConsultantCommittee" Type="Boolean" />
+    <Property Name="TenderingCommittee" Type="Boolean" />
+    <Property Name="PaymentDraftCommittee" Type="Boolean" />
+    <Property Name="ManagingPaymentDraft" Type="Boolean" />
+    <Property Name="ManagingContractAccess" Type="Boolean" />
+    <Property Name="Isdeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AccessRight" Relationship="RTMModel.FK_User_AccessRights" FromRole="User" ToRole="AccessRights" />
+    <NavigationProperty Name="Contracts" Relationship="RTMModel.FK_Contract_User" FromRole="User" ToRole="Contract" />
+    <NavigationProperty Name="Contracts1" Relationship="RTMModel.FK_Contract_User1" FromRole="User" ToRole="Contract" />
+    <NavigationProperty Name="ContractorRequests" Relationship="RTMModel.FK_ContractorRequest_User" FromRole="User" ToRole="ContractorRequest" />
+    <NavigationProperty Name="MeetingUserParticipants" Relationship="RTMModel.FK_MeetingParticipant_User" FromRole="User" ToRole="MeetingUserParticipant" />
+    <NavigationProperty Name="OrganizationalChart" Relationship="RTMModel.FK_User_OrganizationalChart" FromRole="User" ToRole="OrganizationalChart" />
+    <NavigationProperty Name="Position" Relationship="RTMModel.FK_User_Position" FromRole="User" ToRole="Position" />
+    <NavigationProperty Name="UserContractAccesses" Relationship="RTMModel.FK_UserContractAccess_User" FromRole="User" ToRole="UserContractAccess" />
+    <NavigationProperty Name="UserEvaluationMembers" Relationship="RTMModel.FK_UserEvaluationMember_User" FromRole="User" ToRole="UserEvaluationMember" />
+    <NavigationProperty Name="UserTenderingParticipations" Relationship="RTMModel.FK_UserTenderingAccess_User" FromRole="User" ToRole="UserTenderingParticipation" />
+    <NavigationProperty Name="UserTenderingMembers" Relationship="RTMModel.FK_UserTenderingMember_User" FromRole="User" ToRole="UserTenderingMember" />
+  </EntityType>
+  <EntityType Name="UserContractAccess">
+    <Key>
+      <PropertyRef Name="UserContractId" />
+    </Key>
+    <Property Name="UserContractId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ContractId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Contract" Relationship="RTMModel.FK_UserContractAccess_Contract" FromRole="UserContractAccess" ToRole="Contract" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_UserContractAccess_User" FromRole="UserContractAccess" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserEvaluationMember">
+    <Key>
+      <PropertyRef Name="UserEvalId" />
+    </Key>
+    <Property Name="UserEvalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="EvaluationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Evaluation" Relationship="RTMModel.FK_UserEvaluationMember_Evaluation" FromRole="UserEvaluationMember" ToRole="Evaluation" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_UserEvaluationMember_User" FromRole="UserEvaluationMember" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserTenderingMember">
+    <Key>
+      <PropertyRef Name="UserTenderingMemberId" />
+    </Key>
+    <Property Name="UserTenderingMemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_UserTenderingMember_Tendering" FromRole="UserTenderingMember" ToRole="Tendering" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_UserTenderingMember_User" FromRole="UserTenderingMember" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserTenderingParticipation">
+    <Key>
+      <PropertyRef Name="UserTenderingId" />
+    </Key>
+    <Property Name="UserTenderingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_UserTenderingAccess_Tendering" FromRole="UserTenderingParticipation" ToRole="Tendering" />
+    <NavigationProperty Name="User" Relationship="RTMModel.FK_UserTenderingAccess_User" FromRole="UserTenderingParticipation" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Warranty">
+    <Key>
+      <PropertyRef Name="WarrantyId" />
+    </Key>
+    <Property Name="WarrantyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractorId" Type="Int32" Nullable="false" />
+    <Property Name="TenderingId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="RegisterDate" Type="DateTime" Precision="7" />
+    <Property Name="ValidityDate" Type="DateTime" Precision="7" />
+    <Property Name="Number" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="StockTitle" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankBranch" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="BankCity" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Contractor" Relationship="RTMModel.FK_Warranty_Contractor" FromRole="Warranty" ToRole="Contractor" />
+    <NavigationProperty Name="Tendering" Relationship="RTMModel.FK_Warranty_Tendering" FromRole="Warranty" ToRole="Tendering" />
+  </EntityType>
+  <Association Name="FK_User_AccessRights">
+    <End Role="AccessRights" Type="RTMModel.AccessRight" Multiplicity="1" />
+    <End Role="User" Type="RTMModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessRights">
+        <PropertyRef Name="AccessId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="AccessId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advertisement_Notice">
+    <End Role="Notice" Type="RTMModel.Notice" Multiplicity="1" />
+    <End Role="Advertisement" Type="RTMModel.Advertisement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Notice">
+        <PropertyRef Name="NoticeId" />
+      </Principal>
+      <Dependent Role="Advertisement">
+        <PropertyRef Name="NoticeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_Advertisement">
+    <End Role="Advertisement" Type="RTMModel.Advertisement" Multiplicity="0..1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advertisement">
+        <PropertyRef Name="AdvertisementId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="AdvertisementId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bid1Stage_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="Bid" Type="RTMModel.Bid" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="Bid">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bid1Stage_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="Bid" Type="RTMModel.Bid" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="Bid">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_Contractor1">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_ContractType">
+    <End Role="ContractType" Type="RTMModel.ContractType" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractType">
+        <PropertyRef Name="ContractTypeId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ContractTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_OrganizationalChart">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="SupervisingUnit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_OrganizationalChart1">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="SupervisingUnitHigher" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="Supervisor1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contract_User1">
+    <End Role="User" Type="RTMModel.User" Multiplicity="0..1" />
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="Supervisor2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractDocFileRelation_Contract">
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="1" />
+    <End Role="ContractDocFileRelation" Type="RTMModel.ContractDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contract">
+        <PropertyRef Name="Contractid" />
+      </Principal>
+      <Dependent Role="ContractDocFileRelation">
+        <PropertyRef Name="ContractId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentDraft_Contract">
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="0..1" />
+    <End Role="PaymentDraft" Type="RTMModel.PaymentDraft" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contract">
+        <PropertyRef Name="Contractid" />
+      </Principal>
+      <Dependent Role="PaymentDraft">
+        <PropertyRef Name="ContractId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserContractAccess_Contract">
+    <End Role="Contract" Type="RTMModel.Contract" Multiplicity="1" />
+    <End Role="UserContractAccess" Type="RTMModel.UserContractAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contract">
+        <PropertyRef Name="Contractid" />
+      </Principal>
+      <Dependent Role="UserContractAccess">
+        <PropertyRef Name="ContractId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractDocFileRelation_ContractDocument">
+    <End Role="ContractDocument" Type="RTMModel.ContractDocument" Multiplicity="1" />
+    <End Role="ContractDocFileRelation" Type="RTMModel.ContractDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractDocument">
+        <PropertyRef Name="ContractDocumentId" />
+      </Principal>
+      <Dependent Role="ContractDocFileRelation">
+        <PropertyRef Name="ContractDocId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractDocFileRelation_ContractFile">
+    <End Role="ContractFile" Type="RTMModel.ContractFile" Multiplicity="1" />
+    <End Role="ContractDocFileRelation" Type="RTMModel.ContractDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractFile">
+        <PropertyRef Name="FileId" />
+      </Principal>
+      <Dependent Role="ContractDocFileRelation">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorDocFileRelation_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorDocFileRelation" Type="RTMModel.ContractorDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorDocFileRelation">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorMeetingJustification_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorMeetingJustification" Type="RTMModel.ContractorMeetingJustification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorMeetingJustification">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorMeetingOpenPacket1_Contractor1">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorMeetingOpenPacket" Type="RTMModel.ContractorMeetingOpenPacket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorMeetingOpenPacket">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorRequestContractor_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorRequestContractor" Type="RTMModel.ContractorRequestContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorRequestContractor">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingDocumentBuy_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorTenderingDocumentRecieve" Type="RTMModel.ContractorTenderingDocumentRecieve" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingDocumentRecieve">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingShortList_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorTenderingShortList" Type="RTMModel.ContractorTenderingShortList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingShortList">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingSubmitPacket_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorTenderingSubmitPacket" Type="RTMModel.ContractorTenderingSubmitPacket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingSubmitPacket">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingTechWin_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorTenderingTechWin" Type="RTMModel.ContractorTenderingTechWin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingTechWin">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingWin_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="ContractorTenderingWin" Type="RTMModel.ContractorTenderingWin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingWin">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationContractor_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="EvaluationContractor" Type="RTMModel.EvaluationContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="EvaluationContractor">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationStandardRelation_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="EvaluationStandardRelation" Type="RTMModel.EvaluationStandardRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="EvaluationStandardRelation">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PacketContractorTendering_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="PacketContractorTendering" Type="RTMModel.PacketContractorTendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="PacketContractorTendering">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShortlistContractor_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="0..1" />
+    <End Role="ShortlistContractor" Type="RTMModel.ShortlistContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="ShortlistContractor">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tendering_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="0..1" />
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="Tendering">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="0..1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Warranty_Contractor">
+    <End Role="Contractor" Type="RTMModel.Contractor" Multiplicity="1" />
+    <End Role="Warranty" Type="RTMModel.Warranty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ContractorId" />
+      </Principal>
+      <Dependent Role="Warranty">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorDocFileRelation_ContractorDocument">
+    <End Role="ContractorDocument" Type="RTMModel.ContractorDocument" Multiplicity="1" />
+    <End Role="ContractorDocFileRelation" Type="RTMModel.ContractorDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractorDocument">
+        <PropertyRef Name="ContractorDocumentId" />
+      </Principal>
+      <Dependent Role="ContractorDocFileRelation">
+        <PropertyRef Name="ContractorDocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorDocFileRelation_ContractorFile">
+    <End Role="ContractorFile" Type="RTMModel.ContractorFile" Multiplicity="1" />
+    <End Role="ContractorDocFileRelation" Type="RTMModel.ContractorDocFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractorFile">
+        <PropertyRef Name="FileId" />
+      </Principal>
+      <Dependent Role="ContractorDocFileRelation">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorMeetingJustification_Meeting">
+    <End Role="Meeting" Type="RTMModel.Meeting" Multiplicity="1" />
+    <End Role="ContractorMeetingJustification" Type="RTMModel.ContractorMeetingJustification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meeting">
+        <PropertyRef Name="MeetingId" />
+      </Principal>
+      <Dependent Role="ContractorMeetingJustification">
+        <PropertyRef Name="MeetingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorMeetingOpenPacket1_Meeting">
+    <End Role="Meeting" Type="RTMModel.Meeting" Multiplicity="1" />
+    <End Role="ContractorMeetingOpenPacket" Type="RTMModel.ContractorMeetingOpenPacket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meeting">
+        <PropertyRef Name="MeetingId" />
+      </Principal>
+      <Dependent Role="ContractorMeetingOpenPacket">
+        <PropertyRef Name="MeetingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorRequest_Orrganizitionalchart">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="0..1" />
+    <End Role="ContractorRequest" Type="RTMModel.ContractorRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="ContractorRequest">
+        <PropertyRef Name="RequestingUnit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorRequest_TenderingTitle">
+    <End Role="TenderingTitle" Type="RTMModel.TenderingTitle" Multiplicity="0..1" />
+    <End Role="ContractorRequest" Type="RTMModel.ContractorRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TenderingTitle">
+        <PropertyRef Name="TenderingTitleId" />
+      </Principal>
+      <Dependent Role="ContractorRequest">
+        <PropertyRef Name="TenderingTitleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorRequest_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="0..1" />
+    <End Role="ContractorRequest" Type="RTMModel.ContractorRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="ContractorRequest">
+        <PropertyRef Name="FundingControlAssignee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorRequestContractor_ContractorRequest">
+    <End Role="ContractorRequest" Type="RTMModel.ContractorRequest" Multiplicity="1" />
+    <End Role="ContractorRequestContractor" Type="RTMModel.ContractorRequestContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractorRequest">
+        <PropertyRef Name="ContractorRequestId" />
+      </Principal>
+      <Dependent Role="ContractorRequestContractor">
+        <PropertyRef Name="ContractorRequestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tendering_ContractorRequest">
+    <End Role="ContractorRequest" Type="RTMModel.ContractorRequest" Multiplicity="0..1" />
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractorRequest">
+        <PropertyRef Name="ContractorRequestId" />
+      </Principal>
+      <Dependent Role="Tendering">
+        <PropertyRef Name="ContractorRequestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingDocumentBuy_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="ContractorTenderingDocumentRecieve" Type="RTMModel.ContractorTenderingDocumentRecieve" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingDocumentRecieve">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingShortList_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="ContractorTenderingShortList" Type="RTMModel.ContractorTenderingShortList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingShortList">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingSubmitPacket_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="ContractorTenderingSubmitPacket" Type="RTMModel.ContractorTenderingSubmitPacket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingSubmitPacket">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingTechWin_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="ContractorTenderingTechWin" Type="RTMModel.ContractorTenderingTechWin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingTechWin">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContractorTenderingWin_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="ContractorTenderingWin" Type="RTMModel.ContractorTenderingWin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="ContractorTenderingWin">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvalStandard_EvalStandard">
+    <End Role="EvalStandard" Type="RTMModel.EvalStandard" Multiplicity="0..1" />
+    <End Role="EvalStandard1" Type="RTMModel.EvalStandard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EvalStandard">
+        <PropertyRef Name="StandardId" />
+      </Principal>
+      <Dependent Role="EvalStandard1">
+        <PropertyRef Name="ParentStandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationStandardRelation_EvalStandard">
+    <End Role="EvalStandard" Type="RTMModel.EvalStandard" Multiplicity="1" />
+    <End Role="EvaluationStandardRelation" Type="RTMModel.EvaluationStandardRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EvalStandard">
+        <PropertyRef Name="StandardId" />
+      </Principal>
+      <Dependent Role="EvaluationStandardRelation">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationAttachementFile_Evaluation">
+    <End Role="Evaluation" Type="RTMModel.Evaluation" Multiplicity="1" />
+    <End Role="EvaluationAttachementFile" Type="RTMModel.EvaluationAttachementFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evaluation">
+        <PropertyRef Name="EvaluationId" />
+      </Principal>
+      <Dependent Role="EvaluationAttachementFile">
+        <PropertyRef Name="EvaluationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationContractor_Evaluation">
+    <End Role="Evaluation" Type="RTMModel.Evaluation" Multiplicity="1" />
+    <End Role="EvaluationContractor" Type="RTMModel.EvaluationContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evaluation">
+        <PropertyRef Name="EvaluationId" />
+      </Principal>
+      <Dependent Role="EvaluationContractor">
+        <PropertyRef Name="EvaluationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EvaluationStandardRelation_Evaluation">
+    <End Role="Evaluation" Type="RTMModel.Evaluation" Multiplicity="1" />
+    <End Role="EvaluationStandardRelation" Type="RTMModel.EvaluationStandardRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evaluation">
+        <PropertyRef Name="EvaluationId" />
+      </Principal>
+      <Dependent Role="EvaluationStandardRelation">
+        <PropertyRef Name="EvaluationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserEvaluationMember_Evaluation">
+    <End Role="Evaluation" Type="RTMModel.Evaluation" Multiplicity="1" />
+    <End Role="UserEvaluationMember" Type="RTMModel.UserEvaluationMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evaluation">
+        <PropertyRef Name="EvaluationId" />
+      </Principal>
+      <Dependent Role="UserEvaluationMember">
+        <PropertyRef Name="EvaluationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regulation_IssuingReference">
+    <End Role="IssuingReference" Type="RTMModel.IssuingReference" Multiplicity="1" />
+    <End Role="Regulation" Type="RTMModel.Regulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IssuingReference">
+        <PropertyRef Name="IssuingReferenceId" />
+      </Principal>
+      <Dependent Role="Regulation">
+        <PropertyRef Name="IssuingReferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Meeting_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="Meeting" Type="RTMModel.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MeetingParticipant_Meeting">
+    <End Role="Meeting" Type="RTMModel.Meeting" Multiplicity="1" />
+    <End Role="MeetingUserParticipant" Type="RTMModel.MeetingUserParticipant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meeting">
+        <PropertyRef Name="MeetingId" />
+      </Principal>
+      <Dependent Role="MeetingUserParticipant">
+        <PropertyRef Name="MeetingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_Meeting">
+    <End Role="Meeting" Type="RTMModel.Meeting" Multiplicity="0..1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Meeting">
+        <PropertyRef Name="MeetingId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="MeetingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MeetingParticipant_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="1" />
+    <End Role="MeetingUserParticipant" Type="RTMModel.MeetingUserParticipant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="MeetingUserParticipant">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MinRank_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="MinRank" Type="RTMModel.MinRank" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="MinRank">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notice_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="Notice" Type="RTMModel.Notice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="Notice">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NoticeTendering_Notice">
+    <End Role="Notice" Type="RTMModel.Notice" Multiplicity="1" />
+    <End Role="NoticeTendering" Type="RTMModel.NoticeTendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Notice">
+        <PropertyRef Name="NoticeId" />
+      </Principal>
+      <Dependent Role="NoticeTendering">
+        <PropertyRef Name="NoticeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NoticeTendering_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="NoticeTendering" Type="RTMModel.NoticeTendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="NoticeTendering">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationalChart_OrganizationalChart">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="0..1" />
+    <End Role="OrganizationalChart1" Type="RTMModel.OrganizationalChart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="OrganizationalChart1">
+        <PropertyRef Name="ParentNodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regulation_OrganizationalChart">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="1" />
+    <End Role="Regulation" Type="RTMModel.Regulation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="Regulation">
+        <PropertyRef Name="ActingReferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_OrganizationalChart">
+    <End Role="OrganizationalChart" Type="RTMModel.OrganizationalChart" Multiplicity="1" />
+    <End Role="User" Type="RTMModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganizationalChart">
+        <PropertyRef Name="ChartNodeId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="OrganizationPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PacketContractorTendering_Packet">
+    <End Role="Packet" Type="RTMModel.Packet" Multiplicity="1" />
+    <End Role="PacketContractorTendering" Type="RTMModel.PacketContractorTendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Packet">
+        <PropertyRef Name="PacketId" />
+      </Principal>
+      <Dependent Role="PacketContractorTendering">
+        <PropertyRef Name="PacketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PacketContractorTendering_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="PacketContractorTendering" Type="RTMModel.PacketContractorTendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="PacketContractorTendering">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_FK_PaymentFile_PaymentDraft">
+    <End Role="PaymentDraft" Type="RTMModel.PaymentDraft" Multiplicity="0..1" />
+    <End Role="PaymentFile" Type="RTMModel.PaymentFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentDraft">
+        <PropertyRef Name="PaymentDraftId" />
+      </Principal>
+      <Dependent Role="PaymentFile">
+        <PropertyRef Name="PaymentDraftId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentDraftTranscript_PaymentDraft">
+    <End Role="PaymentDraft" Type="RTMModel.PaymentDraft" Multiplicity="0..1" />
+    <End Role="PaymentDraftTranscript" Type="RTMModel.PaymentDraftTranscript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentDraft">
+        <PropertyRef Name="PaymentDraftId" />
+      </Principal>
+      <Dependent Role="PaymentDraftTranscript">
+        <PropertyRef Name="PaymentDraftId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Position">
+    <End Role="Position" Type="RTMModel.Position" Multiplicity="1" />
+    <End Role="User" Type="RTMModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="PositionId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegulationFile_Regulation">
+    <End Role="Regulation" Type="RTMModel.Regulation" Multiplicity="1" />
+    <End Role="RegulationFile" Type="RTMModel.RegulationFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regulation">
+        <PropertyRef Name="RegulationId" />
+      </Principal>
+      <Dependent Role="RegulationFile">
+        <PropertyRef Name="RegulationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShortlistContractor_Shortlist">
+    <End Role="Shortlist" Type="RTMModel.Shortlist" Multiplicity="0..1" />
+    <End Role="ShortlistContractor" Type="RTMModel.ShortlistContractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shortlist">
+        <PropertyRef Name="ShortListId" />
+      </Principal>
+      <Dependent Role="ShortlistContractor">
+        <PropertyRef Name="ShortListId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tendering_Stage">
+    <End Role="Stage" Type="RTMModel.Stage" Multiplicity="0..1" />
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stage">
+        <PropertyRef Name="StageId" />
+      </Principal>
+      <Dependent Role="Tendering">
+        <PropertyRef Name="StageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingResult_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="0..1" />
+    <End Role="TenderingResult" Type="RTMModel.TenderingResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="TenderingResult">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserTenderingAccess_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="UserTenderingParticipation" Type="RTMModel.UserTenderingParticipation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="UserTenderingParticipation">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserTenderingMember_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="UserTenderingMember" Type="RTMModel.UserTenderingMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="UserTenderingMember">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Warranty_Tendering">
+    <End Role="Tendering" Type="RTMModel.Tendering" Multiplicity="1" />
+    <End Role="Warranty" Type="RTMModel.Warranty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tendering">
+        <PropertyRef Name="TenderingId" />
+      </Principal>
+      <Dependent Role="Warranty">
+        <PropertyRef Name="TenderingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_TenderingDocument">
+    <End Role="TenderingDocument" Type="RTMModel.TenderingDocument" Multiplicity="1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TenderingDocument">
+        <PropertyRef Name="TenderingDocumentId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="TenderingDocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TenderingDocumentFileRelation_TenderingDocumentFile">
+    <End Role="TenderingDocumentFile" Type="RTMModel.TenderingDocumentFile" Multiplicity="1" />
+    <End Role="TenderingDocumentFileRelation" Type="RTMModel.TenderingDocumentFileRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TenderingDocumentFile">
+        <PropertyRef Name="TenderingDocumentFileId" />
+      </Principal>
+      <Dependent Role="TenderingDocumentFileRelation">
+        <PropertyRef Name="TenderingDocumentFileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserContractAccess_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="1" />
+    <End Role="UserContractAccess" Type="RTMModel.UserContractAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserContractAccess">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserEvaluationMember_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="1" />
+    <End Role="UserEvaluationMember" Type="RTMModel.UserEvaluationMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserEvaluationMember">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserTenderingAccess_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="1" />
+    <End Role="UserTenderingParticipation" Type="RTMModel.UserTenderingParticipation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserTenderingParticipation">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserTenderingMember_User">
+    <End Role="User" Type="RTMModel.User" Multiplicity="1" />
+    <End Role="UserTenderingMember" Type="RTMModel.UserTenderingMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserTenderingMember">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="AuthenticateUser_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="256" />
+    <Property Type="Binary" Name="Picture" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="Family" Nullable="true" MaxLength="256" />
+    <Property Type="DateTime" Name="LastLogin" Nullable="true" />
+    <Property Type="String" Name="SocialNumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="PositionId" Nullable="false" />
+    <Property Type="Int32" Name="AccessId" Nullable="false" />
+    <Property Type="Int32" Name="OrganizationPosition" Nullable="false" />
+    <Property Type="Boolean" Name="TechnicalCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="ConsultantCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="TenderingCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="PaymentDraftCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="ManagingPaymentDraft" Nullable="true" />
+    <Property Type="Boolean" Name="ManagingContractAccess" Nullable="true" />
+    <Property Type="Boolean" Name="Isdeleted" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="UserSearch_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="256" />
+    <Property Type="Binary" Name="Picture" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="Family" Nullable="true" MaxLength="256" />
+    <Property Type="DateTime" Name="LastLogin" Nullable="true" />
+    <Property Type="String" Name="SocialNumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="PositionId" Nullable="false" />
+    <Property Type="Int32" Name="AccessId" Nullable="false" />
+    <Property Type="Int32" Name="OrganizationPosition" Nullable="false" />
+    <Property Type="Boolean" Name="TechnicalCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="ConsultantCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="TenderingCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="PaymentDraftCommittee" Nullable="true" />
+    <Property Type="Boolean" Name="ManagingPaymentDraft" Nullable="true" />
+    <Property Type="Boolean" Name="ManagingContractAccess" Nullable="true" />
+    <Property Type="Boolean" Name="Isdeleted" Nullable="false" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,38 @@
+﻿<Page x:Class="RTM.UserManagement.FindUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="FindUser" MinWidth="1024" MinHeight="768" Loaded="Page_Loaded">
+    <Grid x:Name="layoutRoot" >
+        <Grid Height="768" Width="1024" >
+            <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="532" Margin="0,0,158,125" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="734">
+                <Label Height="0" Name="label2" Width="0" />
+            </Border>
+            <Label Content="جستجوی کاربران" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,111,171,606" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" />
+            <Button Content="تازه سازی" Margin="461,323,443,413" Name="RefreshBtn" TabIndex="5" Width="120" Click="RefreshBtn_Click" />
+            <Button Content="مشاهده اطلاعات کاربر" HorizontalAlignment="Right" Margin="0,596,296,140" Name="OpenBtn" TabIndex="7" Width="147" Click="OpenBtn_Click" />
+            <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" IsReadOnly="False" Margin="0,169.169,295.5,0" MaxLines="5" Name="FNameTxt" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="267.5" TabIndex="0" IsEnabled="True" />
+            <DataGrid  AutoGenerateColumns="False"  CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="229" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="154,361,0,0" Name="Grid" SelectionMode="Single" TabIndex="6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="572" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="Name" Header="نام" Binding="{Binding Path=Name}"/>
+                    <DataGridTextColumn x:Name="Family" Header="نام خانوادگي" Binding="{Binding Path=Family}"/>
+                    <DataGridTextColumn x:Name="Username" Header="نام کابري" Binding="{Binding Path=Username}"/>
+                    <DataGridTextColumn x:Name="SN" Header="کد ملي" Binding="{Binding Path=SocialNumber}"/>
+                    <DataGridTextColumn x:Name="Tel" Header="شماره تلفن" Binding="{Binding Path=PhoneNumber}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="نام :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="758,167,0,0" Name="label6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="95" />
+            <Label Content="نام خانوادگی :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="758,205,0,0" Name="label7" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="94" />
+            <Button Content="جستجو" HorizontalAlignment="Right" Margin="0,0,296,413" Name="SearchBtn" TabIndex="4" Width="120" Height="32" VerticalAlignment="Bottom" Click="SearchBtn_Click" />
+            <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Right" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" IsReadOnly="False" Margin="0,207.169,295.5,0" MaxLines="5" Name="LNameTxt" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="267.5" TabIndex="1" IsEnabled="True" />
+            <Label Content="سازمان :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="756,243,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="95" />
+            <Label Content="نقش :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="756,279,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="94" />
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="461,247,296,0" Name="OrgCom" SelectedIndex="0" TabIndex="2" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="True" IsReadOnly="False" />
+            <ComboBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Height="32" IsEnabled="True" IsReadOnly="False" Margin="461,284,0,0" Name="PositionTxt" SelectedIndex="0" TabIndex="3" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="267" />
+            <Button Content="چاپ گزارش" HorizontalAlignment="Right" Margin="0,597,776,139" Name="PrintBtn" TabIndex="8" Width="94" Click="PrintBtn_Click" />
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06a2d8154bac4333a3f5c526d77b94f7" Name="Diagram1">
+        <EntityTypeShape EntityType="RTMModel.AccessRight" Width="1.5" PointX="5.25" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Advertisement" Width="1.5" PointX="16.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Bid" Width="1.5" PointX="3" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Contract" Width="1.5" PointX="6" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractDocFileRelation" Width="1.5" PointX="11.25" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractDocument" Width="1.5" PointX="9" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractFile" Width="1.5" PointX="9" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Contractor" Width="1.5" PointX="0.75" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorDocFileRelation" Width="1.5" PointX="3" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorDocument" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorFile" Width="1.5" PointX="0.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorMeetingJustification" Width="1.5" PointX="3" PointY="54.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorMeetingOpenPacket" Width="1.5" PointX="9" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorRequest" Width="1.5" PointX="9.75" PointY="65" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorRequestContractor" Width="1.5" PointX="9" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorTenderingDocumentRecieve" Width="1.5" PointX="9" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorTenderingShortList" Width="1.5" PointX="3" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorTenderingSubmitPacket" Width="1.5" PointX="3" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorTenderingTechWin" Width="1.5" PointX="6" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractorTenderingWin" Width="1.5" PointX="9" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ContractType" Width="1.5" PointX="3.75" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.EvalStandard" Width="1.5" PointX="6.75" PointY="77.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Evaluation" Width="1.5" PointX="3.75" PointY="62" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.EvaluationAttachementFile" Width="1.5" PointX="6" PointY="81.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.EvaluationContractor" Width="1.5" PointX="6" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.EvaluationStandardRelation" Width="1.5" PointX="9" PointY="57.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.IssuingReference" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Log" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Meeting" Width="1.5" PointX="14.25" PointY="51.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.MeetingUserParticipant" Width="1.5" PointX="16.5" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.MinRank" Width="1.5" PointX="14.25" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Notice" Width="1.5" PointX="14.25" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.NoticeTendering" Width="1.5" PointX="16.5" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.OrganizationalChart" Width="1.5" PointX="7.5" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Packet" Width="1.5" PointX="9.75" PointY="74.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.PacketContractorTendering" Width="1.5" PointX="12" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.PaymentDraft" Width="1.5" PointX="8.25" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.PaymentDraftTranscript" Width="1.5" PointX="10.5" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.PaymentFile" Width="1.5" PointX="10.5" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Position" Width="1.5" PointX="5.25" PointY="74.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Regulation" Width="1.5" PointX="12.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.RegulationFile" Width="1.5" PointX="15" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Shortlist" Width="1.5" PointX="9.75" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.ShortlistContractor" Width="1.5" PointX="12" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Stage" Width="1.5" PointX="9.75" PointY="61.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Tendering" Width="1.5" PointX="12" PointY="53.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingDocument" Width="1.5" PointX="16.5" PointY="49" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingDocumentFile" Width="1.5" PointX="16.5" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingDocumentFileRelation" Width="1.5" PointX="18.75" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingFileDownload" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingResult" Width="1.5" PointX="14.25" PointY="64.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.TenderingTitle" Width="1.5" PointX="7.5" PointY="65.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.User" Width="1.5" PointX="7.5" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.UserContractAccess" Width="1.5" PointX="14.25" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.UserEvaluationMember" Width="1.5" PointX="12.75" PointY="70.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.UserTenderingMember" Width="1.5" PointX="19.25" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.UserTenderingParticipation" Width="1.5" PointX="19.25" PointY="62.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RTMModel.Warranty" Width="1.5" PointX="19.25" PointY="48.5" IsExpanded="true" />
+        <AssociationConnector Association="RTMModel.FK_User_AccessRights" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Advertisement_Notice" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_Advertisement" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Bid1Stage_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Bid1Stage_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_Contractor1" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_ContractType" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_OrganizationalChart" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_OrganizationalChart1" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Contract_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractDocFileRelation_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_PaymentDraft_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserContractAccess_Contract" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractDocFileRelation_ContractDocument" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractDocFileRelation_ContractFile" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorDocFileRelation_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorMeetingJustification_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorMeetingOpenPacket1_Contractor1" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorRequestContractor_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingDocumentBuy_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingShortList_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingSubmitPacket_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingTechWin_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingWin_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationContractor_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationStandardRelation_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_PacketContractorTendering_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ShortlistContractor_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Tendering_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Warranty_Contractor" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorDocFileRelation_ContractorDocument" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorDocFileRelation_ContractorFile" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorMeetingJustification_Meeting" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorMeetingOpenPacket1_Meeting" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorRequest_Orrganizitionalchart" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorRequest_TenderingTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorRequest_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorRequestContractor_ContractorRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Tendering_ContractorRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingDocumentBuy_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingShortList_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingSubmitPacket_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingTechWin_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ContractorTenderingWin_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvalStandard_EvalStandard" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationStandardRelation_EvalStandard" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationAttachementFile_Evaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationContractor_Evaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_EvaluationStandardRelation_Evaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserEvaluationMember_Evaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Regulation_IssuingReference" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Meeting_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_MeetingParticipant_Meeting" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_Meeting" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_MeetingParticipant_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_MinRank_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Notice_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_NoticeTendering_Notice" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_NoticeTendering_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_OrganizationalChart_OrganizationalChart" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Regulation_OrganizationalChart" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_User_OrganizationalChart" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_PacketContractorTendering_Packet" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_PacketContractorTendering_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.C_FK_PaymentFile_PaymentDraft" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_PaymentDraftTranscript_PaymentDraft" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_User_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_RegulationFile_Regulation" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_ShortlistContractor_Shortlist" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Tendering_Stage" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingResult_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserTenderingAccess_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserTenderingMember_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_Warranty_Tendering" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocument" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_TenderingDocumentFileRelation_TenderingDocumentFile" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserContractAccess_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserEvaluationMember_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserTenderingAccess_User" ManuallyRouted="false" />
+        <AssociationConnector Association="RTMModel.FK_UserTenderingMember_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

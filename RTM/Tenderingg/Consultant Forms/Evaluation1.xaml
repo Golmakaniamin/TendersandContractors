@@ -1,0 +1,92 @@
+﻿<Page x:Class="RTM.Tenderingg.Evaluation1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="Evaluation1" Width="1024" Height="768" Background="{x:Null}" Loaded="Page_Loaded" xmlns:my="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit,Version=3.5.40128.1,Culture=neutral,PublicKeyToken=31bf3856ad364e35">
+
+    <Grid Width="1024" Height="768" Background="{x:Null}">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="241" HorizontalAlignment="Right" Margin="0,0,65,358" Name="border2" Opacity="0.4" VerticalAlignment="Bottom" Width="888">
+            <Label Height="0" Name="label16" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="240" HorizontalAlignment="Right" Margin="0,0,65,112" Name="border1" Opacity="0.4" VerticalAlignment="Bottom" Width="888">
+            <Label Height="0" Name="label17" Width="0" />
+        </Border>
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="684" HorizontalAlignment="Right" Margin="0,0,53,58" Name="Border" Opacity="0.4" VerticalAlignment="Bottom" Width="918">
+            <Label Height="0" Name="label2" Width="0" />
+        </Border>
+        <Label Content="جلسه ارزیابی مشاور" FontFamily="B Nazanin" FontSize="23" FontWeight="Normal" Foreground="Black" Height="51" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,26,65,690" Name="Title" Style="{StaticResource TitleLabel}" VerticalAlignment="Stretch" VerticalContentAlignment="Center" />
+        <Button Content="ثبت" Margin="195,662,0,74" Name="SaveBtn" TabIndex="20" Width="120" Click="SaveBtn_Click" HorizontalAlignment="Left" />
+        <Button Content="ویرایش" HorizontalAlignment="Right" Margin="0,662,585,74" Name="EditBtn" TabIndex="21" Width="120" Click="EditBtn_Click" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="73,80,129,0" MaxLines="5" Name="TitleTxt" TabIndex="0" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="379,214,0,0" Name="Grid1" SelectionMode="Single" TabIndex="10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="285" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="نام" Binding="{Binding Path=Name}"/>
+                <DataGridTextColumn  Header="نام خانوادگي" Binding="{Binding Path=Family}"/>
+                <DataGridTextColumn  Header="سمت" Binding="{Binding Path=PositionId, Converter={StaticResource ResourceKey=positionConverter}}"/>
+                <DataGridTextColumn  Header="کد ملي" Binding="{Binding Path=SocialNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="موضوع :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="901,78,0,0" Name="l1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="58" />
+        <Label Content="تاریخ تشکیل جلسه :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="613,118,0,0" Name="label10" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="134" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="755,123,0,0" MaxLines="5" Name="MinTxt" TabIndex="1" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="54" />
+        <Label Content="حداقل امتیاز مورد قبول :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="19" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="799,118,0,0" Name="l22" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="160" />
+        <Label Content="حاضرین هیئت انتخاب مشاور :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,170,77,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="200" />
+        <Label FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="807,416,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="140" Content="مشاوران حاضر :" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="671,249,0,0" MaxLines="5" Name="FamilyTxt" TabIndex="4" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" />
+        <Label Content="نام خانوادگی :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="854,243,0,0" Name="label5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="94" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="670.773,214,0,0" MaxLines="5" Name="NameTxt" TabIndex="3" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" TextChanged="textBox6_TextChanged" />
+        <Label Content="نام :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="915,209,0,0" Name="label6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="32" />
+        <Label Content="نقش :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="862,279,0,0" Name="label12" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="85" />
+        <Button Content="تازه سازی" Margin="799,360,105,376" Name="RefreshBtn" TabIndex="8" Width="120" Click="RefreshBtn_Click" />
+        <Button Content="جستجو" Height="32" HorizontalAlignment="Right" Margin="0,0,105,411" Name="SearchBtn" TabIndex="6" VerticalAlignment="Bottom" Width="120" Click="SearchBtn_Click" />
+        <Button Margin="673,325,231,411" Name="button1" TabIndex="7" Width="120" Content="اضافه" Click="button1_Click" />
+        <Button Content="حذف" Margin="673,360,231,376" Name="button2" TabIndex="9" Width="120" Click="button2_Click" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="379,451,0,0" Name="Grid3" SelectionMode="Single" TabIndex="18" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="285" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header=" نام شرکت" Binding="{Binding Path=CompanyName}"/>
+                <DataGridTextColumn  Header="نام مديرعامل" Binding="{Binding Path=CeoFamily}"/>
+                <DataGridTextColumn  Header="شناسه ملي" Binding="{Binding Path=NationalIdNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="674,510,0,0" MaxLines="5" Name="SocialNumberTxt" TabIndex="13" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" />
+        <Label Content="شناسه ملی:" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="863,506,0,0" Name="label13" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="85" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="674,475,0,0" MaxLines="5" Name="CompanyNameTxt" TabIndex="12" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" />
+        <Label Content="نام شرکت:" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,472,77,0" Name="label14" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="80" />
+        <Button Content="تازه سازی" Margin="799,597,105,139" Name="button3" TabIndex="16" Width="120" Click="button3_Click"/>
+        <Button Content="جستجو" Height="32" HorizontalAlignment="Right" Margin="0,0,105,177" Name="button4" TabIndex="14" VerticalAlignment="Bottom" Width="120" Click="searchContractor_Click" />
+        <Button Content="اضافه" Margin="673,559,231,177" Name="button5" TabIndex="15" Width="120" Click="button5_Click" />
+        <Button Content="حذف" Margin="673,597,231,139" Name="button6" TabIndex="17" Width="120" Click="button6_Click"/>
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="73,214,0,0" Name="Grid2" SelectionMode="Single" TabIndex="11" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="300" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Name" Header="نام" Binding="{Binding Path=Name}"/>
+                <DataGridTextColumn x:Name="Family" Header="نام خانوادگي" Binding="{Binding Path=Family}"/>
+                <DataGridTextColumn  Header="سمت" Binding="{Binding Path=PositionId, Converter={StaticResource ResourceKey=positionConverter}}"/>
+                <DataGridTextColumn x:Name="SN" Header="کد ملي" Binding="{Binding Path=SocialNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalContentAlignment="Center" Margin="73,451,651,0" Name="Grid4" SelectionMode="Single" TabIndex="19" VerticalAlignment="Top" VerticalContentAlignment="Center" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header=" نام شرکت" Binding="{Binding Path=CompanyName}"/>
+                <DataGridTextColumn  Header="نام مديرعامل" Binding="{Binding Path=CeoFamily}"/>
+                <DataGridTextColumn  Header="شناسه ملي" Binding="{Binding Path=NationalIdNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="نتایج جستجو :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,183,356,0" Name="label18" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <Label Content="نتایج جستجو :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Right" HorizontalContentAlignment="Left" Margin="0,417,356,0" Name="label19" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <Label Content="لیست منتخب :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="233,184,0,0" Name="l4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="140" />
+        <Label Content="لیست منتخب :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="233,419,0,0" Name="l5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="140" />
+        <ComboBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" Margin="671,288,168,0" Name="PositionCom" TabIndex="5" VerticalAlignment="Top" VerticalContentAlignment="Center" SelectedIndex="-1" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="74,122.833,0,0" MaxLines="5" Name="textBox1" TabIndex="1" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="70" IsReadOnly="True" />
+        <Label Content="شماره جلسه :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="142,118,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="94" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="300.939,121.409,0,0" MaxLines="5" x:Name="MinuteTxt" TabIndex="2" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="30.667" MaxLength="2" d:LayoutOverrides="HorizontalAlignment" />
+        <Label Content="ساعت :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="332,116,0,0" x:Name="l6" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="53.333" d:LayoutOverrides="HorizontalAlignment" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="257.939,121.409,0,0" MaxLines="5" x:Name="HourTxt" TabIndex="2" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="30.667" MaxLength="2" d:LayoutOverrides="HorizontalAlignment" />
+        <Label Content=":" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="284,116.666,0,0" x:Name="label11_Copy1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="15.333" d:LayoutOverrides="HorizontalAlignment" />
+        <my:DatePicker HorizontalAlignment="Left" Margin="466,123,0,0" Name="datePicker1" VerticalAlignment="Top" Height="31" Width="141" Text="انتخاب تاريخ" FlowDirection="RightToLeft" />
+        <Button Content="بعدی" HorizontalAlignment="Left" Margin="71,662,0,74" TabIndex="21" Width="120" Name="NextBtn" Click="NextBtn_Click" />
+    </Grid>
+</Page>

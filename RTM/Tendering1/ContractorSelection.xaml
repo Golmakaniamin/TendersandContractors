@@ -1,0 +1,40 @@
+﻿<Page x:Class="RTM.Tendering1.ContractorSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="ContractorSelection" Loaded="Page_Loaded">
+
+    <Grid Height="768" Width="1024">
+        <Border Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="527" HorizontalAlignment="Left" Margin="123,142,0,0" Name="border1" Opacity="0.4" VerticalAlignment="Top" Width="770">
+            <Label Height="0" Name="label17" Width="0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        </Border>
+        <Label Content="انتخاب شرکت ها" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="765,143,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="116" />
+        <DataGrid AlternationCount="2" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalContentAlignment="Center" IsReadOnly="True" Margin="143,208,0,0" Name="DataGrid1" SelectionMode="Single" TabIndex="3" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="458">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=CompanyName}" Header=" نام شرکت" />
+                <DataGridTextColumn Binding="{Binding Path=CeoFamily}" Header="نام مديرعامل" />
+                <DataGridTextColumn Binding="{Binding Path=NationalIdNumber}" Header="شناسه ملي" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="جستجو" Height="32" HorizontalAlignment="Left" Margin="704,280,0,0" Name="searchContractor" TabIndex="2" VerticalAlignment="Top" Width="90" Click="searchContractor_Click" />
+        <Button Content="اضافه" Margin="609,280,325,456" Name="AddBtn" TabIndex="4" Width="90" VerticalAlignment="Top" HorizontalAlignment="Left" Click="AddBtn_Click" />
+        <Button Content="حذف" Margin="609,418,0,0" Name="DelBtn" TabIndex="6" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Click="DelBtn_Click" />
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="178" HorizontalContentAlignment="Center" IsReadOnly="True" Margin="143,418,0,0" Name="DataGrid2" SelectionMode="Single" TabIndex="5" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="458">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=CompanyName}" Header=" نام شرکت" />
+                <DataGridTextColumn Binding="{Binding Path=CeoFamily}" Header="نام مديرعامل" />
+                <DataGridTextColumn Binding="{Binding Path=NationalIdNumber}" Header="شناسه ملي" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="نتایج جستجو :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="499,169,0,0" Name="label19" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="609.333,244,0,0" MaxLines="5" Name="SocialNumberTxt" TabIndex="1" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" />
+        <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="32" HorizontalAlignment="Left" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="609.333,208,0,0" MaxLines="5" Name="CompanyNameTxt" TabIndex="0" Text="" TextAlignment="Left" UseLayoutRounding="False" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="185.111" />
+        <Label Content="شناسه ملی :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="790,239,0,0" Name="label13" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="91" />
+        <Label Content="نام شرکت :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="801,205,0,0" Name="label14" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="80" />
+        <Label Content="لیست منتخب :" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="41" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="499,382,0,0" Name="l5" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="102" />
+        <Button Content="ثبت" HorizontalAlignment="Left" Margin="143,623,0,0" Name="button1" TabIndex="7" VerticalAlignment="Top" Width="90" Click="button1_Click" />
+    </Grid>
+</Page>

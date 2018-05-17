@@ -1,0 +1,64 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit" xmlns:RTM="clr-namespace:RTM" x:Class="RTM.Contracts.ContractDocuments" 
+      mc:Ignorable="d" Title="ContractDocuments" x:Name="page" Height="768" Width="1024" Loaded="page_Loaded">
+
+    <Grid Height="768" Width="1024" x:Name="layoutRoot">
+
+        
+        	<Grid Height="857.832" Background="{x:Null}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180*" />
+                <ColumnDefinition Width="844*" />
+            </Grid.ColumnDefinitions>
+            <Border AllowDrop="True" Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="649" HorizontalAlignment="Right" Margin="0,69,31,0" Opacity="0.4" VerticalAlignment="Top" Width="962" Grid.ColumnSpan="2" />
+            <Border AllowDrop="True" Background="White" BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="0" Height="362" HorizontalAlignment="Right" Margin="0,0,45,153" Opacity="0.4" VerticalAlignment="Bottom" Width="934" Grid.ColumnSpan="2"/>
+            <Button Content="ثبت" FontFamily="B Nazanin" FontSize="20" Height="34.201" HorizontalAlignment="Right" Margin="0,1028.299,40,0" x:Name="SaveBtn" TabIndex="44" VerticalAlignment="Top" Width="93" FontWeight="Normal"  />
+                <TextBox FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="18" FontWeight="Normal" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" MaxLines="5" x:Name="DescriptionTxt" TabIndex="38" Text="" TextAlignment="Left" TextWrapping="Wrap" UseLayoutRounding="False" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Auto" Margin="25,826,128,86" Grid.ColumnSpan="2" />
+            <Button Content="مشاهده" FontFamily="B Nazanin" FontSize="17" Height="34.201" HorizontalAlignment="Right" Margin="0,985.462,701,0" x:Name="ShowBtn" TabIndex="40" VerticalAlignment="Top" Width="130" FontWeight="Normal" Grid.Column="1" />
+                <Button Content="بارگذاری" FontFamily="B Nazanin" FontSize="17" Height="34.201" HorizontalAlignment="Right" Margin="0,985.462,567,0" x:Name="UploadBtn" TabIndex="39" VerticalAlignment="Top" Width="130" FontWeight="Normal" Grid.Column="1" />
+                <Button Content="ویرایش" FontFamily="B Nazanin" FontSize="20" Height="34.201" HorizontalAlignment="Right" Margin="0,1028.299,787,0" x:Name="EditBtn1" TabIndex="43" VerticalAlignment="Top" Width="93" FontWeight="Normal" Grid.ColumnSpan="2" />
+                <Button Content="صورتجلسه" FontFamily="B Nazanin" FontSize="20" Height="34.201" HorizontalAlignment="Right" Margin="0,1028.299,690,0" x:Name="SesionRecordBtn" TabIndex="42" VerticalAlignment="Top" Width="93" FontWeight="Normal" Grid.Column="1" />
+            <my:DatePicker FlowDirection="RightToLeft" Height="27" Margin="358,799.416,377,241.416" x:Name="JustificationSesionDP" Width="109" TabIndex="34" IsEnabled="False" Grid.Column="1" />
+            <Button Content="حذف" FontFamily="B Nazanin" FontSize="17" Height="34.201" HorizontalAlignment="Right" Margin="0,985.462,836,0" x:Name="DelBtn" TabIndex="41" VerticalAlignment="Top" Width="130" FontWeight="Normal" Grid.ColumnSpan="2" />
+                <Label Content="اسناد قرارداد" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="620,66,0,0" x:Name="label6_Copy" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="183" Grid.Column="1" />
+        		<RTM:ContractHeaderControl Grid.ColumnSpan="2" Height="228" Margin="45,109,45,0" VerticalAlignment="Top" Loaded="ContractHeaderControl_Loaded" x:Name="Header" />
+                <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="287.123" HorizontalContentAlignment="Center" Margin="0,0,63.159,164.689" SelectionMode="Single" TabIndex="4" UseLayoutRounding="False" VerticalAlignment="Bottom" VerticalContentAlignment="Center" x:Name="Grid1" HorizontalAlignment="Right" Width="897.841" Grid.ColumnSpan="2" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="عنوان" MinWidth="170" IsReadOnly="False" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox Name="DocTitles" DisplayMemberPath="Title" SelectedValuePath="DocumentIndex" SelectedValue="{Binding Path=DocumentIndex,Mode=TwoWay}" ItemsSource="{Binding  Path=DocTypes,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Page}}}" IsEnabled="False"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="توضيحات" MinWidth="170" Binding="{Binding Path=Version,Mode=TwoWay}"/>
+                    <DataGridTextColumn IsReadOnly="True"  Header="زمان بارگذاري" Binding="{Binding Path=AttachedDate, Converter= {StaticResource dateConverter}}"/>
+                    <DataGridTemplateColumn Header="مشاهده">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="مشاهده" Margin="5"  Click="ViewFile_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="حذف">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="حذف" Margin="5" Click="DeleteFile_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="افزودن فایل سند" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" HorizontalAlignment="Left" Margin="51,0,0,470" x:Name="button1" TabIndex="2" Width="116" Click="button1_Click" Grid.Column="1" Height="30" VerticalAlignment="Bottom" />
+            <ComboBox Name="DocTitles" DisplayMemberPath="Title" SelectedValuePath="DocumentIndex" Margin="485,359,188,468" Grid.Column="1" SelectedIndex="0" FontFamily="B Nazanin" FontSize="12" TabIndex="0" />
+            <Label ClipToBounds="True" Content="نوع سند :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="652,354,0,0" Name="label2" TabIndex="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="70" Grid.Column="1" />
+            <TextBox FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" FontWeight="Normal" Grid.Column="1" HorizontalContentAlignment="Right" HorizontalScrollBarVisibility="Auto" Margin="173.333,358.667,450.667,467.165" MaxLines="5" Name="VersionTxt" TabIndex="1" TextAlignment="Left" UseLayoutRounding="False" VerticalContentAlignment="Center" />
+            <Label Content="توضیحات :" FlowDirection="RightToLeft" FontFamily="/RTM;component/Fonts/#B Nazanin" FontSize="20" Grid.Column="1" Height="40" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="394,353,0,0" Name="l1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="90" />
+            <Button Content="تازه سازی" HorizontalAlignment="Left" Margin="118,357,0,469" Name="RefreshBtn" TabIndex="3" Width="110" Click="RefreshBtn_Click" Grid.ColumnSpan="2" Height="30" />
+        </Grid>
+    </Grid>
+</Page>

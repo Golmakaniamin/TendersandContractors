@@ -1,0 +1,66 @@
+﻿<Page x:Class="RTM.Tendering1.UI13packetPresentationt"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"  
+      xmlns:myd="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="UI13packetPresentationt" Background="{x:Null}" MinHeight="768" MinWidth="1024" x:Name="page" Margin="0" Loaded="page_Loaded" xmlns:my="clr-namespace:RTM">
+    <Grid MinHeight="768" MinWidth="1024" x:Name="layoutRoot">
+        <Grid Width="1024" Height="768" Margin="0" >
+            <Border AllowDrop="True" Background="White" BorderBrush="#FF9A9696" BorderThickness="1" CornerRadius="0" Height="553" HorizontalAlignment="Right" Margin="0,0,24.5,114" x:Name="border1_Copy1" Opacity="0.4" VerticalAlignment="Bottom" Width="989" />
+            <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" FontWeight="Normal" Height="249" HorizontalContentAlignment="Center" x:Name="dataGrid" SelectionMode="Single" TabIndex="0" VerticalContentAlignment="Center" SelectionChanged="Grid_SelectionChanged_1" VerticalAlignment="Bottom" UseLayoutRounding="False" Margin="27,0,43.344,162.5" HorizontalScrollBarVisibility="Visible">
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn x:Name="Cntrctr" Binding="{Binding ContractorId, Converter={StaticResource companyNameConverter}}" Header="نام پیمانکار" IsReadOnly="True" />
+                    <DataGridTextColumn x:Name="SocialNom" Binding="{Binding ContractorId, Converter={StaticResource companySNConverter}}" Header="شناسه ملی" IsReadOnly="True" />
+                    <DataGridTextColumn x:Name="agent" Binding="{Binding RepresentativeName}" Header="نام نماینده" />
+                    <DataGridTextColumn x:Name="regNom" Binding="{Binding SecretaryNumber}" Header="شماره ثبت دبیرخانه" />
+
+                    <DataGridTemplateColumn Header="تاریخ تسلیم پاکات" MinWidth="40">
+                        <DataGridTemplateColumn.CellTemplate >
+                            <DataTemplate >
+                                <myd:DatePicker SelectedDate="{Binding SubmitDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Margin="1"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="تاریخ انصراف" MinWidth="40">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <myd:DatePicker SelectedDate="{Binding WithdrawDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="1"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="بارگذاري">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="بارگذاري" Margin="5"  Click="SaveFile_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="مشاهده">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="مشاهده" Margin="5"  Click="ViewFile_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="حذف">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="حذف" Margin="5" Click="DeleteFile_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Height="0" x:Name="label22" Width="0" />
+            <Button Content="ثبت" FontFamily="B Nazanin" FontSize="20" Height="32" HorizontalAlignment="Right" Margin="0,610,905,0" x:Name="SaveBtn" TabIndex="1" VerticalAlignment="Top" Width="93" FontWeight="Normal" Click="SaveBtn_Click" />
+            <Label Content="فرم تسلیم پاکات" FlowDirection="RightToLeft" FontFamily="B Nazanin" FontSize="20" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="862,92,0,0" x:Name="label24" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="125" />
+            <my:TenderingHeaderControl HorizontalAlignment="Left" Margin="27,147,0,0" x:Name="Header" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+</Page>
